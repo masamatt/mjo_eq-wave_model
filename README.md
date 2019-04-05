@@ -1,2 +1,2 @@
 # MJO-beta-plane
-Retroactively made a repository. A beta-plane spectral model for the Madden-Julian Oscillation.
+A beta-plane spectral model for the Madden-Julian Oscillation.  Originally coded in 2005, retroactively made a repository.
