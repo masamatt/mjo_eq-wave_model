@@ -64,7 +64,12 @@ disp(' ')
 
 % Clear variables used to calculate phi
 disp('Clearing phi specific variables.')
-clear PHIN PHIF Z phi
+
+
+%%%clear PHIN PHIF Z phi   %%% save:  phi
+clear PHIN PHIF Z
+
+
 disp('Done clearing.')
 disp(' ')
 

@@ -64,7 +64,10 @@ disp(' ')
 
 % Clear variables used to calculate q
 disp('Clearing q specific variables.')
-clear qN qF Z q
+
+%%%clear qN qF Z q   %%% save: q
+clear qN qF Z
+
 disp('Done clearing.')
 disp(' ')
 

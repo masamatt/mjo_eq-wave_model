@@ -77,7 +77,12 @@ disp(' ')
 
 % Clear variables used to calculate omegaM
 disp('Clearing w specific variables.')
-clear wN wF Zprime w omegaM
+
+
+%%%clear wN wF Zprime w omegaM     %%% save: omegaM
+clear wN wF Zprime w
+
+
 disp('Done clearing.')
 disp(' ')
 
