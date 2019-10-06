@@ -75,6 +75,19 @@ yVec = (a/ep^(1/4))*yHatVec;
 ySize = length(yVec);
 xSize = length(xiVec);
 
+% %%% save:  yVec
+disp('Saving y coordinate in file: ./matFiles/coord_y.mat')
+save ./matFiles/coord_y.mat yVec
+disp('Done saving.')
+disp(' ')
+
+% %%% save:  xiVec
+disp('Saving xi coordinate in file: ./matFiles/coord_xi.mat')
+save ./matFiles/coord_xi.mat xiVec
+disp('Done saving.')
+disp(' ')
+
+
 % initialize "T"otal array. T is composed of y,xi,u,v,phi,omegaM,q.
 T = zeros(7,xSize*ySize);
 
@@ -102,12 +115,12 @@ for yy = 1:ySize
   end
 end
 
-
-% clear unneeded variables
-clear u v phi omegaM q
-
-% delete unneeded "field" .mat files, still need "out" .mat files
-delete('./matFiles/field*.mat');
+% %%%  *****************************   save:  u v phi omegaM q
+% % clear unneeded variables
+% clear u v phi omegaM q
+% 
+% % delete unneeded "field" .mat files, still need "out" .mat files
+% delete('./matFiles/field*.mat');
 
 % get primitive output file name
 mName = 'prim';

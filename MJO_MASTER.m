@@ -268,7 +268,7 @@ end
 %                   and exit if specified
 if autoExit == 0
   % clear remaining variables
-  clear
+  %%%clear
   
   % Big end statement
   disp('                                                ')
@@ -291,7 +291,7 @@ if autoExit == 0
   pause(10);
 else
   % clear remaining variables
-  clear
+  %%%clear
   
   % Big end statement
   disp('                                                ')
