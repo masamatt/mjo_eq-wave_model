@@ -1,6 +1,11 @@
 %
-% plotFields.m
+% loadMatFiles.m
 %
+% PURPOSE:  load coordinates and output field variables from .mat files.
+%
+%
+%
+
 
 LOADVARS=1;                % 0: true,  1: false
 
