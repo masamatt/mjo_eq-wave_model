@@ -41,19 +41,19 @@ global a
 % Diabatic forcing coefficient. Maximum magnitude of
 % cloud cluster forcing term. [J/kg*s]
 %%%Q0 = 0.1743;
-%%%Q0 = 0.0242;
-Q0 = 0.0545;
+Q0 = 0.0242;
+%%%Q0 = 0.0545;
 
 % Zonal half-width of cloud cluster. [m]
 %%%a0 = 1250000;
-%%%a0 = 9000000;
-a0 = 18000000;
+a0 = 9000000;
+%%%a0 = 18000000;
 
 
 % Meridional e-folding width of cloud cluster. [m]
 %%%b0 = 450000;
-%%%b0 = 200000;
-b0 = 100000;
+b0 = 200000;
+%%%b0 = 100000;
                    
 % NOTE: Q0*a0*b0 = constant
 
