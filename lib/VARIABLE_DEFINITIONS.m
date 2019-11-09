@@ -3,7 +3,10 @@
 % FILE:        VARIABLE_DEFINITIONS.m
 % AUTHOR:      Matt Masarik
 % DATE:        June 15 2005
-% MODIFIED:    N/A
+% MODIFIED:    MM Nov 08 2019 - moved 'alfa' to CONSTANT_DEFINITIONS.m.
+%                               Also moved all interesting user params
+%                               to MJO_PARAMS.m in the root dir, and added
+%                               a call to that file in this script.
 % CALL SYNTAX: VARIABLE_DEFINITIONS;
 % PRE:         CONSTANT_DEFINITIONS.m has been called
 % POST:        Variables contained in this script will be
@@ -28,59 +31,9 @@ disp('Starting VARIABLE_DEFINITIONS.m script...')
 % global declaration
 global a
 
-
-
-%               initialize variables
-% ----------------------------------------------------
-
-%%% % CC = 9.8044e+10
-%%% % C0 = 0.1743 *  1,250,000 * 450,000
-%%% % C1 = 0.0242 *  9,000,000 * 200,000
-%%% % C2 = 0.0545 * 18,000,000 * 100,000
-
-% Diabatic forcing coefficient. Maximum magnitude of
-% cloud cluster forcing term. [J/kg*s]
-%%%Q0 = 0.1743;
-%%%Q0 = 0.0242;
-Q0 = 0.0545;
-
-% Zonal half-width of cloud cluster. [m]
-%%%a0 = 1250000;
-%%%a0 = 9000000;
-a0 = 18000000;
-
-
-% Meridional e-folding width of cloud cluster. [m]
-%%%b0 = 450000;
-%%%b0 = 200000;
-b0 = 100000;
-                   
-% NOTE: Q0*a0*b0 = constant
-
-
-% The meridional displacement, relative to the equator, 
-% of the center of the cloud cluster. [m]
-%%%y0 = 0;        
-y0 = 500000;        
-
-% Eastward propagation speed of the cloud cluster
-% (and frame of reference). [m/s]
-%%%c = 2.5;
-c = 0;
-
-% Constant coefficient for Rayleigh friction 
-% and Newtonian cooling. [1/s]
-% "alfa" = alpha... alpha already taken
-alfa = 2.894*10^(-6); 
-
-% Chosen pressure level. [mb]                   
-p = 850;           
-
-% N = nMax, maximum meridional mode (integer). []
-nMax = 200;
-
-% M = mMax, maximum zonal wavenumber (integer). []
-mMax = 200;          
+% Call MJO_PARAMS.m, which contains user adjustable parameters previously
+% contained in this file.
+MJO_PARAMS;
 
 % Maximum dimensionless meridional distance from the equator. []
 % Corresponds to about yMax = 2731 km, or roughly 
@@ -109,7 +62,6 @@ xiIncrement = 50000;
 % have increments of 50 km. (Close to the increments in
 % the meridional direction).
 xiVec = [-xiMax:xiIncrement:xiMax];  
-
 
 
 % Finishing statement
