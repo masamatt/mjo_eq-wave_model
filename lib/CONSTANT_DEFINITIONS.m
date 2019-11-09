@@ -3,10 +3,12 @@
 % FILE:        CONSTANT_DEFINITIONS.m
 % AUTHOR:      Matt Masarik
 % DATE:        June 08 2006
-% MODIFIED:    MM August 25 2005 - R -> Rd
-%                                  When the dry air gas constant
-%                                  was used in functions with 
-%                                  roots (R), then R was overloaded.
+% MODIFIED:    MM August 25 2005   - R -> Rd
+%                                    When the dry air gas constant
+%                                    was used in functions with 
+%                                    roots (R), then R was overloaded.
+%              MM November 08 2019 - Moved 'alfa' here from 
+%                                    VARIABLE_DEFINITIONS.m.
 %
 % CALL SYNTAX: CONSTANT_DEFINITIONS;
 % PRE:         None
@@ -70,7 +72,10 @@ cBar = sqrt((Rd*Gmma)/((pi/zT)^2 + 1/4));
 % ep = epsilon
 ep = (4*Omega^2*a^2)/cBar^2;  
                               
-
+% Constant coefficient for Rayleigh friction 
+% and Newtonian cooling. [1/s]
+% "alfa" = alpha... alpha already taken
+alfa = 2.894*10^(-6); 
 
 % Finish statement
 disp('Finishing CONSTANT_DEFINITIONS.m script.')
