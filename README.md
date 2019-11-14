@@ -79,7 +79,7 @@ The following is a reproduction of the thesis Abstract.<br>
 > on the horizontal shape, propagation speed, and meridional position of the prescribed
 > forcing are examined by evaluating the Parseval relation for different values of these
 > forcing parameters.
-
+>
 <br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
