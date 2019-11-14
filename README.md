@@ -85,32 +85,32 @@ The following is a reproduction of the thesis Abstract.<br>
 >
 >
 >
-[Return to top](#MJO_eq-wave_model)
+[Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## V. Primitive Model
 The governing equations for the primitive equation model are presented in Ch 2.1 - Governing Equations.
 blah<br>
-[Return to top](#MJO_eq-wave_model)
+[Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## VI. Balanced Model
 blah<br>
-[Return to top](#MJO_eq-wave_model)
+[Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## VII. Plotting
 blah<br>
-[Return to top](#MJO_eq-wave_model)
+[Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## VIII. Citations
 blah<br>
 <br><br>
-[Return to top](#MJO_eq-wave_model)
+[Return to top](#mjo_eqwave_model)
 <br><br>
 
