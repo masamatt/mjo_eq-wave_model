@@ -109,6 +109,8 @@ blah<br>
 
 
 ## VIII. Citations
+Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**,
+127-151. [PDF](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 blah<br>
 <br><br>
 [Return to top](#mjo_eqwave_model)
