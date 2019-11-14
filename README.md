@@ -11,7 +11,7 @@
 * [I. Overview](#I-Overview) - *brief description of repository*
 * [II. Manifest](#II-Manifest) - *repository structure*
 * [III. Quick Start](#III-Quick-Start) - *downloading repository and running models*
-* [IV. Thesis Abstract](#IV-Abstract)
+* [IV. Thesis Abstract](#IV-Thesis-Abstract)
 * [V. Primitive Model](#V-Primitive-Model) - *description of Primitive Equation model*
 * [VI. Balanced Model](#VI-Balanced-Model) - *description of Balanced model*
 * [VII. Plotting](#VII-Plotting) - *information on plotting output*
@@ -42,13 +42,13 @@ mjo_eqwave_model/
 <br><br><br>
 
 
-## III. Quick Start Guide
+## III. Quick Start
 blah<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
-## IV. Abstract
+## IV. Thesis Abstract
 The following is a reproduction of the thesis Abstract.<br>
 > POTENTIAL VORTICITY AND ENERGY ASPECTS OF THE MJO THROUGH
 >                   EQUATORIAL WAVE THEORY
@@ -78,7 +78,8 @@ The following is a reproduction of the thesis Abstract.<br>
 > equatorial wave contributions to the total energy.  The dependence of wave response energy
 > on the horizontal shape, propagation speed, and meridional position of the prescribed
 > forcing are examined by evaluating the Parseval relation for different values of these
-> forcing parameters.<br>
+> forcing parameters.
+<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
