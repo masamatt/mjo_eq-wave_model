@@ -10,8 +10,8 @@
 ## Contents
 * [I. Overview](#I-Overview) - *brief description of repository*
 * [II. Manifest](#II-Manifest) - *repository structure*
-* [III. Quick Start Guide](#III-Quick-Start-Guide) - *downloading repository and running models*
-* [IV. Abstract](#IV-Abstract) - *thesis abstract*
+* [III. Quick Start](#III-Quick-Start) - *downloading repository and running models*
+* [IV. Thesis Abstract](#IV-Abstract)
 * [V. Primitive Model](#V-Primitive-Model) - *description of Primitive Equation model*
 * [VI. Balanced Model](#VI-Balanced-Model) - *description of Balanced model*
 * [VII. Plotting](#VII-Plotting) - *information on plotting output*
@@ -20,8 +20,7 @@
 
 
 ## I. Overview
-This repository contains the original model code used in the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>, and journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>.
-<br>
+This repository contains the original model code used in the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>, and journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>.<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
@@ -79,20 +78,13 @@ The following is a reproduction of the thesis Abstract.<br>
 > equatorial wave contributions to the total energy.  The dependence of wave response energy
 > on the horizontal shape, propagation speed, and meridional position of the prescribed
 > forcing are examined by evaluating the Parseval relation for different values of these
-> forcing parameters.
->
->
->
->
->
->
+> forcing parameters.<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## V. Primitive Model
-The governing equations for the primitive equation model are presented in Ch 2.1 - Governing Equations.
-blah<br>
+The governing equations for the primitive equation model are presented in Ch 2.1 - Governing Equations.<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
