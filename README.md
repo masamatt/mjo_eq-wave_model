@@ -79,14 +79,14 @@ The following is a reproduction of the thesis Abstract.<br>
 > on the horizontal shape, propagation speed, and meridional position of the prescribed
 > forcing are examined by evaluating the Parseval relation for different values of these
 > forcing parameters.
->
-<br>
+><br>
 [Return to top](#mjo_eqwave_model)
+
 <br><br><br>
 
 
 ## V. Primitive Model
-The governing equations for the primitive equation model are presented in Ch 2.1 - Governing Equations.<br>
+The governing equations for the primitive equation model are presented in [Ch 2.1 - Governing Equations](https://github.com/masamatt/mjo_eqwave_model/blob/c80079e98b1cd8c40c0c0be658a5acea7e5c0707/docs/mtm_thesis_sec_2.1.pdf).<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
