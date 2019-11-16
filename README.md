@@ -43,9 +43,9 @@ mjo_eqwave_model/
 <br><br><br>
 
 
-## III. Model Operations
+## III. Model Operation
 blah<br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
