@@ -44,7 +44,11 @@ mjo_eqwave_model/
 
 
 ## III. Model Operation
-blah<br>
+The first step is to download a copy of this repository to your computer using `git`
+```bash
+git clone 
+```
+<br>
 [Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
