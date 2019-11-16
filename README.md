@@ -1,6 +1,6 @@
 # mjo_eqwave_model
 
-*An equatorial wave model for the Madden-Julian oscillation (MJO).  Developed in 2005, posted retroactively.*
+*A steady state, beta-plane, equatorial wave model for Madden-Julian oscillation (MJO) diabatic forcing*
 <br>
 <br>
 <br>
@@ -8,14 +8,14 @@
 
 
 ## Contents
-* [I. Overview](#I-Overview) - *brief description of repository*
-* [II. Manifest](#II-Manifest) - *repository structure*
-* [III. Quick Start](#III-Quick-Start) - *downloading repository and running models*
-* [IV. Thesis Abstract](#IV-Thesis-Abstract)
-* [V. Primitive Model](#V-Primitive-Model) - *description of Primitive Equation model*
-* [VI. Balanced Model](#VI-Balanced-Model) - *description of Balanced model*
-* [VII. Plotting](#VII-Plotting) - *information on plotting output*
-* [VIII. Citations](#VIII-Citations)
+* [I. Overview](#I-Overview) - brief description
+* [II. Manifest](#II-Manifest) - repository structure
+* [III. Model Operation](#III-Model-Operation) - **downloading repository and running model**
+* [IV. Thesis Abstract](#IV-Thesis-Abstract) - MS abstract reproduced
+* [V. Primitive Model](#V-Primitive-Model) - description of Primitive Equation model
+* [VI. Balanced Model](#VI-Balanced-Model) - description of Balanced model
+* [VII. Plotting](#VII-Plotting) - information on plotting output
+* [VIII. Appendix \& Citations](#VIII-Appendix-Citations)
 <br><br><br>
 
 
@@ -42,14 +42,13 @@ mjo_eqwave_model/
 <br><br><br>
 
 
-## III. Quick Start
+## III. Model Operations
 blah<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
 
 ## IV. Thesis Abstract
-The following is a reproduction of the thesis Abstract.<br>
 > POTENTIAL VORTICITY AND ENERGY ASPECTS OF THE MJO THROUGH
 >                   EQUATORIAL WAVE THEORY
 > 
@@ -79,7 +78,8 @@ The following is a reproduction of the thesis Abstract.<br>
 > on the horizontal shape, propagation speed, and meridional position of the prescribed
 > forcing are examined by evaluating the Parseval relation for different values of these
 > forcing parameters.
-><br>
+> <br>
+
 [Return to top](#mjo_eqwave_model)
 
 <br><br><br>
@@ -103,7 +103,7 @@ blah<br>
 <br><br><br>
 
 
-## VIII. Citations
+## VIII. Appendix \& Citations
 * <sup><a name="1">1</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [PDF](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
 * <sup><a name="2">2</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**,
 127-151. [PDF](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
