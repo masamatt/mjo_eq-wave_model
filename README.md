@@ -15,7 +15,7 @@
 * [V. Primitive Model](#V-Primitive-Model) - description of Primitive Equation model
 * [VI. Balanced Model](#VI-Balanced-Model) - description of Balanced model
 * [VII. Plotting](#VII-Plotting) - information on plotting output
-* [VIII. Appendix \& Citations](#VIII-Appendix-Citations)
+* [VIII. Appendix \& Citations](#VIII-Appendix-&-Citations)
 <br><br><br>
 
 
