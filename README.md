@@ -1,4 +1,4 @@
-# mjo_eqwave_model
+# mjo_eq-wave_model
 
 *Steady state, beta-plane, equatorial wave model for Madden-Julian oscillation (MJO)-like diabatic forcing.*
 <br>
@@ -20,10 +20,9 @@
 
 
 ## I. Overview
-This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>.  
-
+This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>.  The description here will follow the later.
 <br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -40,7 +39,7 @@ mjo_eqwave_model/
 ├── primitive/                      #   code base for primitive equation model
 └── README.md
 ```
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -82,26 +81,26 @@ blah<br>
 > forcing parameters.
 > <br>
 
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 
 <br><br><br>
 
 
 ## V. Primitive Model
 The governing equations for the primitive equation model are presented in [Ch 2.1 - Governing Equations](https://github.com/masamatt/mjo_eqwave_model/blob/c80079e98b1cd8c40c0c0be658a5acea7e5c0707/docs/mtm_thesis_sec_2.1.pdf).<br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
 ## VI. Balanced Model
 blah<br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
 ## VII. Plotting
 blah<br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -111,6 +110,6 @@ blah<br>
 127-151. [PDF](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 
 <br><br>
-[Return to top](#mjo_eqwave_model)
+[Return to top](#mjo_eq-wave_model)
 <br><br>
 
