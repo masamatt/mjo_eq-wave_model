@@ -14,13 +14,15 @@
 * [IV. Thesis Abstract](#IV-Thesis-Abstract) - MS abstract reproduced
 * [V. Primitive Model](#V-Primitive-Model) - description of Primitive Equation model
 * [VI. Balanced Model](#VI-Balanced-Model) - description of Balanced model
-* [VII. Plotting](#VII-Plotting) - information on plotting output
+* [VII. Plotting](#VII-Plotting) - plotting model output
 * [VIII. Appendix \& Citations](#VIII-Appendix--Citations)
 <br><br><br>
 
 
 ## I. Overview
-This repository contains the original model code used in the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>, and journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>.<br>
+This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>.  
+
+<br>
 [Return to top](#mjo_eqwave_model)
 <br><br><br>
 
