@@ -22,7 +22,7 @@
 ## I. Overview
 This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[2](#2)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[1](#1)</sup>.  The description here will follow the later.  A schematic outlining the computational procedure for the model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
 <br>
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -39,7 +39,7 @@ mjo_eqwave_model/
 ├── primitive/                      #   code base for primitive equation model
 └── README.md
 ```
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -58,7 +58,7 @@ From the command prompt inside the MatLab program you can start a model simulati
 ```matlab
 MJO_SIM
 ```
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -94,7 +94,7 @@ MJO_SIM
 > forcing parameters.
 > <br>
 
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -103,19 +103,19 @@ The governing equations for the primitive equation model are presented in [Sec 2
 equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf).  Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).
 <br>
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
 ## VI. Balanced Model
 blah<br>
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
 ## VII. Plotting
 blah<br>
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
 
@@ -125,5 +125,5 @@ blah<br>
 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 * [Appendix F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf) - schematic flow-chart of the computational procedure.
 <br><br><br>
-[Return to top](#mjo_eq-wave_model)
+[\[Return to top\]](#mjo_eq-wave_model)
 <br>
