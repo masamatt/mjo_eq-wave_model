@@ -7,12 +7,17 @@
 %
 %
 
-clear;
-
+%clear;
 %CONSTANT_DEFINITIONS;
 %VARIABLE_DEFINITIONS;
+%loadMatFiles;
 
-loadMatFiles;
+% PLOT PARAMETERS
+overlayEquator = 'false'
+overlayForcing = 'true'
+yMax = (yHatMax*a) / ep^(1/4);
+
+
 
 plotFields;
 
