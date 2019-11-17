@@ -101,7 +101,7 @@ MJO_SIM
 
 ## V. Primitive Model
 The governing equations for the primitive equation model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eqwave_model/blob/c80079e98b1cd8c40c0c0be658a5acea7e5c0707/docs/mtm_thesis_sec_2.1.pdf).  These 
-equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2]().
+equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/0edae78321a84f2dd9b292521c96b4077efe844d/docs/mtm_thesis_sec_2.2.pdf).
 <br>
 [Return to top](#mjo_eq-wave_model)
 <br><br><br>
