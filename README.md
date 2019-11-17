@@ -124,7 +124,6 @@ blah<br>
 * <sup><a name="2">2</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**,
 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 * [Appendix F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf) - schematic flow-chart of the computational procedure.
-<br><br>
+<br><br><br>
 [Return to top](#mjo_eq-wave_model)
-<br><br>
-
+<br>
