@@ -100,7 +100,7 @@ MJO_SIM
 
 
 ## V. Primitive Model
-The governing equations for the primitive equation model are presented in [Sec 2.1]().  These 
+The governing equations for the primitive equation model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
 equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](). In 
 [Sec 2.3]() the prescription of the diabatic forcing term for the horizontal structure problem is given.
 <br>
