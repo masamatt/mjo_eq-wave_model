@@ -3,40 +3,31 @@
 %
 
 
-%%% % CC = 9.8044e+10
-%%% % C0 = 0.1743 *  1,250,000 * 450,000
-%%% % C1 = 0.0242 *  9,000,000 * 200,000
-%%% % C2 = 0.0545 * 18,000,000 * 100,000
+% Zonal half-width of cloud cluster. [m]
+a0 = 1250000;
+
+% Meridional e-folding width of cloud cluster. [m]
+b0 = 450000;
+
+% For the purpose of comparison among experiments varying Q0,a0,b0, 
+% we have constrained the quantity Q0*a0*b0 to be a constant, namely
+% 9.8044e+10.  The default configuration is:
+%     Q0 * a0 * b0  =  0.1743 * 1,250,000 * 450,000  =  9.8044e+10
+Q0_a0_b0 = 9.8044e+10;
 
 % Diabatic forcing coefficient. Maximum magnitude of
 % cloud cluster forcing term. [J/kg*s]
-%%%Q0 = 0.1743;
-Q0 = 0.0242;
-%%%Q0 = 0.0545;
-
-% Zonal half-width of cloud cluster. [m]
-%%%a0 = 1250000;
-a0 = 9000000;
-%%%a0 = 18000000;
-
-
-% Meridional e-folding width of cloud cluster. [m]
-%%%b0 = 450000;
-b0 = 200000;
-%%%b0 = 100000;
-                   
-% NOTE: Q0*a0*b0 = constant
-
+% To ensure the quantity Q0*a0*b0 is constant, the quantity Q0 is 
+% computed from it's constants value and the user selected a0 and b0.
+Q0 = Q0_a0_b0 / (a0*b0);
 
 % The meridional displacement, relative to the equator, 
-% of the center of the cloud cluster. [m]
-%%%y0 = 0;        
-y0 = 500000;        
+% of the center of the cloud cluster. [m]  
+y0 = 0;        
 
 % Eastward propagation speed of the cloud cluster
 % (and frame of reference). [m/s]
-%%%c = 2.5;
-c = 0;
+c = 5;
 
 % Chosen pressure level. [mb]                   
 p = 850;           
@@ -45,4 +36,10 @@ p = 850;
 nMax = 200;
 
 % M = mMax, maximum zonal wavenumber (integer). []
-mMax = 200;          
+mMax = 200;
+
+% zonalDomain = zonal extent of equatorial channel
+%               0.5 (half)  default
+%               1.0 (full)
+zonalDomain = 0.5;
+

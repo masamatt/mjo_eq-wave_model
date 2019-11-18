@@ -52,7 +52,10 @@ yHatVec = [-yHatMax:yHatIncrement:yHatMax];
 
 % Maximum zonal distance in the frame of 
 % reference moving at a constant speed, c. [m]
-xiMax = (pi*a)/2;      
+% zonalDomain is a dimensionless parameter prescribing if
+% the full (1.0) equatorial channel is computing or half (0.5).
+% The default is half.
+xiMax = (pi*a)*zonalDomain;      
                    
 % Increment of "xi" zonal distance. [m]
 xiIncrement = 50000;   

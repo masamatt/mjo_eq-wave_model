@@ -17,6 +17,8 @@ disp('                                                ')
 disp('                                                ')
 disp('                                                ')
 
+clear;
+
 % Add current working directory and subdirs to search path
 disp('Adding paths to search path...')
 
@@ -34,6 +36,18 @@ libPath  = [currentDir,subDir3];
 outPath  = [currentDir,subDir4];
 matPath  = [currentDir,subDir5];
 plotPath = [currentDir,subDir6];
+
+
+if exist('./matFiles') ~= 7     % 7 = directory
+    mkdir matFiles;
+else
+    delete('./matFiles/*');
+end
+if exist('./output') ~= 7
+    mkdir output;
+else
+    delete('./output/*');
+end
 
 addpath(currentDir,primPath,balPath,libPath,outPath,matPath,plotPath);
 
@@ -76,10 +90,6 @@ if primitiveModel == 0
   disp(' ')
 end
 
-% delete all files left in ./matFiles and ./output
-delete('./matFiles/*');
-delete('./output/*');
-  
 
 % save input parameters
 outputType = 1;
