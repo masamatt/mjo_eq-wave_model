@@ -1,4 +1,4 @@
-  function Q = get_Q(y,xi,Q0,a0,b0,y0)
+  function Q = get_Q(xi,y,Q0,a0,b0,y0)
             Y_VALS  = length(y);
             XI_VALS = length(xi);
             Q  = zeros(Y_VALS,XI_VALS);

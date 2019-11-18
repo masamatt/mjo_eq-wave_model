@@ -27,7 +27,7 @@ y0 = 0;
 
 % Eastward propagation speed of the cloud cluster
 % (and frame of reference). [m/s]
-c = 2.5;
+c = 5;
 
 % Chosen pressure level. [mb]                   
 p = 850;           
@@ -41,5 +41,5 @@ mMax = 200;
 % zonalDomain = zonal extent of equatorial channel
 %               0.5 (half)  default
 %               1.0 (full)
-zonalDomain = 1.0;
+zonalDomain = 0.5;
 

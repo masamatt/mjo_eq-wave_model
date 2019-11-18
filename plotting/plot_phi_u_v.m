@@ -19,17 +19,14 @@ v_skip_vec = v(1:y_incr_val:length(yVec),1:xi_incr_val:length(xiVec));
 
 
 % mesh grids
-[XIVEC, YVEC]  = meshgrid(xiVec, yVec);
+[XI,Y]         = meshgrid(xiVec, yVec);
 [XISKIP,YSKIP] = meshgrid(xi_skip_vec, y_skip_vec);
 
 
-contourf(XIVEC,YVEC,phi);
+contourf(XI,Y,phi);
 hold on
-if overlayForcing == 'true'
-    Qmax = max(max(Q));
-    contour(XIVEC,YVEC,Q,'LineStyle',':','LineColor','k','LineWidth',1.75, ...
-    'LevelListMode','manual','LevelList', ...
-    [0.5*Qmax 0.0625*Qmax]);
+if overlayForcing == true
+    plot_Q(XI,Y,Q);
 end
 quiver(XISKIP,YSKIP,u_skip_vec,v_skip_vec,'Color','black');
 hold off

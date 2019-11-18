@@ -13,8 +13,8 @@
 %loadMatFiles;
 
 % PLOT PARAMETERS
-overlayEquator = 'false'
-overlayForcing = 'true'
+overlayEquator = false;
+overlayForcing = false;
 yMax = (yHatMax*a) / ep^(1/4);
 
 
