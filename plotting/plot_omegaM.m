@@ -4,15 +4,15 @@
 % PURPOSE: plot omegaM:=vertical pressure velocity contours.
 %
 
-% colormap - gray scale
-gray_scale_map = [255 255 255
-                  239 239 239
-                  219 219 219
-                  194 194 194
-                  170 170 170
-                  142 142 142
-                  113 113 113
-                   77  77  77] / 255;
+% % colormap - gray scale
+% gray_scale_map = [255 255 255
+%                   239 239 239
+%                   219 219 219
+%                   194 194 194
+%                   170 170 170
+%                   142 142 142
+%                   113 113 113
+%                    77  77  77] / 255;
 
 % mesh grids
 [XI, Y]  = meshgrid(xiVec, yVec);
@@ -35,7 +35,7 @@ hold on
 contourf(XI,Y,omegaM_up,'linestyle','--');
 colormap(gray_scale_map);
 if overlayForcing == true
-    plot_Q(XI,Y,Q);
+    contour_DiabForcing(XI,Y,Qdiab);
 end
 hold off
 

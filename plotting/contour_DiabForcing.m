@@ -1,4 +1,4 @@
-function plot_Q(XI_MAT,Y_MAT,Q_MAT)
+function contour_DiabForcing(XI_MAT,Y_MAT,Q_MAT)
 %
 %
 % plot_Q.m - plot contours of Q (diabatic heating)
