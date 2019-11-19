@@ -3,31 +3,37 @@
 % 
 % PURPOSE: plot potential vorticity (PV) contours.
 %
+q_mu           = q * 10^6;              % mu s^-1 = 10^-6 s^-1
+q_cyclonic     = zeros(Y_NUM,XI_NUM);
+q_anticyclonic = zeros(Y_NUM,XI_NUM);
 
-
-
-% mesh grids
-[XIVEC, YVEC]  = meshgrid(xiVec, yVec);
-
-
-for xixi = 1:length(xiVec)
-    for yy = 1:length(yVec)
-        if q(yy,xixi) >= 0
-            q_cyclonic(yy,xixi) = q(yy,xixi);
+for xixi = 1:XI_NUM
+    for yy = 1:Y_NUM
+        if q_mu(yy,xixi) >= 0
+            q_cyclonic(yy,xixi) = q_mu(yy,xixi);
             q_anticyclonic(yy,xixi) = NaN;
         else
             q_cyclonic(yy,xixi) = NaN;
-            q_anticyclonic(yy,xixi) = q(yy,xixi);
+            q_anticyclonic(yy,xixi) = q_mu(yy,xixi);
         end
     end
 end
 
 
-contourf(XIVEC,YVEC,q_cyclonic,'linestyle','-');
+contourf(XI,Y,q_cyclonic,'linestyle','-');
 hold on
+contourf(XI,Y,q_anticyclonic,'linestyle','--');
 colormap(gray_scale_map);
-contourf(XIVEC,YVEC,q_anticyclonic,'linestyle','--');
-if overlayForcing == true
-    contour_DiabForcing(XIVEC,YVEC,Qdiab);
+if displayColorBar == true
+    colorbar;
 end
+if overlayEquator == true
+    contour_Equator(XI,Y,EQ);
+end
+if overlayForcing == true
+    contour_DiabForcing(XI,Y,Qdiab);
+end
+label_plot(['potential vorticity anomaly (10$^{-6}\,$ s$^{-1}$) at p=',num2str(p),' hPa']);
 hold off
+
+% END

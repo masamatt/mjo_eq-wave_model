@@ -8,11 +8,15 @@
 %
 
 % ***************** PLOT PARAMETERS ******************************** %
-overlayEquator = false;
-overlayForcing = true;
+overlayEquator  = false;
+overlayForcing  = false;
+displayColorBar = true;
 % ****************************************************************** %
 
-yMax = (yHatMax*a) / ep^(1/4);
+
+
+
+
 
 
 plotFields;

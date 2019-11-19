@@ -1,15 +1,15 @@
-function EQ = calc_Equator(xiVec,yVec)
+function Equator = calc_Equator(xi,y)
     %
     %
     %
-    xi_num = length(xiVec);
-    y_num  = length(yVec);
-    EQ     = zeros(y_num,xi_num);
+    xi_num  = length(xi);
+    y_num   = length(y);
+    Equator = zeros(y_num,xi_num);
     
     for i = 1:xi_num
         for j = 1:y_num
-            if yVec(j) == 0
-                EQ(j,i) = 1;
+            if y(j) == 0
+                Equator(j,i) = 1;
             end
         end
     end

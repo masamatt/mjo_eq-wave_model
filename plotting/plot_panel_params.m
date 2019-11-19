@@ -5,6 +5,7 @@
 %
 
 % sizes
+yMax = (yHatMax*a) / ep^(1/4);
 xi_y_ratio=xiMax/yMax;
 left_val=0;
 bottom_val=0;
@@ -17,14 +18,4 @@ tot_height_val=height_val * sub_plot_num + padding_val;
 %%%tot_height_val=height_val;
 
 
-% color maps
-% colormap - gray scale
-gray_scale_map = [255 255 255
-                  239 239 239
-                  219 219 219
-                  194 194 194
-                  170 170 170
-                  142 142 142
-                  113 113 113
-                   77  77  77] / 255;
 
