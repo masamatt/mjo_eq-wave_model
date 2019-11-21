@@ -21,6 +21,23 @@ gravity_const = 9.81;  % [m s^-2]
 PHI = phi / gravity_const;
 
 
+peakWindHeightStr='';
+if displayPeakValues == true
+    maxHeight        = max(max(PHI));
+    minHeight        = min(min(PHI));
+    heightStr        = '';
+    if abs(maxHeight) >= abs(minHeight)
+        heightStr        = sprintf('%0.2f',maxHeight);
+    else
+        heightStr        = sprintf('%0.2f',minHeight);
+    end
+    windSpeed        = sqrt(u.^2 + v.^2);
+    peakWind         = max(max(windSpeed)); 
+    windStr          = sprintf('%0.2f',peakWind);
+    peakWindHeightStr=['  [peak: $|V|$=',windStr,', $\Delta$z=',heightStr,']'];
+end
+
+
 contourf(XI,Y,PHI);
 hold on
 colormap(gray_scale_map);
@@ -34,5 +51,5 @@ if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
 quiver(XISKIP,YSKIP,u_skip_vec,v_skip_vec,'Color','black');
-label_plot(['wind (m s$^{-1}$) and height anomaly (m) at p=',num2str(p),' hPa']);
+label_plot(['wind(m s$^{-1}$) height(m) anomaly p=',num2str(p),'hPa',peakWindHeightStr]);
 hold off

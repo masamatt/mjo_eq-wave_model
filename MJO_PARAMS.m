@@ -30,7 +30,7 @@ y0 = 0;
 c = 5;
 
 % Chosen pressure level. [mb]                   
-p = 850;           
+p = 300;           
 
 % N = nMax, maximum meridional mode (integer). []
 nMax = 200;

@@ -19,6 +19,15 @@ for xixi = 1:XI_NUM
     end
 end
 
+peakOmegaMStr='';
+if displayPeakValues == true
+    peakOmegaMDown = max(max(omegaM_down));
+    peakOmegaMUp   = min(min(omegaM_up));
+    downStr        = sprintf('%0.2f',peakOmegaMDown);
+    upStr          = sprintf('%0.2f',peakOmegaMUp);
+    peakOmegaMStr=['  [peak: $\omega_{up}$=',upStr,', $\omega_{down}$=',downStr,']'];
+end
+
 % PLOT
 contourf(XI,Y,omegaM_down,'linestyle','-');
 hold on
@@ -33,7 +42,7 @@ end
 if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
-label_plot('vertical p-velocity (hPa day$^{-1}$) at p=395 hPa');
+label_plot(['vertical p-velocity(hPa day$^{-1}$) p=395hPa',peakOmegaMStr]);
 hold off
 
 %END

@@ -8,9 +8,10 @@
 %
 
 % ***************** PLOT PARAMETERS ******************************** %
-overlayEquator  = false;
-overlayForcing  = false;
-displayColorBar = true;
+overlayEquator    = false;
+overlayForcing    = false;
+displayColorBar   = true;
+displayPeakValues = true;
 % ****************************************************************** %
 
 

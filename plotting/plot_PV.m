@@ -19,6 +19,14 @@ for xixi = 1:XI_NUM
     end
 end
 
+peakPVString='';
+if displayPeakValues == true
+    PVmax = max(max(q_cyclonic));
+    PVmin = min(min(q_anticyclonic));
+    PVmaxStr = sprintf('%0.2f',PVmax);
+    PVminStr = sprintf('%0.2f',PVmin);
+    peakPVString=[' [peak: PV$_{+}$=',PVmaxStr,' PV$_{-}$=',PVminStr,']'];
+end
 
 contourf(XI,Y,q_cyclonic,'linestyle','-');
 hold on
@@ -33,7 +41,7 @@ end
 if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
-label_plot(['potential vorticity anomaly (10$^{-6}\,$ s$^{-1}$) at p=',num2str(p),' hPa']);
+label_plot(['potential vorticity(10$^{-6}\,$ s$^{-1}$) anomaly p=',num2str(p),'hPa',peakPVString]);
 hold off
 
 % END
