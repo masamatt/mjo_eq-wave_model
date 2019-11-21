@@ -35,7 +35,7 @@ figure('Units','inches','Position',[ left_val bottom_val width_val tot_height_va
 % TOP PANEL
 subplot(3,1,1);
 plot_PV;
-
+main_fig_title;
 
 % MIDDLE PANEL
 subplot(3,1,2);
