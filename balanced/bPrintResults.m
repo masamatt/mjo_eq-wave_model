@@ -103,10 +103,10 @@ end
 
 
 % clear unneeded variables
-clear b_u b_v b_phi b_omegaM b_q
+%%%clear b_u b_v b_phi b_omegaM b_q
 
 % delete unneeded "field_b" .mat files
-delete('./matFiles/field_b*.mat');
+%%%delete('./matFiles/field_b*.mat');
 
 % get balanced output file name
 mName = 'bal';

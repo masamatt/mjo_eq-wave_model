@@ -65,7 +65,7 @@ balancedModel  = 1;              % init outside of 'if'
 modelRunString = '';             % init outside of 'if'
 modelSuite     = 1;              % never run full modelSuite
 if primitiveModel == 0
-    balanceModel = 1;
+    balancedModel = 1;
     modelRunString = 'Primitive';
 else
     balancedModel = 0;
@@ -74,6 +74,7 @@ end
 
 
 % Prompt for components if Primitive Model is run
+waves = -1;  % value for balancedModel if primitiveModel != 0
 if primitiveModel == 0
   disp('                                                        ')
   disp('Choose from the wave components for the Primitive Model.')
@@ -132,8 +133,12 @@ disp(' ')
 disp(' ')
 
 
+
 disp('   ********* PLOT MJO RUN RESULTS *********')
 disp(' ')
+
+% prep variables
+mjo_var_copy;
 
 MJO_PLOT;
 

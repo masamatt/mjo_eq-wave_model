@@ -9,15 +9,23 @@ omegaM_down = zeros(Y_NUM,XI_NUM);
 % partition up & down omegaM for plot formatting only
 for xixi = 1:XI_NUM
     for yy = 1:Y_NUM
-        if omegaM(yy,xixi) >= 0
-            omegaM_down(yy,xixi) = omegaM(yy,xixi);
+        if omegaM_var(yy,xixi) >= 0
+            omegaM_down(yy,xixi) = omegaM_var(yy,xixi);
             omegaM_up(yy,xixi)   = NaN;
         else
             omegaM_down(yy,xixi) = NaN;
-            omegaM_up(yy,xixi)   = omegaM(yy,xixi);
+            omegaM_up(yy,xixi)   = omegaM_var(yy,xixi);
         end
     end
 end
+
+% Mixed Rossby-gravity wave for y0=0... this rectifies NaN partitioning
+% artifact
+if (primitiveModel == 0) && (waves == 2) && (y0 == 0)
+    omegaM_up   = zeros(Y_NUM,XI_NUM);
+    omegaM_down = zeros(Y_NUM,XI_NUM);
+end
+
 
 peakOmegaMStr='';
 if displayPeakValues == true

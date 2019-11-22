@@ -12,12 +12,12 @@ overlayEquator    = false;
 overlayForcing    = false;
 displayColorBar   = true;
 displayPeakValues = true;
+applyNewPLevel    = false;
+newPLevel         = p;
 % ****************************************************************** %
 
-
-
-
-
-
-
+% the call
 plotFields;
+
+
+% END

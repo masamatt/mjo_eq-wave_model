@@ -10,15 +10,15 @@ xi_incr_val    = y_incr_val * 4;
 
 xi_skip_vec    = xi_Mm(1:xi_incr_val:XI_NUM);
 y_skip_vec     = y_Mm(1:y_incr_val:Y_NUM);
-u_skip_vec     = u(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
-v_skip_vec     = v(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
+u_skip_vec     = u_var(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
+v_skip_vec     = v_var(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
 
 [XISKIP,YSKIP] = meshgrid(xi_skip_vec, y_skip_vec);
 % *************************************************************** %
 
 % convert geopotential (phi, [m^2 s^-2]) to geopotential height (PHI, [m])
 gravity_const = 9.81;  % [m s^-2]
-PHI = phi / gravity_const;
+PHI = phi_var / gravity_const;
 
 
 peakWindHeightStr='';
@@ -31,7 +31,7 @@ if displayPeakValues == true
     else
         heightStr        = sprintf('%0.2f',minHeight);
     end
-    windSpeed        = sqrt(u.^2 + v.^2);
+    windSpeed        = sqrt(u_var.^2 + v_var.^2);
     peakWind         = max(max(windSpeed)); 
     windStr          = sprintf('%0.2f',peakWind);
     peakWindHeightStr=['  [peak: $|V|$=',windStr,', $\Delta$z=',heightStr,']'];

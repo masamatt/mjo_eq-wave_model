@@ -4,6 +4,19 @@
 % PURPOSE:  plot all field variables.
 %
 
+% declare plot variables
+u_var      = 0;
+v_var      = 0;
+phi_var    = 0;
+q_var      = 0;
+omegaM_var = 0;
+if applyNewPLevel == true
+    p = newPLevel;
+    apply_new_p_level;
+else
+    select_plot_vars;
+end
+
 % load plot parameters for formatting, colormaps, etc.
 plot_panel_params;
 plot_color_maps;

@@ -61,13 +61,13 @@ wF = IFourier(wN,yHatVec,xiVec,mMax);
 % Want to plot at vertical structure max: Z'(zM) = 1.
 Zprime = 1;
 
-% Get total w field w(yHat,xi,z)
-w = Zprime*wF;
-
-% Get vertical velocity in pressure units (mb/day), at the
+% Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
-% omega = -p*w, so omegaM = -pM*w.
-omegaM = -pM*86400*w;
+% omegaF = -p*wF, so omegaMF = -pM*wF.
+omegaMF = -pM*86400*wF;
+
+% Get total omegaM field omegaM(yHat,xi,z)
+omegaM = Zprime*omegaMF;
 
 % Save omegaM field
 disp('Saving omegaM(yHat,xi) in file: ./matFiles/field_omegaM.mat')
@@ -79,7 +79,7 @@ disp(' ')
 disp('Clearing w specific variables.')
 
 
-%%%clear wN wF Zprime w omegaM     %%% save: omegaM
+%%%clear wN wF Zprime w omegaMF     %%% save: omegaM
 clear wN wF Zprime w
 
 

@@ -3,7 +3,8 @@
 % 
 % PURPOSE: plot potential vorticity (PV) contours.
 %
-q_mu           = q * 10^6;              % mu s^-1 = 10^-6 s^-1
+
+q_mu           = q_var * 10^6;              % mu s^-1 = 10^-6 s^-1
 q_cyclonic     = zeros(Y_NUM,XI_NUM);
 q_anticyclonic = zeros(Y_NUM,XI_NUM);
 
@@ -19,13 +20,27 @@ for xixi = 1:XI_NUM
     end
 end
 
+% Kelvin wave -> PV := 0... this rectifies partitioning artifact of NaN
+if (primitiveModel == 0) && (waves == 4)
+    q_cyclonic     = zeros(Y_NUM,XI_NUM);
+    q_anticyclonic = zeros(Y_NUM,XI_NUM);
+end
+
+% Mixed Rossby-gravity wave for y0=0... this rectifies NaN partitioning
+% artifact
+if (primitiveModel == 0) && (waves == 2) && (y0 == 0)
+    q_cyclonic     = zeros(Y_NUM,XI_NUM);
+    q_anticyclonic = zeros(Y_NUM,XI_NUM);
+end
+
+
 peakPVString='';
 if displayPeakValues == true
     PVmax = max(max(q_cyclonic));
     PVmin = min(min(q_anticyclonic));
     PVmaxStr = sprintf('%0.2f',PVmax);
     PVminStr = sprintf('%0.2f',PVmin);
-    peakPVString=[' [peak: PV$_{+}$=',PVmaxStr,' PV$_{-}$=',PVminStr,']'];
+    peakPVString=[' [peak: q$_{+}$=',PVmaxStr,' q$_{-}$=',PVminStr,']'];
 end
 
 contourf(XI,Y,q_cyclonic,'linestyle','-');
