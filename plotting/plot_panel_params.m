@@ -14,7 +14,7 @@ width_val=xi_y_ratio * height_val;  % xi
 
 padding_val=1;
 sub_plot_num=3;
-tot_height_val=height_val * sub_plot_num + padding_val;
+tot_height_val = height_val*sub_plot_num + padding_val;
 %%%tot_height_val=height_val;
 
 

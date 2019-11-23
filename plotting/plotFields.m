@@ -4,6 +4,16 @@
 % PURPOSE:  plot all field variables.
 %
 
+
+
+
+
+% if newPLevelPVFlag == true
+%     q_var = qf_hor * ;
+% else
+% end
+
+
 % declare plot variables
 u_var      = 0;
 v_var      = 0;
@@ -17,12 +27,16 @@ else
     select_plot_vars;
 end
 
+
+
+
 % load plot parameters for formatting, colormaps, etc.
 plot_panel_params;
 plot_color_maps;
 
 
 % coords
+yVec   = (a/ep^(1/4))*yHatVec;
 xi_Mm  = xiVec / 10^6;     % Mm = 10^6 m = 10^3 km
 y_Mm   = yVec  / 10^6; 
 XI_NUM = length(xi_Mm);

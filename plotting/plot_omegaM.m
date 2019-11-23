@@ -19,8 +19,11 @@ for xixi = 1:XI_NUM
     end
 end
 
-% Mixed Rossby-gravity wave for y0=0... this rectifies NaN partitioning
-% artifact
+% Mixed Rossby-gravity wave for y0=0, response is zero.  The model in fact
+% produces that result, though partitioning into omegaM_up/omegaM_down
+% above (which is done solely to use different contour lineStyles for
+% each), artificially introduces all NaNs for omegaM_down in this case.
+% The assignment below corrects to the original result.
 if (primitiveModel == 0) && (waves == 2) && (y0 == 0)
     omegaM_up   = zeros(Y_NUM,XI_NUM);
     omegaM_down = zeros(Y_NUM,XI_NUM);
@@ -42,7 +45,11 @@ hold on
 contourf(XI,Y,omegaM_up,'linestyle','--');
 colormap(gray_scale_map);
 if displayColorBar == true
-    colorbar;
+    cbh = colorbar;
+    cbh.Label.String = '$\omega$ (hPa day$^{-1}$)';
+    cbh.Label.FontSize = 10;
+    cbh.Label.FontName = 'FixedWidth';
+    cbh.Label.Interpreter = 'latex';
 end
 if overlayEquator == true
     contour_Equator(XI,Y,EQ);

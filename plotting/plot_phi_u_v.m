@@ -42,7 +42,11 @@ contourf(XI,Y,PHI);
 hold on
 colormap(gray_scale_map);
 if displayColorBar == true
-    colorbar;
+    cbh = colorbar;
+    cbh.Label.String = '$\Delta$z (m)';
+    cbh.Label.FontSize = 10;
+    cbh.Label.FontName = 'FixedWidth';
+    cbh.Label.Interpreter = 'latex';
 end
 if overlayEquator == true
     contour_Equator(XI,Y,EQ);

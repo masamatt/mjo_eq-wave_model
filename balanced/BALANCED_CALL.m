@@ -50,6 +50,9 @@ writeStatus;
 
 % Call STATUS.m, wait for 10 seconds
 STATUS;
+disp('Sleeping for 10 seconds...');
+pause(1);
+disp('To ABORT run:  CTRL-C');
 pause(10);
 
 % Compute u field
@@ -128,7 +131,7 @@ disp('                                          ')
 disp('                                          ')
 
 % Print all balanced fields to a text file
-bPrintResults;
+%%%bPrintResults;
 
 % End balanced run
 disp('                                          ')

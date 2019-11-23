@@ -15,10 +15,10 @@
 % ---------------
 
 % zonal wave number
-zonalString = ['Maximum Zonal Wavenumber, M: ',int2str(mMax)];
+zonalString = ['Maximum Zonal Wavenumber, M: ',int2str(mMax),'.'];
 
 % meridional mode
-meridionalString = ['Maximum Meridional Mode, N: ',int2str(nMax)];
+meridionalString = ['Maximum Meridional Mode, N: ',int2str(nMax),'.'];
 
 % phase speed of cloud cluster
 cString = ['Phase speed, c = ',num2str(c),' m/s.'];
@@ -35,9 +35,13 @@ b0String = ['Meridional e-folding width, b0 = ',num2str(b0_km),' km.'];
 y0_km = y0/1000;
 y0String = ['Meridional displacement, y0 = ',num2str(y0_km),' km.'];
 
-% pressure level
+% diabatic heating rate for prescribed forcing
+Q0_cp = (Q0 * 86400) / cp;          % Q0/cp K day^-1
+Q0_cpString = ['Diabatic heating rate, Q0/cp = ',sprintf('%0.2f',Q0_cp),' K/day.'];
+
+% pressure level (mb == hPa)
 p_mb = p;
-pString = ['Pressure level, p = ',num2str(p_mb),' mb.'];
+pString = ['Pressure level, p = ',num2str(p_mb),' hPa.'];
 
 % model type
 if modelType == 0
@@ -79,11 +83,12 @@ disp('        _____________________________________________        ')
 disp('       |                                             |       ')
 disp('       |         CURRENT PARAMETER STATUS            |       ')
 disp('       |_____________________________________________|       ')
-disp([space1,outString]);
+%%%disp([space1,outString]);
 disp([space1,modelString]);
 disp([space1,zonalString]);
 disp([space1,meridionalString]);
 disp([space1,cString]);
+disp([space1,Q0_cpString]);
 disp([space1,a0String]);
 disp([space1,b0String]);
 disp([space1,y0String]);
@@ -96,8 +101,8 @@ disp('                                                             ')
 disp('                                                             ')
 
 % clear unneeded strings, temp variables
-clear a0_km b0_km y0_km p_mb
-clear zonalString meridionalString a0String b0String y0String pString
+clear a0_km b0_km y0_km p_mb Q0_cp
+clear zonalString meridionalString a0String b0String y0String pString Q0_cpString
 clear cString space1 modelType modelString outputType outString
 
 % END
