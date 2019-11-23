@@ -21,26 +21,25 @@ if primitiveModel == 0
     vf          = v;
     phif        = phi;
     qf          = q;
-    omegaMf     = omegaM;    % Zprime
+    omegaMf     = omegaM;
     
     uf_hor      = UF;
     vf_hor      = VF;
     phif_hor    = PHIF;
     qf_hor      = qF;
-    omegaMf_hor = omegaMF;   % Zprime - not used, see NOTE below
+    omegaMf_hor = omegaMF;
 elseif balancedModel == 0
     uf          = b_u;
     vf          = b_v;
     phif        = b_phi;
     qf          = b_q;
-    omegaMf     = b_omegaM;   % Zprime
+    omegaMf     = b_omegaM;
     
     uf_hor      = bUF;
     vf_hor      = bVF;
     phif_hor    = bPhiF;
     qf_hor      = bqF;
-    omegaMf_hor = b_omegaMF;  % !! NOTE: uses Zprime vs. Z 
-                              %    also, currently fixed at p_max omegaM
+    omegaMf_hor = b_omegaMF;
 else
     disp('Error, bad model IDs.');
     return
