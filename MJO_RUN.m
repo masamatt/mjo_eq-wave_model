@@ -1,9 +1,8 @@
-% MJO_SIM    - Main script to orchestrate primitive and balanced runs.
+% MJO_RUN.m   - Main run script to orchestrate primitive and balanced simulations.
 %
-% FILE:         MJO_SIM.m
 % AUTHOR:       Matt Masarik
 % DATE:         October 21, 2019
-% CALL SYNTAX:  MJO_SIM;
+% CALL SYNTAX:  MJO_RUN;
 %
 %
 
