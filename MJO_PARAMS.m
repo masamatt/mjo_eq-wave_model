@@ -4,7 +4,7 @@
 
 
 % Zonal half-width of cloud cluster. [m]
-a0 = 1250000;
+a0 = 450000;
 
 % Meridional e-folding width of cloud cluster. [m]
 b0 = 450000;
@@ -24,7 +24,7 @@ Q0 = Q0_a0_b0 / (a0*b0);
 
 % The meridional displacement, relative to the equator, 
 % of the center of the cloud cluster. [m]  
-y0 = 0;        
+y0 = 800000;        
 
 % Eastward propagation speed of the cloud cluster
 % (and frame of reference). [m/s]

@@ -29,7 +29,15 @@ if (primitiveModel == 0) && (waves == 2) && (y0 == 0)
     omegaM_down = zeros(Y_NUM,XI_NUM);
 end
 
+% pressure level string
+pOmegaMStr='';
+if newPLevelOmegaMFlag == true
+    pOmegaMStr=num2str(newPLevelOmegaMValue);
+else
+    pOmegaMStr=sprintf('%0.0f',pM);  % Z'(pM) = 1, max Zprime [default]
+end
 
+% peak values string
 peakOmegaMStr='';
 if displayPeakValues == true
     peakOmegaMDown = max(max(omegaM_down));
@@ -43,6 +51,8 @@ end
 contourf(XI,Y,omegaM_down,'linestyle','-');
 hold on
 contourf(XI,Y,omegaM_up,'linestyle','--');
+omegam_caxis_lims=caxis;
+caxis([omegam_caxis_lims(1),omegam_caxis_lims(2)]);
 colormap(gray_scale_map);
 if displayColorBar == true
     cbh = colorbar;
@@ -57,7 +67,7 @@ end
 if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
-label_plot(['vertical p-velocity(hPa day$^{-1}$) p=395hPa',peakOmegaMStr]);
+label_plot(['vertical p-velocity(hPa day$^{-1}$) p=',pOmegaMStr,'hPa',peakOmegaMStr]);
 hold off
 
 %END

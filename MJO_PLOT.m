@@ -10,10 +10,10 @@
 % ***************** USER PLOT PARAMETERS *************************** %
 % GENERAL
 % =======
-overlayEquator        = false;
-overlayForcing        = false;
-displayColorBar       = true;
-displayPeakValues     = true;
+overlayEquator        = true;
+overlayForcing        = true;
+displayColorBar       = false;
+displayPeakValues     = false;
 
 
 % [PANEL 1]:  POTENTIAL VORTICITY

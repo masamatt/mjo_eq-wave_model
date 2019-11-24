@@ -42,18 +42,19 @@ CONSTANT_DEFINITIONS;
 % Call VARIABLE_DEFINITIONS.m, initialize variables.
 VARIABLE_DEFINITIONS;
 
-% Compute variables needed for all 5 fields
-balancedBasis;
-
-% write record to runParameters.txt file
-writeStatus;
-
 % Call STATUS.m, wait for 10 seconds
 STATUS;
 disp('Sleeping for 10 seconds...');
 pause(1);
 disp('To ABORT run:  CTRL-C');
 pause(10);
+
+% Compute variables needed for all 5 fields
+balancedBasis;
+
+% write record to runParameters.txt file
+writeStatus;
+
 
 % Compute u field
 disp('                                          ')

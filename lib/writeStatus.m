@@ -74,7 +74,7 @@ if modelType == 0
   mName = 'prim';
 else
   mName = 'bal';
-  waves = 0;
+  waves = -1;
 end
 outFileName = getOutFile(mName,p,y0,waves);
 

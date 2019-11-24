@@ -20,7 +20,15 @@ v_skip_vec     = v_var(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
 gravity_const = 9.81;  % [m s^-2]
 PHI = phi_var / gravity_const;
 
+% pressure level string
+pUVPhiStr='';
+if newPLevelUVPhiFlag == true
+    pUVPhiStr=num2str(newPLevelUVPhiValue);
+else
+    pUVPhiStr=num2str(p);
+end
 
+% peak values string
 peakWindHeightStr='';
 if displayPeakValues == true
     maxHeight        = max(max(PHI));
@@ -40,6 +48,8 @@ end
 
 contourf(XI,Y,PHI);
 hold on
+uvphi_caxis_lims=caxis;
+caxis([uvphi_caxis_lims(1),uvphi_caxis_lims(2)]);
 colormap(gray_scale_map);
 if displayColorBar == true
     cbh = colorbar;
@@ -55,5 +65,5 @@ if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
 quiver(XISKIP,YSKIP,u_skip_vec,v_skip_vec,'Color','black');
-label_plot(['wind(m s$^{-1}$) height(m) anomaly p=',num2str(p),'hPa',peakWindHeightStr]);
+label_plot(['wind(m s$^{-1}$) height(m) anomaly p=',pUVPhiStr,'hPa',peakWindHeightStr]);
 hold off

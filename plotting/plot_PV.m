@@ -41,7 +41,15 @@ if (primitiveModel == 0) && (waves == 2) && (y0 == 0)
     q_anticyclonic = zeros(Y_NUM,XI_NUM);
 end
 
+% pressure level string
+pPVStr='';
+if newPLevelPVFlag == true
+    pPVStr=num2str(newPLevelPVValue);
+else
+    pPVStr=num2str(p);
+end
 
+% peak value string
 peakPVString='';
 if displayPeakValues == true
     PVmax = max(max(q_cyclonic));
@@ -54,6 +62,8 @@ end
 contourf(XI,Y,q_cyclonic,'linestyle','-');
 hold on
 contourf(XI,Y,q_anticyclonic,'linestyle','--');
+q_caxis_lims=caxis;
+caxis([q_caxis_lims(1),q_caxis_lims(2)]);
 colormap(gray_scale_map);
 if displayColorBar == true
     cbh = colorbar;
@@ -68,7 +78,7 @@ end
 if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
-label_plot(['potential vorticity(10$^{-6}\,$ s$^{-1}$) anomaly p=',num2str(p),'hPa',peakPVString]);
+label_plot(['potential vorticity(10$^{-6}\,$ s$^{-1}$) anomaly p=',pPVStr,'hPa',peakPVString]);
 hold off
 
 % END

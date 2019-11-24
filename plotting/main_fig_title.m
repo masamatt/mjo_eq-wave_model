@@ -6,21 +6,21 @@
 modelTitleStr='';
 if primitiveModel == 0
     if waves == 0
-        modelTitleStr='---------------------- PRIMITIVE[TOTAL] MODEL -----------------------';
+        modelTitleStr='------------- PRIMITIVE[TOTAL] MODEL --------------';
     elseif waves == 1
-        modelTitleStr='---------------------- PRIMITIVE[ROSSBY] MODEL ----------------------';
+        modelTitleStr='------------ PRIMITIVE[ROSSBY] MODEL --------------';
     elseif waves == 2
-        modelTitleStr='--------------------- PRIMITIVE[MIXED-RG] MODEL ---------------------';
+        modelTitleStr='----------- PRIMITIVE[MIXED-RG] MODEL -------------';
     elseif waves == 3
-        modelTitleStr='---------------------- PRIMITIVE[GRAVITY] MODEL ---------------------';
+        modelTitleStr='------------ PRIMITIVE[GRAVITY] MODEL -------------';
     elseif waves == 4
-        modelTitleStr='---------------------- PRIMITIVE[KELVIN] MODEL ----------------------';
+        modelTitleStr='------------ PRIMITIVE[KELVIN] MODEL --------------';
     else
         disp('Bad model ID.');
         return
     end
 elseif balancedModel == 0
-    modelTitleStr='-------------------------- BALANCED MODEL ---------------------------';
+    modelTitleStr    ='----------------- BALANCED MODEL ------------------';
 else
     disp('Bad model ID.');
     return
@@ -43,7 +43,7 @@ mainTitleStr=[mainTitleStr,', b$_0$:',b0Str,'km, y$_0$:',y0Str,'km'];
 mainTitleStr=[mainTitleStr,', c:',cStr,'m s$^{-1}$',', M:',mMaxStr,', N:',nMaxStr];
 
 % display text
-text(0.5,1.17,modelTitleStr,'units','normalized','HorizontalAlignment','center',...
-    'fontsize',8,'fontname','fixedwidth');
-text(0,1.27,mainTitleStr,'interpreter','latex','units','normalized',...
+text(0.5,1.18,modelTitleStr,'units','normalized','HorizontalAlignment','center',...
     'fontsize',12,'fontname','fixedwidth');
+text(0,1.28,mainTitleStr,'interpreter','latex','units','normalized',...
+    'fontsize',10,'fontname','fixedwidth');
