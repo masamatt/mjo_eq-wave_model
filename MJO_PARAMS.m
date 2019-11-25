@@ -4,8 +4,8 @@
 
 
 % *****************  DIABATIC FORCING PARAMETERS ****************** %
-% Q0/cp [K/day]:  diabatic heating rate [default, Q0/cp=12K/day]
-Q0_cp = 12;                      %   comment: for fixed integrated heating
+% Q0/cp [K/day]:  diabatic heating rate          [default, Q0/cp=12K/day]
+Q0_cp = 15;                      %   comment: for fixed integrated heating
 fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
 %%% fixedIntegratedForcing=true; % uncomment: for fixed integrated heating
 %%% Q0_cp     = NaN;             % uncomment: for fixed integrated heating

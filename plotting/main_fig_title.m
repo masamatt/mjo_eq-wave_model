@@ -28,7 +28,6 @@ end
 
 
 % nums to strs
-Q0_cp = (Q0 * 86400) / cp;          % Q0/cp K day^-1
 Q0_cpStr=sprintf('%0.2f',Q0_cp);   
 a0Str=sprintf('%d',a0/1000);
 b0Str=sprintf('%d',b0/1000);

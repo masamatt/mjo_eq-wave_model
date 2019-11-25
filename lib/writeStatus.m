@@ -30,15 +30,12 @@ meridionalString = ['Maximum Meridional Mode, N: ',int2str(nMax)];
 cString = ['Phase speed, c = ',num2str(c),' m/s.'];
 
 % zonal half-width of cloud cluster
-a0_km = a0/1000;    % a0 expressed in kilometers
 a0String = ['Zonal half-width, a0 = ',num2str(a0_km),' km.'];
 
 % meridional e-folding width of cloud cluster
-b0_km = b0/1000;
 b0String = ['Meridional e-folding width, b0 = ',num2str(b0_km),' km.'];
 
 % meridional displacement off equator of center of cloud cluster
-y0_km = y0/1000;
 y0String = ['Meridional displacement, y0 = ',num2str(y0_km),' km.'];
 
 % pressure level
@@ -113,7 +110,6 @@ fprintf(RUNFILE,'%s%s\n\n',space1,pString);
 fclose(RUNFILE);
 
 % clear unneeded strings, temp variables
-clear a0_km b0_km y0_km p_mb
 clear zonalString meridionalString a0String b0String y0String pString
 clear cString space1 modelString outFileName outFileString
 clear timeString runTimeString outputType fileType RUNFILE
