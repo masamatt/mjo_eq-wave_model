@@ -1,48 +1,52 @@
 % 
-% MJO_PARAMS.m - user adjustable parameters for run diabatic forcing.
+% MJO_PARAMS.m - user adjustable run parameters.
 %
 
 
-% Zonal half-width of cloud cluster. [m]
-a0 = 300000;
+% *****************  DIABATIC FORCING PARAMETERS ****************** %
+% Q0/cp [K/day]:  diabatic heating rate [default, Q0/cp=12K/day]
+Q0_cp = 12;                      %   comment: for fixed integrated heating
+fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
+%%% fixedIntegratedForcing=true; % uncomment: for fixed integrated heating
+%%% Q0_cp     = NaN;             % uncomment: for fixed integrated heating
+%%% a0b0Q0_cp = 1250*450*12;     % uncomment: for fixed integrated heating
+                                 %   set integrated heating fixed amount,
+                                 %   a0b0Q0_cp:= a0*b0*Q0/cp
+                                 %             = 1250*450*12
+                                 %     default = 6750x10^3 [(K*km^2)/day]                      
 
-% Meridional e-folding width of cloud cluster. [m]
-b0 = 350000;
+% a0 [km]:  zonal half-width of diabatic heating
+%           [default, a0=1250km]
+a0_km = 300;
 
-% For the purpose of comparison among experiments varying Q0,a0,b0, 
-% we have constrained the quantity Q0*a0*b0 to be a constant, namely
-% 9.8044e+10.  The default configuration is:
-%  Q0/cp = 15K/day:   Q0 * a0 * b0  =  0.1743 * 1,250,000 * 450,000  =  9.8044e+10
-%  Q0/cp = 12K/day:                 =  0.1394 * 1,250,000 * 450,000  =  7.8413e+10
-Q0_a0_b0 = 9.8044e+10;
+% b0 [km]:  meridional e-folding width of diabatic heating
+%           [default,  b0=450km]
+b0_km = 350;
 
-% Diabatic forcing coefficient. Maximum magnitude of
-% cloud cluster forcing term. [J/kg*s]
-% To ensure the quantity Q0*a0*b0 is constant, the quantity Q0 is 
-% computed from it's constants value and the user selected a0 and b0.
-Q0 = Q0_a0_b0 / (a0*b0);
+% y0 [km]:  meridional displacement from equator of diabatic heating
+%           [default,  y0=450km]
+y0_km = 1200;        
 
-% The meridional displacement, relative to the equator, 
-% of the center of the cloud cluster. [m]  
-y0 = 1200000;        
+% c [m/s]:  phase speed of diabatic forcing
+%           [default,    c=5m/s]
+c  = 5;
+% ***************************************************************** %
 
-% Eastward propagation speed of the cloud cluster
-% (and frame of reference). [m/s]
-c = 5;
 
-% Chosen pressure level. [mb]                   
+% p [hPa]:  vertical pressure level                  [default, p=850hPa]             
 p = 850;           
 
-% N = nMax, maximum meridional mode (integer). []
+
+% N []:  maximum meridional mode, integer            [default,    N=200]
 nMax = 300;
 
-% M = mMax, maximum zonal wavenumber (integer). []
+% M []:  maximum zonal wavenumber, integer           [default,    M=200]
 mMax = 300;
 
-% zonalDomain = zonal extent of equatorial channel
-%               0.5  (half) [default]
+
+% zonalDomain []:  zonal extent of equatorial channel to display
+%               0.5  (half)                          [default]
 %               1.0  (full)
 zonalDomain = 0.5;
 
 % END
-

@@ -34,6 +34,7 @@ global a
 % Call MJO_PARAMS.m, which contains user adjustable parameters previously
 % contained in this file.
 MJO_PARAMS;
+convert_mjo_params;
 
 % Maximum dimensionless meridional distance from the equator. []
 % Corresponds to about yMax = 2731 km, or roughly 
