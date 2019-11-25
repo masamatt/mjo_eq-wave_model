@@ -79,5 +79,9 @@ load_color_maps;
     subplot(3,1,3)
     plot_omegaM;
 
-
+% save hardcopy
+if saveFigHardcopy == true
+    save_current_fig;
+end
+    
 %END

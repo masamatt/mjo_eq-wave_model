@@ -11,8 +11,6 @@
 % POST:        The values for the current run of some variables
 %              of interest are displayed.
 
-% compose strings
-% ---------------
 
 % zonal wave number
 zonalString      = ['Maximum Zonal Wavenumber,    M: ',int2str(mMax)];
@@ -41,27 +39,28 @@ pString          = ['Pressure level,              p: ',num2str(p_mb),' hPa'];
 
 % model type
 if modelType == 0
-  modelName = 'Model Type: Primitive - ';
+  modelName = 'Simulation Type:  Primitive';
   
   % wave component
   if waves == 0
-    waveType = 'Total wave';
+    waveType = 'Total';
   elseif waves == 1
-    waveType = 'Rossby wave';
+    waveType = 'Rossby';
   elseif waves == 2
-    waveType = 'Mixed wave';
+    waveType = 'Mixed';
   elseif waves == 3
-    waveType = 'Gravity wave';
+    waveType = 'Gravity';
   else
-    waveType = 'Kelvin wave';
+    waveType = 'Kelvin';
   end
   
-  modelString = [modelName,waveType];
+  modelString = [modelName,'[',waveType,']'];
   clear modelName waveType
     
 else
-  modelString = 'Model Type: Balanced';
+  modelString = 'Simulation Type:           Balanced';
 end
+modelString=[modelString,' Model'];
 
 % output format
 load ./matFiles/type_input.mat
@@ -74,11 +73,12 @@ end
 % display information
 % -------------------
 space1 = '                 ';
-disp('                                                                   ')
-disp('              _____________________________________________        ')
-disp('             |                                             |       ')
-disp('             |                RUN  PARAMETERS              |       ')
-disp('             |_____________________________________________|       ')
+disp('                                                                 ');
+disp('              ________________________________________________   ');
+disp('             |                                                |  ');
+disp('             |                RUN  PARAMETERS                 |  ');
+disp('             |________________________________________________|  ');
+disp(' ');
 %%%disp([space1,outString]);
 disp([space1,modelString]);
 disp([space1,Q0_cpString]);
@@ -89,12 +89,12 @@ disp([space1,cString]);
 disp([space1,pString]);
 disp([space1,zonalString]);
 disp([space1,meridionalString]);
-disp('              _____________________________________________        ')
-disp('             |                                             |       ')
-disp('             |                                             |       ')
-disp('             |_____________________________________________|       ')
-disp('                                                                   ')
-disp('                                                                   ')
+disp('              ________________________________________________   ');
+disp('             |                                                |  ');
+disp('             |                                                |  ');
+disp('             |________________________________________________|  ');
+disp('                                                                 ');
+disp('                                                                 ');
 
 % clear unneeded strings, temp variables
 clear zonalString meridionalString a0String b0String y0String pString Q0_cpString

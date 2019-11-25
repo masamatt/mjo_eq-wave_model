@@ -15,6 +15,9 @@ overlayForcing        = false;
 displayColorBar       = true;
 displayPeakValues     = true;
 
+saveFigHardcopy       = true;
+saveFigType           = 'png';    % eps, png
+
 
 % [PANEL 1]:  POTENTIAL VORTICITY
 % ===============================
