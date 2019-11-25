@@ -12,15 +12,18 @@ figfname=getFigFilename(waves,a0_km,b0_km,y0_km);
 figfname=['output/',figfname];
 
 
-% saveFigType:  'eps' or 'png'
-if strcmp(saveFigType,'eps')
-    print(figfname,'-depsc'); % '-tiff'
+% saveFigType:  'pdf', 'eps', 'png'
+if strcmp(saveFigType,'pdf')
+    print(figfname,'-dpdf');
+    disp(['Current figure saved: ',figfname,'.pdf']);
+elseif strcmp(saveFigType,'eps')
+    print(figfname,'-depsc');
     disp(['Current figure saved: ',figfname,'.eps']);
 elseif strcmp(saveFigType,'png')
     set(gcf,'PaperPositionMode','auto');
     print(figfname,'-dpng','-r0');
     disp(['Current figure saved: ',figfname,'.png']);
 else
-    disp(['Bad figure export type [eps,png]: ',saveFigType,'.']);
+    disp(['Bad figure export type [pdf,eps,png]: ',saveFigType,'.']);
 end
 
