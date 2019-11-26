@@ -43,7 +43,7 @@ mjo_eq-wave_model/
 
 ## III. User Guide
 The first step is to download a copy of this repository to your computer using `git` by
-issuing the following command in a terminal
+issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
