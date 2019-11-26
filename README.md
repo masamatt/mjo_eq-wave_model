@@ -45,7 +45,7 @@ mjo_eq-wave_model/
 The first step is to download a copy of this repository to your computer using `git` by
 issuing the following command in a terminal
 ```bash
-  $ git clone https://github.com/masamatt/mjo_eq-wave_model       # clone locally in ./mjo_eq-wave_model
+  $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
 Next change directories to the cloned repository root directory, and start MatLab from there
 ```bash
