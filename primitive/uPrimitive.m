@@ -65,7 +65,7 @@ disp(' ')
 disp('Clearing u specific variables.')
 
 %%%clear UN UF Z u   %%% save: u
-clear UN UF Z
+clear UN Z
 
 disp('Done clearing.')
 disp(' ')

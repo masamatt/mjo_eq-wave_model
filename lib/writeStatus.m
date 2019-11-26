@@ -17,64 +17,63 @@
 disp('Writing current run status to ./output/runParameters.txt...')
 disp(' ')
 
-% compose strings
-% ---------------
-
 % zonal wave number
-zonalString = ['Maximum Zonal Wavenumber, M: ',int2str(mMax)];
+zonalString      = ['Maximum Zonal Wavenumber,    M: ',int2str(mMax)];
 
 % meridional mode
-meridionalString = ['Maximum Meridional Mode, N: ',int2str(nMax)];
+meridionalString = ['Maximum Meridional Mode,     N: ',int2str(nMax)];
 
 % phase speed of cloud cluster
-cString = ['Phase speed, c = ',num2str(c),' m/s.'];
+cString          = ['Phase speed,                 c: ',num2str(c),' m/s'];
 
 % zonal half-width of cloud cluster
-a0_km = a0/1000;    % a0 expressed in kilometers
-a0String = ['Zonal half-width, a0 = ',num2str(a0_km),' km.'];
+a0String         = ['Zonal half-width,           a0: ',num2str(a0_km),' km'];
 
 % meridional e-folding width of cloud cluster
-b0_km = b0/1000;
-b0String = ['Meridional e-folding width, b0 = ',num2str(b0_km),' km.'];
+b0String         = ['Meridional e-folding width, b0: ',num2str(b0_km),' km'];
 
 % meridional displacement off equator of center of cloud cluster
-y0_km = y0/1000;
-y0String = ['Meridional displacement, y0 = ',num2str(y0_km),' km.'];
+y0String         = ['Meridional displacement,    y0: ',num2str(y0_km),' km'];
 
-% pressure level
+% diabatic heating rate for prescribed forcing
+Q0_cpString      = ['Diabatic heating rate,   Q0/cp: ',sprintf('%0.2f',Q0_cp),' K/day'];
+
+% pressure level (mb == hPa)
 p_mb = p;
-pString = ['Pressure level, p = ',num2str(p_mb),' mb.'];
+pString          = ['Pressure level,              p: ',num2str(p_mb),' hPa'];
 
 % model type
 if modelType == 0
-  modelName = 'Model Type: Primitive - ';
+  modelName = 'Simulation Type:  Primitive';
   
   % wave component
   if waves == 0
-    waveType = 'Total wave solution';
+    waveType = 'Total';
   elseif waves == 1
-    waveType = 'Rossby wave';
+    waveType = 'Rossby';
   elseif waves == 2
-    waveType = 'Mixed wave';
+    waveType = 'Mixed';
   elseif waves == 3
-    waveType = 'Gravity wave';
+    waveType = 'Gravity';
   else
-    waveType = 'Kelvin wave';
+    waveType = 'Kelvin';
   end
   
-  modelString = [modelName,waveType];
+  modelString = [modelName,'[',waveType,']'];
   clear modelName waveType
     
 else
-  modelString = 'Model Type: Balanced';
+  modelString = 'Simulation Type:           Balanced';
 end
+modelString=[modelString,' Model'];
+
 
 % corresponding output file name
 if modelType == 0
   mName = 'prim';
 else
   mName = 'bal';
-  waves = 0;
+  waves = -1;
 end
 outFileName = getOutFile(mName,p,y0,waves);
 
@@ -101,19 +100,19 @@ space1 = '            ';
 % -----------------
 RUNFILE = fopen('./output/runParameters.txt','a');
 fprintf(RUNFILE,'\n%s%s\n',space1,runTimeString);
-fprintf(RUNFILE,'%s%s\n',space1,outFileString);
+%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
 fprintf(RUNFILE,'%s%s\n',space1,modelString);
-fprintf(RUNFILE,'%s%s\n',space1,zonalString);
-fprintf(RUNFILE,'%s%s\n',space1,meridionalString);
-fprintf(RUNFILE,'%s%s\n',space1,cString);
+fprintf(RUNFILE,'%s%s\n',space1,Q0_cpString);
 fprintf(RUNFILE,'%s%s\n',space1,a0String);
 fprintf(RUNFILE,'%s%s\n',space1,b0String);
 fprintf(RUNFILE,'%s%s\n',space1,y0String);
-fprintf(RUNFILE,'%s%s\n\n',space1,pString);
+fprintf(RUNFILE,'%s%s\n',space1,cString);
+fprintf(RUNFILE,'%s%s\n',space1,pString);
+fprintf(RUNFILE,'%s%s\n',space1,zonalString);
+fprintf(RUNFILE,'%s%s\n',space1,meridionalString);
 fclose(RUNFILE);
 
 % clear unneeded strings, temp variables
-clear a0_km b0_km y0_km p_mb
 clear zonalString meridionalString a0String b0String y0String pString
 clear cString space1 modelString outFileName outFileString
 clear timeString runTimeString outputType fileType RUNFILE

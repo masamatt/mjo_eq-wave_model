@@ -51,6 +51,19 @@ if modelSuite == 1
   % Call VARIABLE_DEFINITIONS.m, initialize variables.
   VARIABLE_DEFINITIONS;
 
+  % XXX XXX
+  % % % convert_params;  *IMPLEMENT ME*
+  % XXX XXX
+  
+  % Call STATUS.m, wait for 10 seconds
+  STATUS;
+  disp('Sleeping for 10 seconds...');
+  pause(1);
+  disp('To ABORT run:  CTRL-C');
+  disp('');
+  pause(10);
+  disp('');disp('');
+  
   % Compute variables needed for all 5 fields
   primitiveBasis;
 end
@@ -58,9 +71,6 @@ end
 % write record to runParameters.txt file
 writeStatus;
 
-% Call STATUS.m, wait for 10 seconds
-STATUS;
-pause(10);
 
 % Compute u field
 disp('                                          ')
@@ -237,7 +247,7 @@ disp('                                          ')
 disp('                                          ')
 
 % Print all fields to a text file
-printResults;
+%%%printResults;
 
 % End primitive run
 disp('                                          ')

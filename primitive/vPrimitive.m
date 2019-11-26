@@ -66,7 +66,7 @@ disp(' ')
 disp('Clearing v specific variables.')
 
 %%%clear VN VF Z v    %%% save: v
-clear VN VF Z
+clear VN Z
 
 disp('Done clearing.')
 disp(' ')

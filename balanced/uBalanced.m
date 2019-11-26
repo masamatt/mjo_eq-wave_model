@@ -49,7 +49,7 @@ disp(' ')
 
 % clear variables used to calculate b_u
 disp('Clearing balanced u specific variables.')
-clear Umn U_SE bUF Z b_u
+clear Umn U_SE Z
 disp('Done clearing.')
 disp(' ')
 

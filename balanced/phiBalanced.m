@@ -49,7 +49,7 @@ disp(' ')
 
 % clear variables used to calculate b_phi
 disp('Clearing balanced phi specific variables.')
-clear PHImn PHI_SE bPhiF Z b_phi
+clear PHImn PHI_SE Z
 disp('Done clearing.')
 disp(' ')
 

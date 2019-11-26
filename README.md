@@ -34,7 +34,7 @@ mjo_eqwave_model/
 ├── lib/                            #   code shared between both models
 ├── MJO_PARAMS.m                    # adjustable run parameters
 ├── MJO_PLOT.m                      # main plotting script
-├── MJO_SIM.m                       # main simulation script
+├── MJO_RUN.m                       # main simulation script
 ├── plotting/                       #   scripts for plotting
 ├── primitive/                      #   code base for primitive equation model
 └── README.md
@@ -47,16 +47,16 @@ mjo_eqwave_model/
 The first step is to download a copy of this repository to your computer using `git` by
 issuing the following command in a terminal
 ```bash
-git clone https://github.com/masamatt/mjo_eq-wave_model              # clone locally as, ./mjo_eq-wave_model
+  $ git clone https://github.com/masamatt/mjo_eq-wave_model       # clone locally in ./mjo_eq-wave_model
 ```
 Next change directories to the cloned repository root directory, and start MatLab from there
 ```bash
-cd mjo_eq-wave_model
-matlab
+  $ cd mjo_eq-wave_model
+  $ matlab
 ```
 From the command prompt inside the MatLab program you can start a model simulation by calling the main run script
 ```matlab
-MJO_SIM
+  >> MJO_RUN
 ```
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>

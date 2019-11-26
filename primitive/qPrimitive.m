@@ -66,7 +66,7 @@ disp(' ')
 disp('Clearing q specific variables.')
 
 %%%clear qN qF Z q   %%% save: q
-clear qN qF Z
+clear qN Z
 
 disp('Done clearing.')
 disp(' ')

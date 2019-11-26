@@ -1,12 +1,10 @@
-% MJO_SIM    - Main script to orchestrate primitive and balanced runs.
+% MJO_RUN.m   - Main run script to orchestrate primitive and balanced simulations.
 %
-% FILE:         MJO_SIM.m
 % AUTHOR:       Matt Masarik
 % DATE:         October 21, 2019
-% CALL SYNTAX:  MJO_SIM;
+% CALL SYNTAX:  MJO_RUN;
 %
 %
-
 disp('                                                ')
 disp('    ****************************************    ')
 disp('    *                                      *    ')
@@ -15,28 +13,17 @@ disp('    *                                      *    ')
 disp('    ****************************************    ')
 disp('                                                ')
 disp('                                                ')
-disp('                                                ')
 
 clear;
 
-% Add current working directory and subdirs to search path
-disp('Adding paths to search path...')
-
-currentDir = pwd;
-subDir1  = '/primitive';
-subDir2  = '/balanced';
-subDir3  = '/lib';
-subDir4  = '/output';
-subDir5  = '/matFiles';
-subDir6  = '/plotting';
-
-primPath = [currentDir,subDir1];
-balPath  = [currentDir,subDir2];
-libPath  = [currentDir,subDir3];
-outPath  = [currentDir,subDir4];
-matPath  = [currentDir,subDir5];
-plotPath = [currentDir,subDir6];
-
+% Add root directory and subdirs to search path
+mjoDir   = pwd;
+primPath = [mjoDir,'/','primitive'];
+balPath  = [mjoDir,'/','balanced'];
+libPath  = [mjoDir,'/','lib'];
+outPath  = [mjoDir,'/','output'];
+matPath  = [mjoDir,'/','matFiles'];
+plotPath = [mjoDir,'/','plotting'];
 
 if exist('./matFiles') ~= 7     % 7 = directory
     mkdir matFiles;
@@ -48,12 +35,7 @@ if exist('./output') ~= 7
 else
     delete('./output/*');
 end
-
-addpath(currentDir,primPath,balPath,libPath,outPath,matPath,plotPath);
-
-disp('Done adding paths.')
-disp(' ')
-disp(' ')
+addpath(mjoDir,primPath,balPath,libPath,outPath,matPath,plotPath);
 
 
 % Prompt for which model: primitive or balanced
@@ -63,17 +45,17 @@ disp('        Balanced:  1')
 primitiveModel = input('Enter [0 or 1]: ');
 balancedModel  = 1;              % init outside of 'if'
 modelRunString = '';             % init outside of 'if'
-modelSuite     = 1;              % never run full modelSuite
+modelSuite     = 1;              % never run full modelSuite, legacy var
 if primitiveModel == 0
-    balanceModel = 1;
+    balancedModel = 1;
     modelRunString = 'Primitive';
 else
     balancedModel = 0;
     modelRunString = 'Balanced';
 end
 
-
 % Prompt for components if Primitive Model is run
+waves = -1;  % value for balancedModel if primitiveModel != 0
 if primitiveModel == 0
   disp('                                                        ')
   disp('Choose from the wave components for the Primitive Model.')
@@ -86,10 +68,9 @@ if primitiveModel == 0
   disp('        Gravity wave  =   3                             ')
   disp('         Kelvin wave  =   4                             ')
   disp('                                                        ')
-  waves = input('Enter the wave ID number (0,1,2,3,4): ');
+  waves = input('Enter the wave ID number [0,1,2,3,4]: ');
   disp(' ')
 end
-
 
 % save input parameters
 outputType = 1;
@@ -98,8 +79,7 @@ save ./matFiles/suite_input.mat     modelSuite
 save ./matFiles/primitive_input.mat primitiveModel
 save ./matFiles/balanced_input.mat  balancedModel
 
-
-% Call selected model
+% run selected model
 startTimeString = getTimeString();
 if primitiveModel == 0
     PRIMITIVE_CALL;
@@ -117,7 +97,6 @@ fprintf(RUNFILE,'Model Run:      %s\n',modelRunString);
 fprintf(RUNFILE,'Start Time:     %s\n',startTimeString);
 fprintf(RUNFILE,'Stop Time:      %s\n',stopTimeString);
 fclose(RUNFILE);
-
 disp('                                                ')
 disp('                                                ')
 disp('                                                ')
@@ -128,18 +107,18 @@ disp('    *                                      *    ')
 disp('    ****************************************    ')
 disp('                                                ')
 disp('                                                ')
-disp(' ')
-disp(' ')
 
 
+% PLOTTING
+disp(' ')
 disp('   ********* PLOT MJO RUN RESULTS *********')
 disp(' ')
 
+mjo_var_copy;
 MJO_PLOT;
 
 disp(' ')
-disp('   *********** END MJO PLOTTING ***********')
-disp(' ')
+disp('   ************* END PLOTTING *************')
 disp(' ')
 
 return

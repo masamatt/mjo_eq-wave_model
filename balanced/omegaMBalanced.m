@@ -44,13 +44,13 @@ bwF = bIFourier(wH,yHatVec,xiVec,mMax);
 % Want to plot at vertical structure max: Z'(zM) = 1.
 Zprime = 1;
 
-% Get total balanced w field b_w(yHat,xi,z)
-b_w = Zprime*bwF;
-
-% Get vertical velocity in pressure units (mb/day), at the
+% Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
-% b_omega = -p*b_w, so b_omegaM = -pM*b_w.
-b_omegaM = -pM*86400*b_w;
+% b_omegaF = -p*bwF, so b_omegaMF = -pM*bwF.
+b_omegaMF = -pM*86400*bwF;
+
+% Get total balanced omegaM field b_omegaM(yHat,xi,z)
+b_omegaM = Zprime*b_omegaMF;
 
 % save b_omegaM field
 disp('Saving b_omegaM(yHat,xi) in file: ./matFiles/field_b_omegaM.mat')
@@ -60,7 +60,7 @@ disp(' ')
 
 % clear variables used to calculate b_omegaM
 disp('Clearing balanced omegaM specific variables.')
-clear wmn wH bwF Zprime b_w b_omegaM
+clear wmn wH bwF Zprime
 disp('Done clearing.')
 disp(' ')
 

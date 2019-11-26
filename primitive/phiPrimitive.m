@@ -67,7 +67,7 @@ disp('Clearing phi specific variables.')
 
 
 %%%clear PHIN PHIF Z phi   %%% save:  phi
-clear PHIN PHIF Z
+clear PHIN Z
 
 
 disp('Done clearing.')

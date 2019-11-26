@@ -21,7 +21,7 @@ function currentTimeString = getTimeString();
 %
 
 % entry statement
-disp('Entering getTimeString.m function...')
+%%%disp('Entering getTimeString.m function...')
 
 
 % get hour, min, sec from clock command
@@ -31,7 +31,11 @@ currentMin = currentTime(5);
 currentSec = currentTime(6);  
 
 % get hour string
-hourString = num2str(currentHour);
+if currentHour <= 9
+    hourString = ['0',num2str(currentHour)];
+else
+    hourString = num2str(currentHour);
+end
 
 % get min string
 if currentMin <= 9
@@ -53,8 +57,8 @@ currentTimeString = [hourString,':',minString,':',secString];
 
 
 % Exit Statement
-disp('Exiting getTimeString.m function.')
-disp(' ')
+%%%disp('Exiting getTimeString.m function.')
+%%%disp(' ')
 
 % END
 

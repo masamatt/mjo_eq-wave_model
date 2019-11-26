@@ -45,7 +45,7 @@ disp(' ')
 
 % clear variables used to calculate b_q
 disp('Clearing balanced q specific variables.')
-clear qH bqF Z b_q
+clear qH Z
 disp('Done clearing.')
 disp(' ')
 

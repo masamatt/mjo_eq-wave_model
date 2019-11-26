@@ -49,7 +49,7 @@ disp(' ')
 
 % clear variables used to calculate b_v
 disp('Clearing balanced v specific variables.')
-clear Vmn V_SE bVF Z b_v
+clear Vmn V_SE Z
 disp('Done clearing.')
 disp(' ')
 
