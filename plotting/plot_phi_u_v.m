@@ -4,17 +4,17 @@
 % PURPOSE:  plot phi mass contours and (u,v) wind vectors.
 %
 
-% *****************  U,V QUIVER PLOT PARAMETERS ***************** %
-y_incr_val     = 5;
-xi_incr_val    = y_incr_val * 4;
+% *****************  U,V QUIVER DENSITY PLOT PARAMETERS **************** %
+ySkip          = vectorDensityStride;
+xiSkip         = ySkip * round(XI_NUM/Y_NUM);
 
-xi_skip_vec    = xi_Mm(1:xi_incr_val:XI_NUM);
-y_skip_vec     = y_Mm(1:y_incr_val:Y_NUM);
-u_skip_vec     = u_var(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
-v_skip_vec     = v_var(1:y_incr_val:Y_NUM, 1:xi_incr_val:XI_NUM);
+xiSkipVec      = xi_Mm(1:xiSkip:XI_NUM);
+ySkipVec       = y_Mm(1:ySkip:Y_NUM);
+[XISKIP,YSKIP] = meshgrid(xiSkipVec, ySkipVec);
 
-[XISKIP,YSKIP] = meshgrid(xi_skip_vec, y_skip_vec);
-% *************************************************************** %
+USKIP          = u_var(1:ySkip:Y_NUM, 1:xiSkip:XI_NUM);
+VSKIP          = v_var(1:ySkip:Y_NUM, 1:xiSkip:XI_NUM);
+% ********************************************************************** %
 
 % convert geopotential (phi, [m^2 s^-2]) to geopotential height (PHI, [m])
 gravity_const = 9.81;  % [m s^-2]
@@ -45,7 +45,7 @@ if displayPeakValues == true
     peakWindHeightStr=['  [peak: $|V|$=',windStr,', $\Delta$z=',heightStr,']'];
 end
 
-
+%  PLOT
 contourf(XI,Y,PHI);
 hold on
 uvphi_caxis_lims=caxis;
@@ -64,6 +64,7 @@ end
 if overlayForcing == true
     contour_DiabForcing(XI,Y,Qdiab);
 end
-quiver(XISKIP,YSKIP,u_skip_vec,v_skip_vec,'Color','black');
+quiver(XISKIP,YSKIP,USKIP,VSKIP,'Color','black','AutoScale','on', ...
+    'AutoScaleFactor',vectorScaleFactor);
 label_plot(['wind(m s$^{-1}$) height(m) anomaly p=',pUVPhiStr,'hPa',peakWindHeightStr]);
 hold off
