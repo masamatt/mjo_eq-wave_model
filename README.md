@@ -28,7 +28,7 @@ This repository contains the original model code used in the _Dynamics of Atmosp
 ```bash
 mjo_eq-wave_model/
 ├── balanced/                       #   code base for balanced model
-├── docs/                           #   portions of thesis and output plots (.pdf)
+├── docs/                           #   portions of thesis and output plots
 ├── lib/                            #   code shared between both models
 ├── MJO_PARAMS.m                    # adjustable run parameters
 ├── MJO_PLOT.m                      # main plotting script
@@ -44,19 +44,20 @@ mjo_eq-wave_model/
 ## III. User Guide
 
 
-#### III.i. - Download
+#### III.i. - Download Repository
 Download a copy of the repository to your computer using `git` by
 issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
+<br><br>
+
+#### III.ii - Run Model:  MJO_RUN.m
 Change directories to the cloned repository root directory, and start MatLab from there
 ```bash
   $ cd mjo_eq-wave_model
   $ matlab
 ```
-
-#### III.ii - Run Model:  MJO_RUN.m
 From the command prompt (`>>`) inside MatLab you can start a model simulation with default parameters by calling the main run script
 ```matlab
   >> MJO_RUN
