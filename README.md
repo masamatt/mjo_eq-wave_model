@@ -86,8 +86,10 @@ The file `MJO_PARAMS.m` is a script containing all the parameters available to t
 - Q<sub>0</sub>/c<sub>p</sub> \[K day<sup>-1</sup>]: `Q0_cp` = diabatic heating rate (default, `Q0_cp = 12`).
 - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a<sub>0</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[km\]: `a0_km`
 = diabatic heating zonal half-width (default, `a0_km = 1250`).
-- b<sub>0</sub> \[km\]: `b0_km` = diabatic heating meridional e-folding width (default, `b0_km = 450`).
-- y<sub>0</sub> \[km\]: `y0_km` = diabatic heating meridional displacement from equator (default, `y0_km = 450`).
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b<sub>0</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[km\]: `b0_km`
+= diabatic heating meridional e-folding width (default, `b0_km = 450`).
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y<sub>0</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[km\]: `y0_km`
+= diabatic heating meridional displacement from equator (default, `y0_km = 450`).
 <br>
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
