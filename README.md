@@ -52,7 +52,7 @@ Next change directories to the cloned repository root directory, and start MatLa
   $ cd mjo_eq-wave_model
   $ matlab
 ```
-From the command prompt inside the MatLab program you can start a model simulation by calling the main run script
+From the command prompt (`>>`) inside MatLab you can start a model simulation with default parameters by calling the main run script
 ```matlab
   >> MJO_RUN
 ```
