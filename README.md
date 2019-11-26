@@ -2,10 +2,7 @@
 
 *Steady state beta-plane equatorial wave model for Madden-Julian oscillation (MJO)-like diabatic forcing.*
 <br>
-![alt text]( "Primitive equation wind and height anomaly total response.  Off-equator default test configuration.")
-
-
-
+![alt text](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/P_a1250b450y450_uvphi.png "Primitive equation wind and height anomaly total response for off-equator default forcing.")
 <br>
 <br>
 <br>
