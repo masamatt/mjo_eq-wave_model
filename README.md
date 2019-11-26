@@ -50,7 +50,7 @@ issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
-<br><br>
+<br>
 
 #### III.ii - Run Model:  MJO_RUN.m
 Change directories to the cloned repository root directory, and start MatLab from there
