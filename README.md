@@ -42,20 +42,35 @@ mjo_eq-wave_model/
 
 
 ## III. User Guide
-First download a copy of the repository to your computer using `git` by
+
+
+#### III.i. - Download
+Download a copy of the repository to your computer using `git` by
 issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
-Next change directories to the cloned repository root directory, and start MatLab from there
+Change directories to the cloned repository root directory, and start MatLab from there
 ```bash
   $ cd mjo_eq-wave_model
   $ matlab
 ```
+
+#### III.ii - Run Model:  MJO_RUN.m
 From the command prompt (`>>`) inside MatLab you can start a model simulation with default parameters by calling the main run script
 ```matlab
   >> MJO_RUN
 ```
+<br>
+
+#### III.iii - Set Run Parameters:  MJO_PARAMS.m
+blah
+<br>
+
+#### III.iv - Plot Model Output:  MJO_PLOT.m
+blah
+<br>
+
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
@@ -97,9 +112,17 @@ From the command prompt (`>>`) inside MatLab you can start a model simulation wi
 
 
 ## V. Model Description
+blah
+<br>
+
+#### V.i Primitive Equation Model
 The governing equations for the primitive equation model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
 equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf).  Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).
+<br>
+
+#### V.ii Balanced Model
+blah
 <br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
