@@ -79,10 +79,12 @@ Enter the wave ID number [0,1,2,3,4]:
 Entering a wave ID `1` to `4` computes the response for that particular equatorial wave componment, while entering `0` computes the total wave solution, i.e., the sum of waves `1-4`.  
 
 The model will run for ~O(5 min), computer dependent, and will automatically open a plot of the output upon completion.
-<br>
+<br><br>
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
-blah
+The file `MJO_PARAMS.m` is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
+- a<sub>0</sub>: `a0_km` := diabatic forcing zonal half-width \[km\] (default `a0_km = 1250`).
+-
 <br>
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
