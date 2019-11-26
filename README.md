@@ -1,6 +1,6 @@
 # mjo_eq-wave_model
 
-*Steady state, beta-plane, equatorial wave model for Madden-Julian oscillation (MJO)-like diabatic forcing.*
+*Steady state beta-plane equatorial wave model for Madden-Julian oscillation (MJO)-like diabatic forcing.*
 <br>
 <br>
 <br>
@@ -10,12 +10,10 @@
 ## Contents
 * [I. Overview](#I-Overview) - brief description
 * [II. Manifest](#II-Manifest) - repository structure
-* [III. Model Operation](#III-Model-Operation) - **downloading repository and running model**
+* [III. User Guide](#III-User-Guide) - **how to access repository and run model**
 * [IV. Thesis Abstract](#IV-Thesis-Abstract) - MS abstract reproduced
-* [V. Primitive Model](#V-Primitive-Model) - description of Primitive Equation model
-* [VI. Balanced Model](#VI-Balanced-Model) - description of Balanced model
-* [VII. Plotting](#VII-Plotting) - plotting model output
-* [VIII. Appendix \& Citations](#VIII-Appendix--Citations)
+* [V. Model Description](#V-Model-Description) - derivation of primitive equation and balanced models
+* [VI. Appendix \& Citations](#VIII-Appendix--Citations)
 <br><br><br>
 
 
@@ -28,9 +26,9 @@ This repository contains the original model code used in the _Dynamics of Atmosp
 
 ## II. Manifest
 ```bash
-mjo_eqwave_model/
+mjo_eq-wave_model/
 ├── balanced/                       #   code base for balanced model
-├── docs/                           #   portions of thesis (.pdf)
+├── docs/                           #   portions of thesis and output plots (.pdf)
 ├── lib/                            #   code shared between both models
 ├── MJO_PARAMS.m                    # adjustable run parameters
 ├── MJO_PLOT.m                      # main plotting script
@@ -43,7 +41,7 @@ mjo_eqwave_model/
 <br><br><br>
 
 
-## III. Model Operation
+## III. User Guide
 The first step is to download a copy of this repository to your computer using `git` by
 issuing the following command in a terminal
 ```bash
@@ -98,7 +96,7 @@ From the command prompt inside the MatLab program you can start a model simulati
 <br><br><br>
 
 
-## V. Primitive Model
+## V. Model Description
 The governing equations for the primitive equation model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
 equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf).  Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).
@@ -107,19 +105,7 @@ equations in 3-dimensional space are separated into horizonal and vertical struc
 <br><br><br>
 
 
-## VI. Balanced Model
-blah<br>
-[\[Return to top\]](#mjo_eq-wave_model)
-<br><br><br>
-
-
-## VII. Plotting
-blah<br>
-[\[Return to top\]](#mjo_eq-wave_model)
-<br><br><br>
-
-
-## VIII. Appendix \& Citations
+## VI. Appendix \& Citations
 * <sup><a name="1">1</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
 * <sup><a name="2">2</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**,
 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
