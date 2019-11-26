@@ -84,7 +84,7 @@ The model will run for ~O(5 min), computer dependent, and will automatically ope
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
 The file `MJO_PARAMS.m` is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
 - Q<sub>0</sub>/c<sub>p</sub> \[K day<sup>-1</sup>]: `Q0_cp` = diabatic heating rate (default, `Q0_cp = 12`).
-- &nbsp;&nbsp;a<sub>0</sub> \[km\]: `a0_km` = diabatic heating zonal half-width (default, `a0_km = 1250`).
+- &nbsp;&nbsp;&nbsp;&nbsp;a<sub>0</sub>&nbsp;&nbsp;\[km\]: `a0_km` = diabatic heating zonal half-width (default, `a0_km = 1250`).
 - b<sub>0</sub> \[km\]: `b0_km` = diabatic heating meridional e-folding width (default, `b0_km = 450`).
 - y<sub>0</sub> \[km\]: `y0_km` = diabatic heating meridional displacement from equator (default, `y0_km = 450`).
 <br>
