@@ -12,7 +12,7 @@
 * [II. Manifest](#II-Manifest) - repository structure
 * [III. User Guide](#III-User-Guide) - **how to access repository and run model**
 * [IV. Thesis Abstract](#IV-Thesis-Abstract) - MS abstract reproduced
-* [V. Model Description](#V-Model-Description) - derivation of primitive equation and balanced models
+* [V. Model Description](#V-Model-Description) - details of primitive equation and balanced models
 * [VI. Appendix \& Citations](#VI-Appendix--Citations)
 <br><br><br>
 
