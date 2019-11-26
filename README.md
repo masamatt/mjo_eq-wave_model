@@ -90,7 +90,7 @@ The file `MJO_PARAMS.m` is a script containing all the parameters available to t
 = diabatic heating meridional e-folding width (default, `b0_km = 450`).
 - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y<sub>0</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[km\]: `y0_km`
 = diabatic heating meridional displacement from equator (default, `y0_km = 450`).
-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[m s<sup>-1<sup>\]: `c` 
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[m s<sup>-1</sup>\]: `c` 
 = diabatic heating translation speed (default, `c = 5`).
 <br>
 
