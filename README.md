@@ -62,6 +62,21 @@ From the command prompt (`>>`) inside MatLab you can start a model simulation wi
 ```matlab
   >> MJO_RUN
 ```
+You will then be prompted to run either the primitive equation model (`0`) or the balanced model (`1`).  If you enter `1` for the balanced model no more input is needed and the model will start solving for the balanced theory solution.  If you entered `0` for the primitive equation model, you will then be prompted for which equatorial wave component should be run
+```matlab
+Choose from the wave components for the Primitive Model.
+                                                        
+      Wave Components   Wave ID                         
+      ---------------   -------                         
+           All waves  =   0                             
+         Rossby wave  =   1                             
+          Mixed wave  =   2                             
+        Gravity wave  =   3                             
+         Kelvin wave  =   4                             
+                                                        
+Enter the wave ID number [0,1,2,3,4]:
+```
+
 <br>
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
