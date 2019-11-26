@@ -76,7 +76,7 @@ Choose from the wave components for the Primitive Model.
                                                         
 Enter the wave ID number [0,1,2,3,4]:
 ```
-
+Entering a wave ID `1` to `4` computes the response from that particular equatorial wave componment, while entering `0` computes the total wave solution, i.e., the sum of waves `1-4`.  
 <br>
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
