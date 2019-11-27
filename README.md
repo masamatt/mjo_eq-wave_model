@@ -86,17 +86,23 @@ The file `MJO_PARAMS.m` is a script containing all the parameters available to t
 
 
 
-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y<sub>0</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[km\]: `y0_km`
-= diabatic heating meridional displacement from equator (default, `y0_km = 450`).
-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[m s<sup>-1</sup>\]: `c` 
+
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: `c` 
 = diabatic heating translation speed (default, `c = 5`).
 <br>
 
 | Parameter | MatLab Parameter | Units  | Description | Sample Value |
 |:---------:| ----------------:| ------:|:------------| ------------:|
-| Q<sub>0</sub>/c<sub>p</sub> | `Q0_cp` | \[K day<sup>-1</sup>] | diabatic heating rate | 12 |
-| a<sub>0</sub> | `a0_km` | \[km\] | diabatic heating zonal half-width | 1250 |
-| b<sub>0</sub> | `b0_km` | \[km\] | diabatic heating meridional e-folding width | 450 |
+| Q<sub>0</sub>/c<sub>p</sub> | `Q0_cp` | \[K day<sup>-1</sup>] | diabatic heating rate | `12` |
+| a<sub>0</sub> | `a0_km` | \[km\] | zonal half-width of diabatic heating  | `1250` |
+| b<sub>0</sub> | `b0_km` | \[km\] | meridional e-folding width of diabatic heating  | `450` |
+| y<sub>0</sub> | `y0_km` | \[km\] | meridional displacement from equator of diabatic heating | `450` |
+| c  | `c` | \[m s<sup>-1</sup>\]  | zonal translation speed of diabatic heating | `5` |
+|    |     |      |        |           |
+| N  | `nMax` |  \[\]   |  maximum meriodional mode  |  `200` |
+| M  | `mMax` |  \[\]   |  maximum zonal wavenumber  |  `200` |
+| ?  | `blah` |  \[\]   |  extent of physical space zonal channel | `0.5` |
+
 
 
 
