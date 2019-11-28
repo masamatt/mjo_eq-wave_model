@@ -50,19 +50,27 @@ issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
+The model is composed only of Matlab scripts and functions, so it does not need to be compiled, and is in fact ready for use right now from inside a Matlab session.
 <br>
 
 #### III.ii - Run Model:  MJO_RUN.m
-Change directories to the cloned repository root directory, and start MatLab from there
+Change directories to the root directory in the cloned repository, and start Matlab from there
 ```bash
   $ cd mjo_eq-wave_model
   $ matlab
 ```
-From the command prompt (`>>`) inside MatLab you can start a model simulation with default parameters by calling the main run script
+From the command prompt (`>>`) inside Matlab you can start a model simulation (with default parameters set) by calling the main run script
 ```matlab
   >> MJO_RUN
 ```
-You will then be prompted to run either the primitive equation model (`0`) or the balanced model (`1`).  If you enter `1` for the balanced model no more input is needed and the model will start solving for the balanced theory solution.  If you entered `0` for the primitive equation model, you will then be prompted for which equatorial wave component should be run
+You will be prompted to run either the primitive equation model (`0`), or the balanced model (`1`).  
+```matlab
+Which model should be run?
+        Primitive: 0
+        Balanced:  1
+Enter [0 or 1]:
+```
+If you enter `1` for the balanced model no more input is needed and the model will start solving for the balanced theory solution.  If you entered `0` for the primitive equation model, you will then be prompted for which equatorial wave component should be run
 ```matlab
 Choose from the wave components for the Primitive Model.
                                                         
