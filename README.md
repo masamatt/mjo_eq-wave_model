@@ -111,7 +111,7 @@ Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/b
 | `displayColorBar` | \[ \] | display color bar for filled contours (logical)  | `true`, `false` | `true` |
 | `displayPeakValues` | \[ \] | display peak field values in plots (logical) | `true`, `false` | `true` |
 | `saveFigHardcopy` | \[ \] | save a copy of figure to file (logical) | `true`, `false` | `false` |
-| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `'eps'`,`'pdf'`,`'png'` | `pdf` |
+| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `'eps'`,`'pdf'`,`'png'` | `'pdf'` |
 | `newPLevelPVFlag` | \[ \] | display PV panel at new pressure level (logical) | `true`, `false` | `false` |
 | `newPLevelPVValue` | \[hPa\] | new pressure level for PV panel plot          | `1010..200` |    |
 | `newPLevelUVPhiFlag` | \[ \] | display U,V,Phi panel at new pressure level (logical) | `true`, `false` | `false` |
