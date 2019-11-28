@@ -104,14 +104,14 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
 <br>
 
-| MatLab Variable | Units | Description | Value Range | Default |
-| ---------------:|:-----:|:----------- |:---------------:| -------:|
+| MatLab Variable | Units | Description | &nbsp; Value Range &nbsp; | Default |
+| ---------------:|:-----:|:----------- |:-------------------:| -------:|
 | `overlayEquator` | \[ \] | overlay Equator line on plots (logical) | `true`, `false` | `false` |
 | `overlayForcing` | \[ \] | overlay diabatic heating contours on plots (logical) | `true`, `false` | `false` |
 | `displayColorBar` | \[ \] | display color bar for filled contours (logical)  | `true`, `false` | `true` |
 | `displayPeakValues` | \[ \] | display peak field values in plots (logical) | `true`, `false` | `true` |
 | `saveFigHardcopy` | \[ \] | save a copy of figure to file (logical) | `true`, `false` | `false` |
-| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `'eps'`, `'pdf'`, `'png'` | `pdf` |
+| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `'eps'`,`'pdf'`,`'png'` | `pdf` |
 | `newPLevelPVFlag` | \[ \] | display PV panel at new pressure level (logical) | `true`, `false` | `false` |
 | `newPLevelPVValue` | \[hPa\] | new pressure level for PV panel plot          | `1010..200` |    |
 | `newPLevelUVPhiFlag` | \[ \] | display U,V,Phi panel at new pressure level (logical) | `true`, `false` | `false` |
