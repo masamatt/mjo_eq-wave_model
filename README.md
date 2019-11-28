@@ -93,9 +93,9 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 | y<sub>0</sub> | `y0_km` |    \[km\]    | meridional displacement of diabatic heating from equator  | `450` |
 | c  | `c` |   \[m s<sup>-1</sup>\]    | zonal translation speed of diabatic heating | `5` |
 |    |     |                  |        |           |
-| N  | `nMax` |    \[ \]     |  maximum meriodional mode  |  `200` |
-| M  | `mMax` |      \[ \]       |  maximum zonal wavenumber  |  `200` |
-|   | `zonalDomain` |      \[ \]       |  extent of physical space zonal channel to display | `0.5` |
+| N  | `nMax` |    \[ \]     |  maximum meriodional mode (int) |  `200` |
+| M  | `mMax` |      \[ \]       |  maximum zonal wavenumber (int)  |  `200` |
+|   | `zonalDomain` |      \[ \]       |  extent of physical space zonal channel to display (float) | `0.5` |
 
 
 
@@ -103,7 +103,24 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 <br>
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
-blah
+| MatLab Variable | Units | Description | Value Range | Default |
+| ---------------:|:-----:|:----------- |:---------------:| -------:|
+| `overlayEquator` | \[ \] | overlay Equator line on plots (logical) | `true`, `false` | `false` |
+| `overlayForcing` | \[ \] | overlay diabatic heating contours on plots (logical) | `true`, `false` | `false` |
+| `displayColorBar` | \[ \] | display color bar for filled contours (logical)  | `true`, `false` | `true` |
+| `displayPeakValues` | \[ \] | display peak field values in plots (logical) | `true`, `false` | `true` |
+| `saveFigHardcopy` | \[ \] | save a copy of figure to file (logical) | `true`, `false` | `false` |
+| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `eps`, `pdf`, `png` | `pdf` |
+| `newPLevelPVFlag` | \[ \] | display PV panel at new pressure level (logical) | `true`, `false` | `false` |
+| `newPLevelPVValue` | \[hPa\] | new pressure level for PV panel plot          | `1010..200` |    |
+| `newPLevelUVPhiFlag` | \[ \] | display U,V,Phi panel at new pressure level (logical) | `true`, `false` | `false` |
+| `newPLevelUVPhiValue` | \[hPa\] | new pressure level for U,V,Phi panel plot    | `1010..200` |    |
+| `vectorDensityStride` | \[ \]   | stride over which to omit plotted wind vectors (int) | `1...`   | `5` |
+| `vectorScaleFactor` |   \[ \]   | scale factor for length of wind vectors (float)  | | `0.9` |
+| `newPLevelOmegaMFlag` | \[ \] | display omegaM panel at new pressure level (logical) | `true`, `false` | `false` |
+| `newPLevelOmegaMValue` | \[hPa\] | new pressure level for omegaM panel plot | `1010..200` | |
+
+
 <br>
 
 [\[Return to top\]](#mjo_eq-wave_model)
