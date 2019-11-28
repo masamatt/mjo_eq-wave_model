@@ -97,16 +97,13 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 | M  | `mMax` |      \[ \]       |  maximum zonal wavenumber (int)  |  `200` |
 |   | `zonalDomain` |      \[ \]       |  extent of physical space zonal channel to display (float) | `0.5` |
 
-
-
-
 <br>
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
 Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
-
 <br>
+
 | MatLab Variable | Units | Description | Value Range | Default |
 | ---------------:|:-----:|:----------- |:---------------:| -------:|
 | `overlayEquator` | \[ \] | overlay Equator line on plots (logical) | `true`, `false` | `false` |
@@ -123,9 +120,6 @@ Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/b
 | `vectorScaleFactor` |   \[ \]   | scale factor for length of wind vectors (float)  | | `0.9` |
 | `newPLevelOmegaMFlag` | \[ \] | display omegaM panel at new pressure level (logical) | `true`, `false` | `false` |
 | `newPLevelOmegaMValue` | \[hPa\] | new pressure level for omegaM panel plot | `1010..200` | |
-
-
-<br>
 
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
