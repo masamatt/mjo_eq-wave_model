@@ -102,7 +102,11 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 <br>
 
+
 #### III.iv - Plot Model Output:  MJO_PLOT.m
+Blan blaha ablaha [`MJO_PLOT.m`]().
+
+<br>
 | MatLab Variable | Units | Description | Value Range | Default |
 | ---------------:|:-----:|:----------- |:---------------:| -------:|
 | `overlayEquator` | \[ \] | overlay Equator line on plots (logical) | `true`, `false` | `false` |
