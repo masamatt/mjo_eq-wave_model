@@ -104,7 +104,7 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
-Blan blaha ablaha [`MJO_PLOT.m`]().
+Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
 
 <br>
 | MatLab Variable | Units | Description | Value Range | Default |
