@@ -82,7 +82,7 @@ The model will run for ~O(5 min), computer dependent, and will automatically ope
 <br><br>
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
-The file `MJO_PARAMS.m` is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
+The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PARAMS.m) is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
 <br>
 
 | Parameter | MatLab Variable | &nbsp;&nbsp; Units &nbsp;&nbsp;&nbsp; | Description | Sample Value |
