@@ -85,7 +85,7 @@ The model will run for ~O(5 min), computer dependent, and will automatically ope
 The file `MJO_PARAMS.m` is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
 <br>
 
-| Parameter | MatLab Parameter |    Units       | Description | Sample Value |
+| Parameter | MatLab Parameter | &nbsp;&nbsp; Units &nbsp;&nbsp; | Description | Sample Value |
 |:---------:| --------:|:--------------:|:------------| ------------:|
 | Q<sub>0</sub>/c<sub>p</sub> | `Q0_cp`  | K day<sup>-1</sup> | diabatic heating rate | `12` |
 | a<sub>0</sub> | `a0_km` |    \[km\]   | zonal half-width of diabatic heating  | `1250` |
