@@ -90,7 +90,7 @@ The file `MJO_PARAMS.m` is a script containing all the parameters available to t
 | Q<sub>0</sub>/c<sub>p</sub> | `Q0_cp`  | \[K day<sup>-1</sup>\] | diabatic heating rate | `12` |
 | a<sub>0</sub> | `a0_km` |    \[km\]   | zonal half-width of diabatic heating  | `1250` |
 | b<sub>0</sub> | `b0_km` |     \[km\]   | meridional e-folding width of diabatic heating  | `450` |
-| y<sub>0</sub> | `y0_km` |    \[km\]    | meridional displacement from equator of diabatic heating | `450` |
+| y<sub>0</sub> | `y0_km` |    \[km\]    | meridional displacement of diabatic heating from equator  | `450` |
 | c  | `c` |   \[m s<sup>-1</sup>\]    | zonal translation speed of diabatic heating | `5` |
 |    |     |                  |        |           |
 | N  | `nMax` |    \[ \]     |  maximum meriodional mode  |  `200` |
