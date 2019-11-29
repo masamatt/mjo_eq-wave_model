@@ -22,8 +22,8 @@ This repository contains the original model code used in the _Dynamics of Atmosp
 
 There are actually two models available within the repository.  The first, derived from primitive equations, is contained mostly in the directory `primitive/`.
 A schematic outlining the computational procedure for the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
-
 <br>
+
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
@@ -129,10 +129,13 @@ Warning: Contour not rendered for constant ZData
   In plotFields (line 70)
   In MJO_PLOT (line 46)
   In MJO_RUN (line 118) 
+>>
 ```
 <br>
+
 [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
 <br>
+
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
