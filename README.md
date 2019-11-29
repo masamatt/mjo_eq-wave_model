@@ -111,9 +111,15 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
+[Primitive Eq. - total wave response]()
+[ - Rossby wave]()
+[ - Mixed Rossby-gravity wave]()
+[ - Gravity wave]()
+[ - Kelvin wave]()
+[Balanced solution]()
+<br>
 [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
 <br>
-
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
