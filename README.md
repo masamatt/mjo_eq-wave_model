@@ -50,8 +50,9 @@ issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
-The model is composed only of Matlab scripts and functions, so it does not need to be compiled, and is in fact ready for use right now from inside a Matlab session.
-<br>
+The model is composed only of Matlab scripts and functions, so it does not need to be compiled, and is in fact ready for use once downloaded.
+<br><br>
+
 
 #### III.ii - Run Model:  MJO_RUN.m
 Change directories to the root directory in the cloned repository, and start Matlab from there
@@ -88,6 +89,7 @@ Entering a wave ID `1` to `4` computes the response for that particular equatori
 
 The model will run for ~O(5 min), computer dependent, and will automatically open a plot of the output upon completion.
 <br><br>
+
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
 The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PARAMS.m) is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
