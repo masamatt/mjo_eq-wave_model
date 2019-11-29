@@ -111,25 +111,8 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
-Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
+[`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
 <br>
-
-| MatLab Variable | Units | Description | &nbsp; Value Range &nbsp; | Default |
-| ---------------:|:-----:|:----------- |:-------------------:| -------:|
-| `overlayEquator` | \[ \] | overlay Equator line on plots (logical) | `true`, `false` | `false` |
-| `overlayForcing` | \[ \] | overlay diabatic heating contours on plots (logical) | `true`, `false` | `false` |
-| `displayColorBar` | \[ \] | display color bar for filled contours (logical)  | `true`, `false` | `true` |
-| `displayPeakValues` | \[ \] | display peak field values in plots (logical) | `true`, `false` | `true` |
-| `saveFigHardcopy` | \[ \] | save a copy of figure to file (logical) | `true`, `false` | `false` |
-| `saveFigType`     |  \[ \] | file extension for type of fig (string) | `'eps'`,`'pdf'`,`'png'` | `'pdf'` |
-| `newPLevelPVFlag` | \[ \] | display PV panel at new pressure level (logical) | `true`, `false` | `false` |
-| `newPLevelPVValue` | \[hPa\] | new pressure level for PV panel plot          | `1010..200` |    |
-| `newPLevelUVPhiFlag` | \[ \] | display U,V,Phi panel at new pressure level (logical) | `true`, `false` | `false` |
-| `newPLevelUVPhiValue` | \[hPa\] | new pressure level for U,V,Phi panel plot    | `1010..200` |    |
-| `vectorDensityStride` | \[ \]   | stride over which to omit plotted wind vectors (int) | `1...`   | `5` |
-| `vectorScaleFactor` |   \[ \]   | scale factor for length of wind vectors (float)  | | `0.9` |
-| `newPLevelOmegaMFlag` | \[ \] | display omegaM panel at new pressure level (logical) | `true`, `false` | `false` |
-| `newPLevelOmegaMValue` | \[hPa\] | new pressure level for omegaM panel plot | `1010..200` | |
 
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
@@ -172,7 +155,10 @@ Blan blaha ablaha [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/b
 
 
 ## V. Model Description
-This model
+Two models.
+The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
+baroclinic mode response to a moving planetary scale heat source under the long-wave approximation.<sup>\[3\]</sup>
+
 <br><br>
 
 
@@ -181,13 +167,12 @@ The governing equations for the primitive equation model are presented in [Sec 2
 equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf).  Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).
 <br>
-[PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)
-<br>
 [Primitive: Equatorial wave dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf)
-<br>
+<br><br>
+
 
 #### V.ii Balanced Model
-blah
+[PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)
 <br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
@@ -197,6 +182,8 @@ blah
 * <sup><a name="1">1</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
 * <sup><a name="2">2</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**,
 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
+* <sup><a name="3">\[3\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci., 
+**44**, 1940-1949.
 * [Bibliography](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_bib.pdf) for MS thesis.
 * [Appendix F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf) - schematic flow-chart of the computational procedure.
 <br><br><br>
