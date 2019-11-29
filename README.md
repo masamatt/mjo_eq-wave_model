@@ -120,7 +120,7 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 [ - Mixed Rossby-gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PMa1250b450y450_2019-11-29_134443.pdf)<br>
 [ - Gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PGa1250b450y450_2019-11-29_135408.pdf)<br>
 [ - Kelvin wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PKa1250b450y450_2019-11-29_135702.pdf)<br>
-[Balanced solution]()<br>
+[Balanced solution](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/B_a1250b450y450_2019-11-29_141143.pdf)<br>
 Safely ignore warnings of the like...
 ```matlab
 Warning: Contour not rendered for constant ZData 
