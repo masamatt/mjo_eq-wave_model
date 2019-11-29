@@ -157,7 +157,8 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 ## V. Model Description
 Two models.
 The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
-baroclinic mode response to a moving planetary scale heat source under the long-wave approximation.<sup>[\[3\]](#3)</sup>
+baroclinic mode response to a moving planetary scale heat source under the long-wave approximation 
+(Chao, 1987).<sup>[\[3\]](#3)</sup>
 
 <br><br>
 
