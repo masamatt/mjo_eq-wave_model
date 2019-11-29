@@ -20,7 +20,7 @@
 ## I. Overview
 This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  Introductory information on the tropical weather phenomenon that is the subject of the study, the Madden Julian oscillation (MJO), can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).  
 
-There are actually two models available within the repository.  The first, derived from primitive equations, is contained mostly in the directory `primitive/`.
+There are actually two models available within the repository.  The first, derived from [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  
 A schematic outlining the computational procedure for the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
 <br>
 
