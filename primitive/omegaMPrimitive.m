@@ -32,7 +32,7 @@
 %
 
 % Start statement
-disp('omegaMPrimitive.m script')
+disp('  omegaMPrimitive.m script   : [omegaM(yHat,xi)]')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -68,7 +68,7 @@ omegaMF = -pM*86400*wF;
 omegaM = Zprime*omegaMF;
 
 % Save omegaM field
-disp('Saving omegaM(yHat,xi): matFiles/field_omegaM.mat')
+disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
 save ./matFiles/field_omegaM.mat omegaM
 
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM

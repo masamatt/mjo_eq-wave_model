@@ -24,7 +24,7 @@
 %
 
 % Start statement
-disp('vPrimitive.m script')
+disp('  vPrimitive.m script        : [v(yHat,xi)]')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -55,7 +55,7 @@ Z = structureZ(p);
 v = Z*VF;
 
 % Save v field
-disp('Saving v(yHat,xi): matFiles/field_v.mat')
+disp('  Saving v(yHat,xi)          : [v] -> matFiles/field_v.mat')
 save ./matFiles/field_v.mat v
 
 %%%clear VN VF Z v    %%% save: v

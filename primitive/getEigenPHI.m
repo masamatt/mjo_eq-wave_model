@@ -1,4 +1,4 @@
-function PHI = getEigenPHI(A,Nu,H0,H,yHatVec,M,N);
+function PHI = getEigenPHI(A,Nu,H0,H,yHatVec,M,N)
 % GETEIGENPHI - A function to "get" "Eigen"function "PHI".
 %             Computes and returns a 4-D array of eigenfunction 
 %             PHI values. PHI = PHI(yHatIndex,mIndex,nIndex,rIndex).
@@ -54,7 +54,7 @@ function PHI = getEigenPHI(A,Nu,H0,H,yHatVec,M,N);
 %    
 
 % Entry statement
-disp('getEigenPHI.m function')
+disp('  getEigenPHI.m function     : [PHI(yHat)mnr] - eigen geopotential PHI')
 
 
 % global declaration
@@ -100,7 +100,7 @@ for yy = 1:ySize    % yHat loop
         if nVec(jn) > 1
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             T1 = sqrt(nVec(jn)/2)*H(yy,(nVec(jn)+1));     % T1 = "T"erm"1"
             T2 = sqrt((nVec(jn)+1)/2)*H(yy,(nVec(jn)-1));
             PHI(yy,im,jn,kr) = A(im,jn,kr)*cBar*(T1 + T2);
@@ -119,7 +119,7 @@ for yy = 1:ySize    % yHat loop
         elseif nVec(jn) == 1
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             T1 = 2^(-1/2)*H(yy,2) + H0(yy);
             PHI(yy,im,jn,kr) = A(im,jn,kr)*cBar*T1;
           % !(m = 0 and r = 0)

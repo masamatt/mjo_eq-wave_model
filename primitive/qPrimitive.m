@@ -24,7 +24,7 @@
 %
 
 % Start statement
-disp('qPrimitive.m script')
+disp('  qPrimitive.m script        : [q(yHat,xi)]')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -55,7 +55,7 @@ Z = structureZ(p);
 q = Z*qF;
 
 % Save q field
-disp('Saving q(yHat,xi): matFiles/field_q.mat')
+disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
 save ./matFiles/field_q.mat q
 
 %%%clear qN qF Z q   %%% save: q

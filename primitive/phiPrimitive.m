@@ -24,7 +24,7 @@
 %
 
 % Start statement
-disp('phiPrimitive.m script')
+disp('  phiPrimitive.m script      : [phi(yHat,xi)]')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -55,7 +55,7 @@ Z = structureZ(p);
 phi = Z*PHIF;
 
 % Save phi field
-disp('Saving phi(yHat,xi): matFiles/field_phi.mat')
+disp('  Saving phi(yHat,xi)        : [phi] -> matFiles/field_phi.mat')
 save ./matFiles/field_phi.mat phi
 
 %%%clear PHIN PHIF Z phi   %%% save:  phi

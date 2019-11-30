@@ -48,7 +48,7 @@ function Nfield = normalMode(ETA,EIGEN,yHatVec,M,N)
 %                 
 
 % Entry statement
-disp('normalMode.m function')
+disp('    normalMode.m function    : normal mode expansion')
 
 
 % size of yHat vector

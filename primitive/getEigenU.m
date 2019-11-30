@@ -1,4 +1,4 @@
-function U = getEigenU(A,Nu,H0,H,yHatVec,M,N);
+function U = getEigenU(A,Nu,H0,H,yHatVec,M,N)
 % GETEIGENU - A function to "get" "Eigen"function "U".
 %             Computes and returns a 4-D array of eigenfunction 
 %             U values. U = U(yHatIndex,mIndex,nIndex,rIndex).
@@ -55,7 +55,7 @@ function U = getEigenU(A,Nu,H0,H,yHatVec,M,N);
 %              
 
 % Entry statement
-disp('getEigenU.m function')
+disp('  getEigenU.m function       : [U(yHat)mnr] - eigen zonal wind U')
 
 
 % global declaration
@@ -101,7 +101,7 @@ for yy = 1:ySize         % yHat loop
         if nVec(jn) > 1
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             T1 = sqrt(nVec(jn)/2)*H(yy,(nVec(jn)+1));     % T1 = "T"erm"1"
             T2 = sqrt((nVec(jn)+1)/2)*H(yy,(nVec(jn)-1));
             U(yy,im,jn,kr) = A(im,jn,kr)*(T1 - T2);
@@ -120,7 +120,7 @@ for yy = 1:ySize         % yHat loop
         elseif nVec(jn) == 1
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             T1 = 2^(-1/2)*H(yy,2) - H0(yy);
             U(yy,im,jn,kr) = A(im,jn,kr)*T1;
           % !(m = 0 and r = 0)
