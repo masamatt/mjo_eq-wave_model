@@ -37,7 +37,7 @@ function [HC0,HCN] = genHC(y0,b0,N);
 
 
 % Entry statement
-disp('genHC.m function')
+disp('  genHC.m function')
 
 % Global declaration
 global ep a

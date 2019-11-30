@@ -21,8 +21,6 @@ function HnVec = getH(yHat,N)
 % POST: A 1-D vector HnVec = HnVec(nIndex) is returned for the 
 %       specific value of yHat input and nIndex=1..(N+1).
 
-
-
 % Check to make sure N >= 1. If not, display an error message
 % and exit the function.
 if N < 1

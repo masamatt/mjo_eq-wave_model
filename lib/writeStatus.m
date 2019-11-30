@@ -14,7 +14,7 @@
 
 
 % display writing message
-disp('Writing current run status to ./output/runParameters.txt...')
+disp('Writing current run status to output/runParameters.txt')
 
 % zonal wave number
 zonalString      = ['Maximum Zonal Wavenumber,    M: ',int2str(mMax)];

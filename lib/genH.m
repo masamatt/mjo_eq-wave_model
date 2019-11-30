@@ -22,7 +22,7 @@ function HN = genH(yHatVec,N);
 
 
 % Entry statement
-disp('genH.m function')
+disp('  genH.m function')
 
 % Check if N < 1. If so, display error message and return 
 % control to calling function.

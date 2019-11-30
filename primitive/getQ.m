@@ -1,4 +1,4 @@
-function Q = getQ(A,NU,HC0,HC,Q0,a0,b0,y0,M,N);
+function Q = getQ(A,NU,HC0,HC,Q0,a0,b0,y0,M,N)
 % GETQ - A function to compute heating function expansion coefficients.
 %        Q = QHatmnr = Q(mIndex,nIndex,rIndex). The returned quantity, Q,
 %        is a 3-D array indexed by m,n,r and contains the expansion
@@ -62,7 +62,7 @@ function Q = getQ(A,NU,HC0,HC,Q0,a0,b0,y0,M,N);
 %              
 
 % Entry statement
-disp('getQ.m function')
+disp('  getQ.m function')
 
 
 % global declaration

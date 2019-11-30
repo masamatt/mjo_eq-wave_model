@@ -1,4 +1,4 @@
-function ETA = getEta(NU,Q,alfa,c,M,N);
+function ETA = getEta(NU,Q,alfa,c,M,N)
 % GETETA - Calculates the expansion coefficient eta.
 %          Eta is the expansion coefficient used to expand the
 %          solution vector Eta in terms of the Eigenfunctions
@@ -35,7 +35,7 @@ function ETA = getEta(NU,Q,alfa,c,M,N);
 %               
 
 % Entry statement
-disp('getEta.m function')
+disp('  getEta.m function')
 
 
 % global declaration

@@ -24,7 +24,7 @@ function V = genNu(M,N);
 %              
 
 % Entry statement
-disp('genNu.m function')
+disp('  genNu.m function')
 
 % local variables
 R = 3;                % number of roots 

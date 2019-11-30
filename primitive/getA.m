@@ -40,7 +40,7 @@ function A = getA(M,N,V);
 %              
 
 % Entry statement
-disp('getA.m function')
+disp('  getA.m function')
 
 
 % global declaration

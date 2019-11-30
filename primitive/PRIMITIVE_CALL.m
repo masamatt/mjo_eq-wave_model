@@ -47,17 +47,12 @@ VARIABLE_DEFINITIONS;
 STATUS;
 disp('Sleeping for 10 seconds...');
 pause(1);
-disp('To ABORT run:  CTRL-C');
-disp('');
+disp('To ABORT run:  CTRL-C');disp(' ');
 pause(10);
-disp('');disp('');
+disp(' ');
 
 % Compute variables needed for all 5 fields
 primitiveBasis;
-
-% write record to runParameters.txt file
-writeStatus;
-
 
 
 % Compute u field
@@ -66,17 +61,9 @@ disp('        Computing u field             ')
 disp('----------------------------------    ')
 % Get Eigenfunction U
 Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-
-% Calculate u dependent on wave type
-uPrimitive;
-
-% clear Umnr
+uPrimitive;  % Calculate u dependent on wave type
 clear Umnr
-disp('----------------------------------    ')
-disp('      End computing u field           ')
-disp('----------------------------------    ')
-disp('                                      ')
-
+disp(' ')
 
 
 % Compute v field
@@ -85,18 +72,9 @@ disp('        Computing v field             ')
 disp('----------------------------------    ')
 % Get Eigenfunction V
 Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-
-% Calculate v dependent on wave type
-vPrimitive;
-
-% clear Vmnr
+vPrimitive;  % Calculate v dependent on wave type
 clear Vmnr
-disp('----------------------------------    ')
-disp('      End computing v field           ')
-disp('----------------------------------    ')
-disp('                                      ')
-
-
+disp(' ')
 
 
 % Compute phi field
@@ -105,17 +83,9 @@ disp('       Computing phi field            ')
 disp('----------------------------------    ')
 % Get Eigenfunction PHI
 PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-
-% Calculate phi dependent on wave type
-phiPrimitive;
-
+phiPrimitive;  % Calculate phi dependent on wave type
 % DO NOT clear PHImnr, needed for omegaM calculation
-disp('----------------------------------    ')
-disp('     End computing phi field          ')
-disp('----------------------------------    ')
-disp('                                      ')
-
-
+disp(' ')
 
 
 % Compute omegaM field
@@ -125,19 +95,9 @@ disp('----------------------------------    ')
 % Eigenfunction PHI ( PHImnr ) still avialble from above
 % Get expansion Structure function w_mnr(yHat)
 wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
-% clear PHImnr
-clear PHImnr
-
-% Calculate omegaM dependent on wave type
-omegaMPrimitive;
-
-% clear wmnr
-clear wmnr
-disp('----------------------------------    ')
-disp('    End computing omegaM field        ')
-disp('----------------------------------    ')
-disp('                                      ')
-
+omegaMPrimitive;  % Calculate omegaM dependent on wave type
+clear PHImnr wmnr
+disp(' ')
 
 
 % Compute q field
@@ -146,28 +106,20 @@ disp('        Computing q field             ')
 disp('----------------------------------    ')
 % Get expansion Structure function q_mnr(yHat)
 qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-
-% Calculate q dependent on wave type
-qPrimitive;
-
-% clear qmnr
+qPrimitive;        % Calculate q dependent on wave type
 clear qmnr
-disp('----------------------------------    ')
-disp('      End computing q field           ')
-disp('----------------------------------    ')
-disp('                                      ')
+disp(' ')
 
 
-
+% write record to runParameters.txt file
+writeStatus;
 % Print all fields to a text file
 %%%printResults;
-
 % End primitive run
 disp('                                          ')
 disp('        =========================         ')
 disp('        *  END PRIMITIVE MODEL  *         ')
 disp('        =========================         ')
-disp('                                          ')
 
 % END
 
