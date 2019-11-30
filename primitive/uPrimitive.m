@@ -55,7 +55,7 @@ Z = structureZ(p);
 u = Z*UF;
 
 % Save u field
-disp('  Saving u(yHat,xi) variable in file: ./matFiles/field_u.mat')
+disp('Saving u(yHat,xi: matFiles/field_u.mat')
 save ./matFiles/field_u.mat u
 
 %%%clear UN UF Z u   %%% save: u
