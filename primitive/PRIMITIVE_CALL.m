@@ -28,234 +28,145 @@
 %       the "output" directory.
 %
 
-
-% start primitive run
-disp('                                          ')
 disp('                                          ')
 disp('        =========================         ')
 disp('        *    PRIMITIVE MODEL    *         ')
 disp('        =========================         ')
 disp('                                          ')
-disp('                                          ')
-
 
 % Primitive = 0 modelType
 modelType = 0;
 
-% Call the following if the model suite is NOT being run.
-% Otherwise these are called in SUITE_CALL.m.
-if modelSuite == 1
-  % Call CONSTANT_DEFINITIONS.m, initialize global constants.
-  CONSTANT_DEFINITIONS;
+% Call CONSTANT_DEFINITIONS.m, initialize global constants.
+CONSTANT_DEFINITIONS;
 
-  % Call VARIABLE_DEFINITIONS.m, initialize variables.
-  VARIABLE_DEFINITIONS;
+% Call VARIABLE_DEFINITIONS.m, initialize variables.
+VARIABLE_DEFINITIONS;
 
-  % XXX XXX
-  % % % convert_params;  *IMPLEMENT ME*
-  % XXX XXX
-  
-  % Call STATUS.m, wait for 10 seconds
-  STATUS;
-  disp('Sleeping for 10 seconds...');
-  pause(1);
-  disp('To ABORT run:  CTRL-C');
-  disp('');
-  pause(10);
-  disp('');disp('');
-  
-  % Compute variables needed for all 5 fields
-  primitiveBasis;
-end
+% Call STATUS.m, wait for 10 seconds
+STATUS;
+disp('Sleeping for 10 seconds...');
+pause(1);
+disp('To ABORT run:  CTRL-C');
+disp('');
+pause(10);
+disp('');disp('');
+
+% Compute variables needed for all 5 fields
+primitiveBasis;
 
 % write record to runParameters.txt file
 writeStatus;
 
 
-% Compute u field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing u field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
 
-% If the model suite is not being run, generate eigenStructure.
-% If it is, simply load it as it has already been computed.
-if modelSuite == 1
-  % Get Eigenfunction U
-  Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-else
-  % load Umnr(yHat)
-  disp('Loading Umnr...')
-  load ./matFiles/Umnr_out.mat
-  disp('Finished loading Umnr field.')
-  disp(' ')
-end
+% Compute u field
+disp('----------------------------------    ')
+disp('        Computing u field             ')
+disp('----------------------------------    ')
+% Get Eigenfunction U
+Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Calculate u dependent on wave type
 uPrimitive;
 
 % clear Umnr
 clear Umnr
+disp('----------------------------------    ')
+disp('      End computing u field           ')
+disp('----------------------------------    ')
+disp('                                      ')
 
-disp('    ----------------------------------    ')
-disp('          End computing u field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+
 
 % Compute v field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing v field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
-
-% If the model suite is not being run, generate eigenStructure.
-% If it is, simply load it as it has already been computed.
-if modelSuite == 1
-  % Get Eigenfunction V
-  Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-else
-  % load Vmnr(yHat)
-  disp('Loading Vmnr...')
-  load ./matFiles/Vmnr_out.mat
-  disp('Finished loading Vmnr field.')
-  disp(' ')
-end
+disp('----------------------------------    ')
+disp('        Computing v field             ')
+disp('----------------------------------    ')
+% Get Eigenfunction V
+Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Calculate v dependent on wave type
 vPrimitive;
 
 % clear Vmnr
 clear Vmnr
+disp('----------------------------------    ')
+disp('      End computing v field           ')
+disp('----------------------------------    ')
+disp('                                      ')
 
-disp('    ----------------------------------    ')
-disp('          End computing v field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+
+
 
 % Compute phi field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('           Computing phi field            ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
-
-% If the model suite is not being run, generate eigenStructure.
-% If it is, simply load it as it has already been computed.
-if modelSuite == 1
-  % Get Eigenfunction PHI
-  PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-else
-  % load PHImnr(yHat)
-  disp('Loading PHImnr...')
-  load ./matFiles/PHImnr_out.mat
-  disp('Finished loading PHImnr field.')
-  disp(' ')
-end
+disp('----------------------------------    ')
+disp('       Computing phi field            ')
+disp('----------------------------------    ')
+% Get Eigenfunction PHI
+PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Calculate phi dependent on wave type
 phiPrimitive;
 
 % DO NOT clear PHImnr, needed for omegaM calculation
+disp('----------------------------------    ')
+disp('     End computing phi field          ')
+disp('----------------------------------    ')
+disp('                                      ')
 
-disp('    ----------------------------------    ')
-disp('         End computing phi field          ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+
+
 
 % Compute omegaM field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('         Computing omegaM field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
-
-% If the model suite is not being run, generate eigenStructure.
-% If it is, simply load it as it has already been computed.
-if modelSuite == 1
-  % Eigenfunction PHI ( PHImnr ) still avialble from above
-  % Get expansion Structure function w_mnr(yHat)
-  wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
-  % clear PHImnr
-  clear PHImnr
-else
-  % clear PHImnr
-  clear PHImnr
-  % load wmnr(yHat)
-  disp('Loading wmnr...')
-  load ./matFiles/wmnr_out.mat
-  disp('Finished loading wmnr field.')
-  disp(' ')
-end
+disp('----------------------------------    ')
+disp('     Computing omegaM field           ')
+disp('----------------------------------    ')
+% Eigenfunction PHI ( PHImnr ) still avialble from above
+% Get expansion Structure function w_mnr(yHat)
+wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
+% clear PHImnr
+clear PHImnr
 
 % Calculate omegaM dependent on wave type
 omegaMPrimitive;
 
 % clear wmnr
 clear wmnr
+disp('----------------------------------    ')
+disp('    End computing omegaM field        ')
+disp('----------------------------------    ')
+disp('                                      ')
 
-disp('    ----------------------------------    ')
-disp('        End computing omegaM field        ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+
 
 % Compute q field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing q field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
-
-% If the model suite is not being run, generate eigenStructure.
-% If it is, simply load it as it has already been computed.
-if modelSuite == 1
-  % Get expansion Structure function q_mnr(yHat)
-  qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
-else
-  % load qmnr(yHat)
-  disp('Loading qmnr...')
-  load ./matFiles/qmnr_out.mat
-  disp('Finished loading qmnr field.')
-  disp(' ')  
-end
+disp('----------------------------------    ')
+disp('        Computing q field             ')
+disp('----------------------------------    ')
+% Get expansion Structure function q_mnr(yHat)
+qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Calculate q dependent on wave type
 qPrimitive;
 
 % clear qmnr
 clear qmnr
+disp('----------------------------------    ')
+disp('      End computing q field           ')
+disp('----------------------------------    ')
+disp('                                      ')
 
-disp('    ----------------------------------    ')
-disp('          End computing q field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+
 
 % Print all fields to a text file
 %%%printResults;
 
 % End primitive run
 disp('                                          ')
-disp('                                          ')
 disp('        =========================         ')
 disp('        *  END PRIMITIVE MODEL  *         ')
 disp('        =========================         ')
-disp('                                          ')
 disp('                                          ')
 
 % END
