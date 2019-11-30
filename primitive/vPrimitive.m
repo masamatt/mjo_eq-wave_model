@@ -24,9 +24,7 @@
 %
 
 % Start statement
-disp('Starting vPrimitive.m script...')
-disp(' ')
-
+disp('vPrimitive.m script')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -57,25 +55,15 @@ Z = structureZ(p);
 v = Z*VF;
 
 % Save v field
-disp('Saving v(yHat,xi) variable in file: ./matFiles/field_v.mat')
+disp('  Saving v(yHat,xi) variable in file: ./matFiles/field_v.mat')
 save ./matFiles/field_v.mat v
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate v
-disp('Clearing v specific variables.')
 
 %%%clear VN VF Z v    %%% save: v
 clear VN Z
 
-disp('Done clearing.')
-disp(' ')
-
-
-
 % Finish statement
-disp('Finished vPrimitive.m script.')
-disp(' ')
+% disp('Finished vPrimitive.m script.')
+% disp(' ')
 
 % END
 

@@ -62,7 +62,7 @@ function Q = getQ(A,NU,HC0,HC,Q0,a0,b0,y0,M,N);
 %              
 
 % Entry statement
-disp('Entering getQ.m function...')
+disp('getQ.m function')
 
 
 % global declaration
@@ -315,8 +315,8 @@ end    % end m loop
 
 
 % Exit statement
-disp('Exiting getQ.m function.')
-disp(' ')
+% disp('Exiting getQ.m function.')
+% disp(' ')
 
 % END
 

@@ -74,7 +74,7 @@ function q = getStructureq(A,NU,H0,H,yHatVec,M,N);
 %              
 
 % Entry statement
-disp('Entering getStructureq.m function...')
+disp('getStructureq.m function')
 
 
 % global declaration
@@ -179,8 +179,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting getStructureq.m function.')
-disp(' ')
+% disp('Exiting getStructureq.m function.')
+% disp(' ')
 
 % END
 

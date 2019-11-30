@@ -1,4 +1,4 @@
-function IFfield = IFourier(NF,yHatVec,xiVec,M);
+function IFfield = IFourier(NF,yHatVec,xiVec,M)
 % IFOURIER - computes "I"nverse "Fourier" Transformed fields u,v,phi,q,w.
 %            This takes the 2-D array NF_m(yHat) = NF(yIndex,mIndex),
 %            which was recovered from a normal mode expansion,
@@ -38,7 +38,7 @@ function IFfield = IFourier(NF,yHatVec,xiVec,M);
 %                 
 
 % Entry statement
-disp('Entering IFourier.m function...')
+disp('IFourier.m function')
 
 
 % global declaration
@@ -77,8 +77,8 @@ end
 
 
 % Exit statement
-disp('Exiting IFourier.m function.')
-disp(' ')
+% disp('Exiting IFourier.m function.')
+% disp(' ')
 
 % END
 

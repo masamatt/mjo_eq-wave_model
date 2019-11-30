@@ -24,7 +24,7 @@ function V = genNu(M,N);
 %              
 
 % Entry statement
-disp('Entering genNu.m function...')
+disp('genNu.m function')
 
 % local variables
 R = 3;                % number of roots 
@@ -68,8 +68,8 @@ end
 
 
 % Exit statement
-disp('Exiting genNu.m function.')
-disp(' ')
+% disp('Exiting genNu.m function.')
+% disp(' ')
 
 % END
 

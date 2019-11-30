@@ -37,7 +37,7 @@ function [HC0,HCN] = genHC(y0,b0,N);
 
 
 % Entry statement
-disp('Entering genHC.m function...')
+disp('genHC.m function')
 
 % Global declaration
 global ep a
@@ -70,8 +70,8 @@ HCN = getH(constY,(N+1));        % The function getH(yVal,nVal)
 
 
 % Exit statement
-disp('Exiting genHC.m function.')
-disp(' ')
+% disp('Exiting genHC.m function.')
+% disp(' ')
 
 % END
 

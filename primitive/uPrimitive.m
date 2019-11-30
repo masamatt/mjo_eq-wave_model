@@ -24,8 +24,7 @@
 %
 
 % Start statement
-disp('Starting uPrimitive.m script...')
-disp(' ')
+disp('uPrimitive.m script')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -56,25 +55,15 @@ Z = structureZ(p);
 u = Z*UF;
 
 % Save u field
-disp('Saving u(yHat,xi) variable in file: ./matFiles/field_u.mat')
+disp('  Saving u(yHat,xi) variable in file: ./matFiles/field_u.mat')
 save ./matFiles/field_u.mat u
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate u
-disp('Clearing u specific variables.')
 
 %%%clear UN UF Z u   %%% save: u
 clear UN Z
 
-disp('Done clearing.')
-disp(' ')
-
-
-
 % Finish statement
-disp('Finished uPrimitive.m script.')
-disp(' ')
+% disp('Finished uPrimitive.m script.')
+% disp(' ')
 
 % END
 

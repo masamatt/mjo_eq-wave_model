@@ -55,7 +55,7 @@ function U = getEigenU(A,Nu,H0,H,yHatVec,M,N);
 %              
 
 % Entry statement
-disp('Entering getEigenU.m function...')
+disp('getEigenU.m function')
 
 
 % global declaration
@@ -171,8 +171,8 @@ end    % end yHat-loop
 
 
 % Exit statement
-disp('Exiting getEigenU.m function.')
-disp(' ')
+% disp('Exiting getEigenU.m function.')
+% disp(' ')
 
 % END
 

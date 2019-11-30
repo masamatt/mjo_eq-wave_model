@@ -1,4 +1,4 @@
-function Nfield = normalMode(ETA,EIGEN,yHatVec,M,N);
+function Nfield = normalMode(ETA,EIGEN,yHatVec,M,N)
 % NORMALMODE - Computes "normal" "Mode" expansion of u,v,phi,q,w fields.
 %              This function computes any of the single components of the 
 %              "eta_m(yHat)" vector: Um(yHat),Vm(yHat),PHIm(yHat).
@@ -48,7 +48,7 @@ function Nfield = normalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering normalMode.m function...')
+disp('normalMode.m function')
 
 
 % size of yHat vector
@@ -88,8 +88,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting normalMode.m function.')
-disp(' ')
+% disp('Exiting normalMode.m function.')
+% disp(' ')
 
 % END
 

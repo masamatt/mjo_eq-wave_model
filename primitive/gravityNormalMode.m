@@ -39,7 +39,7 @@ function GNfield = gravityNormalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering gravityNormalMode.m function...')
+disp('gravityNormalMode.m function')
 
 
 % size of yHat vector
@@ -95,7 +95,7 @@ for yy = 1:ySize    % yHat loop
         elseif nVec(jn) >= 1
           % r = 1,2
           % -------
-          if (rVec(kr) == 1) | (rVec(kr) == 2)
+          if (rVec(kr) == 1) || (rVec(kr) == 2)
             sumVar = sumVar + ETA(im,jn,kr)*EIGEN(yy,im,jn,kr);
           end
         end
@@ -109,8 +109,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting gravityNormalMode.m function.')
-disp(' ')
+% disp('Exiting gravityNormalMode.m function.')
+% disp(' ')
 
 % END
 

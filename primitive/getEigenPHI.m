@@ -54,7 +54,7 @@ function PHI = getEigenPHI(A,Nu,H0,H,yHatVec,M,N);
 %    
 
 % Entry statement
-disp('Entering getEigenPHI.m function...')
+disp('getEigenPHI.m function')
 
 
 % global declaration
@@ -170,8 +170,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting getEigenPHI.m function.')
-disp(' ')
+% disp('Exiting getEigenPHI.m function.')
+% disp(' ')
 
 % END
 

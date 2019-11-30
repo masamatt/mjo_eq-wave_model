@@ -1,4 +1,4 @@
-function KNfield = kelvinNormalMode(ETA,EIGEN,yHatVec,M,N);
+function KNfield = kelvinNormalMode(ETA,EIGEN,yHatVec,M,N)
 % KELVINNORMALMODE - "kelvin" component "Normal" "Mode" expansion.
 %                    This function computes the Kelvin wave component only
 %                    by doing a Normal Mode expansion of the field
@@ -39,7 +39,7 @@ function KNfield = kelvinNormalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering kelvinNormalMode.m function...')
+disp('kelvinNormalMode.m function')
 
 
 % size of yHat vector
@@ -83,8 +83,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting kelvinNormalMode.m function.')
-disp(' ')
+% disp('Exiting kelvinNormalMode.m function.')
+% disp(' ')
 
 % END
 

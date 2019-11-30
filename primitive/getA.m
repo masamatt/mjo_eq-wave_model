@@ -40,7 +40,7 @@ function A = getA(M,N,V);
 %              
 
 % Entry statement
-disp('Entering getA.m function...')
+disp('getA.m function')
 
 
 % global declaration
@@ -135,8 +135,8 @@ end  % end m-loop
 
 
 % Exit statement
-disp('Exiting getA.m function.')
-disp(' ')
+% disp('Exiting getA.m function.')
+% disp(' ')
 
 % END
 

@@ -24,9 +24,7 @@
 %
 
 % Start statement
-disp('Starting qPrimitive.m script...')
-disp(' ')
-
+disp('qPrimitive.m script')
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -57,25 +55,15 @@ Z = structureZ(p);
 q = Z*qF;
 
 % Save q field
-disp('Saving q(yHat,xi) variable in file: ./matFiles/field_q.mat')
+disp('  Saving q(yHat,xi) variable in file: ./matFiles/field_q.mat')
 save ./matFiles/field_q.mat q
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate q
-disp('Clearing q specific variables.')
 
 %%%clear qN qF Z q   %%% save: q
 clear qN Z
 
-disp('Done clearing.')
-disp(' ')
-
-
-
 % Finish statement
-disp('Finished qPrimitive.m script.')
-disp(' ')
+% disp('Finished qPrimitive.m script.')
+% disp(' ')
 
 % END
 

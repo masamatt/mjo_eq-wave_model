@@ -62,7 +62,7 @@ function V = getEigenV(A,Nu,H0,H,yHatVec,M,N);
 %   
 
 % Entry statement
-disp('Entering getEigenV.m function...')
+disp('getEigenV.m function')
 
 
 % global declaration
@@ -166,8 +166,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting getEigenV.m function.')
-disp(' ')
+% disp('Exiting getEigenV.m function.')
+% disp(' ')
 
 % END
 

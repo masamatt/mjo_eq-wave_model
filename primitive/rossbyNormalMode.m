@@ -39,7 +39,7 @@ function RNfield = rossbyNormalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering rossbyNormalMode.m function...')
+disp('rossbyNormalMode.m function')
 
 
 % size of yHat vector
@@ -93,8 +93,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting rossbyNormalMode.m function.')
-disp(' ')
+% disp('Exiting rossbyNormalMode.m function.')
+% disp(' ')
 
 % END
 

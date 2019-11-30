@@ -35,7 +35,7 @@ function ETA = getEta(NU,Q,alfa,c,M,N);
 %               
 
 % Entry statement
-disp('Entering getEta.m function...')
+disp('getEta.m function')
 
 
 % global declaration
@@ -104,8 +104,8 @@ end    % end m loop
 
 
 % Exit statement
-disp('Exiting getEta.m function.')
-disp(' ')
+% disp('Exiting getEta.m function.')
+% disp(' ')
 
 % END
 

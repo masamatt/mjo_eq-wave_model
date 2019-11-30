@@ -1,4 +1,4 @@
-function MNfield = mixedNormalMode(ETA,EIGEN,yHatVec,M,N);
+function MNfield = mixedNormalMode(ETA,EIGEN,yHatVec,M,N)
 % MIXEDNORMALMODE - "mixed" component "Normal" "Mode" expansion.
 %                    This function computes the Mixed Rossby-Gravity wave
 %                    component only by doing a Normal Mode expansion of
@@ -39,7 +39,7 @@ function MNfield = mixedNormalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering mixedNormalMode.m function...')
+disp('mixedNormalMode.m function')
 
 
 % size of yHat vector
@@ -83,8 +83,8 @@ end    % end yHat loop
 
 
 % Exit statement
-disp('Exiting mixedNormalMode.m function.')
-disp(' ')
+% disp('Exiting mixedNormalMode.m function.')
+% disp(' ')
 
 % END
 
