@@ -1,4 +1,4 @@
-function V = genNu(M,N);
+function V = genNu(M,N)
 % GENNU - Calls function getNu(m,n,r) returns V(m,n,r).
 %         This function returns a 3-D array of frequencys (nu)
 %         where m=-M..M, n=-1..(N+1), r=0..2. (function)
@@ -22,9 +22,8 @@ function V = genNu(M,N);
 % PRE:         None
 % POST:        3-D array of nu(m,n,r) values has been returned.
 %              
-
 % Entry statement
-disp('  genNu.m function')
+disp('  genNu.m function           : [nu_nmr] - calc p frequencies')
 
 % local variables
 R = 3;                % number of roots 

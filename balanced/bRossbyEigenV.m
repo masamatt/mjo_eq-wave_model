@@ -33,7 +33,7 @@ function V = bRossbyEigenV(H0,H,yHatVec,M,N)
 %    
 
 % entry statement
-disp('bRossbyEigenV.m function');
+disp('  bRossbyEigenV.m function   : [V(yHat)mn] - rossby approx. eigen V');
 
 % local variables
 ySize = length(yHatVec);

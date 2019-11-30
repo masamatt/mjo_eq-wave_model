@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('phiBalanced.m script')
+disp('  phiBalanced.m script       : [b_phi(yHat,xi)] - b geopotential')
 
 % Get Rossby wave approximation to Eigenfunction PHI
 PHImn = bRossbyEigenPHI(H0,Hn,yHatVec,mMax,nMax);
@@ -40,7 +40,7 @@ Z = structureZ(p);
 b_phi = Z*bPhiF;
 
 % save b_phi field
-disp('Saving b_phi(yHat,xi): matFiles/field_b_phi.mat')
+disp('  Saving b_phi(yHat,xi)      : [b_phi] -> matFiles/field_b_phi.mat')
 save ./matFiles/field_b_phi.mat b_phi
 clear PHImn PHI_SE Z
 

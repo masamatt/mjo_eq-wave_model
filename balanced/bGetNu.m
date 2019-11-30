@@ -1,4 +1,4 @@
-function NU = bGetNu(M,N);
+function NU = bGetNu(M,N)
 % BGETNU - bGetNu = "b"alanced model "Get" "Nu". 
 %          Calculates and returns a 2-D array of dimensionless
 %          frequencies, nu (actually nuHat are the dimensionless
@@ -30,7 +30,7 @@ function NU = bGetNu(M,N);
 
 
 % entry statement
-disp('bGetNu.m function');
+disp('  bGetNu.m function          : [nu_mn] calc b frequencies');
 
 % global declaration
 global ep

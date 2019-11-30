@@ -46,7 +46,7 @@ function Q = bGetQ(HC0,HC,Q0,a0,b0,y0,M,N)
 
 
 % Entry statement
-disp('bGetQ.m function')
+disp('  bGetQ.m function           : [Q_mn] - calc b diabatic heating coefficient')
 
 % global declarations
 global ep a

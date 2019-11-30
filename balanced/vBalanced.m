@@ -22,9 +22,7 @@
 %
 
 % Start statement
-disp('vBalanced.m script')
-disp(' ')
-
+disp('  vBalanced.m script         : [b_v(yHat,xi)] - b meridional wind')
 
 % Get Rossby wave approximation to Eigenfunction V
 Vmn = bRossbyEigenV(H0,Hn,yHatVec,mMax,nMax);
@@ -42,7 +40,7 @@ Z = structureZ(p);
 b_v = Z*bVF;
 
 % save b_v field
-disp('Saving b_v(yHat,xi): matFiles/field_b_v.mat')
+disp('  Saving b_v(yHat,xi)        : [b_v] -> matFiles/field_b_v.mat')
 save ./matFiles/field_b_v.mat b_v
 clear Vmn V_SE Z
 

@@ -29,7 +29,7 @@
 %
 
 % Start statement
-disp('omegaMBalanced.m script')
+disp('  omegaMBalanced.m script    : [b_omegaM(yHat,xi)] - b log-pressure vertical velocity')
 
 % Get spectral space log-pressure vertical velocity
 wmn = bSpectralw(psimn,Qmn,alfa,c,mMax,nMax);
@@ -52,7 +52,7 @@ b_omegaMF = -pM*86400*bwF;
 b_omegaM = Zprime*b_omegaMF;
 
 % save b_omegaM field
-disp('Saving b_omegaM(yHat,xi): matFiles/field_b_omegaM.mat')
+disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
 save ./matFiles/field_b_omegaM.mat b_omegaM
 clear wmn wH bwF Zprime
 

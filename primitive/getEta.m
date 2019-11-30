@@ -35,7 +35,7 @@ function ETA = getEta(NU,Q,alfa,c,M,N)
 %               
 
 % Entry statement
-disp('  getEta.m function')
+disp('  getEta.m function          : [eta_mnr] - calc p eigen expansion coeff.')
 
 
 % global declaration

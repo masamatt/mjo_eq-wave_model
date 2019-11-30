@@ -1,4 +1,4 @@
-function [HC0,HCN] = genHC(y0,b0,N);
+function [HC0,HCN] = genHC(y0,b0,N)
 % GENHC - calculates "script-H" polynomials for a constant-y-argument.
 %         (function).  --> "gen"erate script-"H" "C"onstant.
 %         This function takes scalar variables y0,b0, and N. It
@@ -37,7 +37,7 @@ function [HC0,HCN] = genHC(y0,b0,N);
 
 
 % Entry statement
-disp('  genHC.m function')
+disp('  genHC.m function           : [H_0(y_const), H_n(y_const)] - generate structure functions')
 
 % Global declaration
 global ep a
