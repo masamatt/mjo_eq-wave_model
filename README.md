@@ -21,8 +21,9 @@
 This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  Introductory information on the tropical weather phenomenon that is the subject of the study, the Madden Julian oscillation (MJO), can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).  
 
 There are actually two models available within the repository.  The first, derived from [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  A schematic outlining the computational procedure for this model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
-The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation potential vorticity (PV) principle along with a linear balance relationship 
-[App H](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_eq_bal.pdf) that is valid in the entire equatorial plane, equator included.  
+The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation 
+[potential vorticity](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf) (PV) principle along with a linear balance relationship 
+\([App H](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_eq_bal.pdf)\) that is valid in the entire equatorial plane, equator included.  
 <br>
 
 [\[Return to top\]](#mjo_eq-wave_model)
