@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('Starting vBalanced.m script...')
+disp('vBalanced.m script')
 disp(' ')
 
 
@@ -42,21 +42,13 @@ Z = structureZ(p);
 b_v = Z*bVF;
 
 % save b_v field
-disp('Saving b_v(yHat,xi) variable in file: ./matFiles/field_b_v.mat')
+disp('Saving b_v(yHat,xi): matFiles/field_b_v.mat')
 save ./matFiles/field_b_v.mat b_v
-disp('Done saving.')
-disp(' ')
-
-% clear variables used to calculate b_v
-disp('Clearing balanced v specific variables.')
 clear Vmn V_SE Z
-disp('Done clearing.')
-disp(' ')
-
 
 % Finish statement
-disp('Finished vBalanced.m script.')
-disp(' ')
+% disp('Finished vBalanced.m script.')
+% disp(' ')
 
 % END
 

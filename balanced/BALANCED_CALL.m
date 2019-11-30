@@ -28,6 +28,7 @@ disp('        *    BALANCED MODEL     *         ')
 disp('        =========================         ')
 disp('                                          ')
 
+
 % Balanced = 1 modelType
 modelType = 1;
 
@@ -41,16 +42,12 @@ VARIABLE_DEFINITIONS;
 STATUS;
 disp('Sleeping for 10 seconds...');
 pause(1);
-disp('To ABORT run:  CTRL-C');
-disp('');
+disp('To ABORT run:  CTRL-C');disp(' ');
 pause(10);
-disp('');disp('');
+disp(' ');disp(' ');
 
 % Compute variables needed for all 5 fields
 balancedBasis;
-
-% write record to runParameters.txt file
-writeStatus;
 
 
 
@@ -59,9 +56,6 @@ disp('----------------------------------    ')
 disp('        Computing u field             ')
 disp('----------------------------------    ')
 uBalanced;
-disp('----------------------------------    ')
-disp('      End computing u field           ')
-disp('----------------------------------    ')
 disp('                                      ')
 
 
@@ -71,9 +65,6 @@ disp('----------------------------------    ')
 disp('        Computing v field             ')
 disp('----------------------------------    ')
 vBalanced;
-disp('----------------------------------    ')
-disp('      End computing v field           ')
-disp('----------------------------------    ')
 disp('                                      ')
 
 
@@ -83,9 +74,6 @@ disp('----------------------------------    ')
 disp('       Computing phi field            ')
 disp('----------------------------------    ')
 phiBalanced;
-disp('----------------------------------    ')
-disp('     End computing phi field          ')
-disp('----------------------------------    ')
 disp('                                      ')
 
 
@@ -95,11 +83,7 @@ disp('----------------------------------    ')
 disp('     Computing omegaM field           ')
 disp('----------------------------------    ')
 omegaMBalanced;
-disp('----------------------------------    ')
-disp('    End computing omegaM field        ')
-disp('----------------------------------    ')
 disp('                                      ')
-
 
 
 % Compute q field
@@ -107,13 +91,11 @@ disp('----------------------------------    ')
 disp('        Computing q field             ')
 disp('----------------------------------    ')
 qBalanced;
-disp('----------------------------------    ')
-disp('      End computing q field           ')
-disp('----------------------------------    ')
 disp('                                      ')
 
 
-
+% write record to runParameters.txt file
+writeStatus;
 % Print all balanced fields to a text file
 %%%bPrintResults;
 % End balanced run

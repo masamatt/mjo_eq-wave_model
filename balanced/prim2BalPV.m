@@ -53,7 +53,7 @@ function q = prim2BalPV(ETA,A,NU,M,N);
 
 
 % Entry statement
-disp('Entering prim2BalPV.m function...')
+disp('prim2BalPV.m function')
 
 % global declarations
 global ep a
@@ -137,8 +137,8 @@ end    % end m loop
 
 
 % exit statement
-disp('Exiting prim2Bal.m function.')
-disp(' ')
+% disp('Exiting prim2Bal.m function.')
+% disp(' ')
 
 % END
 

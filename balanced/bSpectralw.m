@@ -1,4 +1,4 @@
-function w = bSpectralw(stream,Q,alfa,c,M,N);
+function w = bSpectralw(stream,Q,alfa,c,M,N)
 % BSPECTRALW - bSpectralw = "b"alanced model "Spectral" "w".
 %              Calculates and returns a 2-D array of spectral space
 %              log-pressure vertical velocity, w = w_mn = w(mIndex,nIndex).
@@ -50,7 +50,7 @@ function w = bSpectralw(stream,Q,alfa,c,M,N);
 
 
 % entry statement
-disp('Entering bSpectralw.m function...')
+disp('bSpectralw.m function')
 
 % global declarations
 global cp Gmma Omega Rd ep a
@@ -108,8 +108,8 @@ end    % end m loop
 
 
 % exit statement
-disp('Exiting bSpectralw.m function.')
-disp(' ')
+% disp('Exiting bSpectralw.m function.')
+% disp(' ')
 
 % END
 

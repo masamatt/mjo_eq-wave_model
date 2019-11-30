@@ -1,4 +1,4 @@
-function Q = bGetQ(HC0,HC,Q0,a0,b0,y0,M,N);
+function Q = bGetQ(HC0,HC,Q0,a0,b0,y0,M,N)
 % BGETQ - A function to compute heating function expansion coefficients.
 %         bGetQ = "b"alanced model "Get" "Q"
 %         Q = QHat_mn = Q(mIndex,nIndex). The returned quantity, Q,
@@ -46,7 +46,7 @@ function Q = bGetQ(HC0,HC,Q0,a0,b0,y0,M,N);
 
 
 % Entry statement
-disp('Entering bGetQ.m function...')
+disp('bGetQ.m function')
 
 % global declarations
 global ep a
@@ -110,19 +110,19 @@ for im = 1:mSize        % m loop
     
     % m = 0 and n = 0
     % ---------------
-    if (mVec(im) == 0) & (nVec(jn) == 0)
+    if (mVec(im) == 0) && (nVec(jn) == 0)
       %%% (EQ 1) %%%
       Q(im,jn) = T1*T3*T4*HC0;
     
     % m = 0 and n != 0
     % ----------------
-    elseif (mVec(im) == 0) & (nVec(jn) ~= 0)
+    elseif (mVec(im) == 0) && (nVec(jn) ~= 0)
       %%% (EQ 2) %%%
       Q(im,jn) = T1*T3*T4*T5^(nVec(jn)/2)*HC(nVec(jn));
     
     % m != 0 and n = 0
     % ----------------
-    elseif (mVec(im) ~= 0) & (nVec(jn) == 0)
+    elseif (mVec(im) ~= 0) && (nVec(jn) == 0)
       %%% (EQ 3) %%%
       % LN = "L"oop variable number "N"
       L1 = T2*T3*T4*HC0;
@@ -146,8 +146,8 @@ end    % end m loop
     
 
 % Exit statement
-disp('Exiting bGetQ.m function.')
-disp(' ')
+% disp('Exiting bGetQ.m function.')
+% disp(' ')
 
 % END
 

@@ -1,4 +1,4 @@
-function IFfield = bIFourier(HF,yHatVec,xiVec,M);
+function IFfield = bIFourier(HF,yHatVec,xiVec,M)
 % BIFOURIER - Computes "b"alanced "I"nverse "Fourier" Transformed fields.
 %             This takes the 2-D array HF_m(yHat) = HF(yIndex,mIndex),
 %             which was recovered from a Inverse Hermite Transform,
@@ -42,7 +42,7 @@ function IFfield = bIFourier(HF,yHatVec,xiVec,M);
 %                 
 
 % Entry statement
-disp('Entering bIFourier.m function...')
+disp('bIFourier.m function')
 
 
 % global declaration
@@ -81,8 +81,8 @@ end
 
 
 % Exit statement
-disp('Exiting bIFourier.m function.')
-disp(' ')
+% disp('Exiting bIFourier.m function.')
+% disp(' ')
 
 % END
 

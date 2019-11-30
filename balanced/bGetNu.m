@@ -30,7 +30,7 @@ function NU = bGetNu(M,N);
 
 
 % entry statement
-disp('Entering bGetNu.m function...');
+disp('bGetNu.m function');
 
 % global declaration
 global ep
@@ -85,8 +85,8 @@ end    % end m loop
 
 
 % exit statement
-disp('Exiting bGetNu.m function.')
-disp(' ')
+% disp('Exiting bGetNu.m function.')
+% disp(' ')
 
 % END
 
