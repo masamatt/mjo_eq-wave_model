@@ -23,7 +23,7 @@ function Z = structureZ(p);
 
 
 % entry statement
-disp('Entering structureZ.m function...')
+disp('structureZ.m function')
 
 % global declaration
 global p0 zT zM
@@ -40,8 +40,8 @@ Z = T1*T2*(T3 - T4);
 
 
 % Exit statement
-disp('Exiting structureZ.m function.')
-disp(' ')
+% disp('Exiting structureZ.m function.')
+% disp(' ')
 
 % END
 

@@ -48,7 +48,7 @@ function fileName = getOutFile(modelName,pVal,y0Val,waveID);
 %
 
 % entry statement
-disp('Entering getOutFile.m function...')
+% disp('Entering getOutFile.m function...')
 
 
 % initialize output file name string
@@ -121,8 +121,8 @@ end
 
 
 % Exit Statement
-disp('Exiting getOutFile.m function.')
-disp(' ')
+% disp('Exiting getOutFile.m function.')
+% disp(' ')
 
 % END
 

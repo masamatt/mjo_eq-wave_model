@@ -15,7 +15,6 @@
 
 % display writing message
 disp('Writing current run status to ./output/runParameters.txt...')
-disp(' ')
 
 % zonal wave number
 zonalString      = ['Maximum Zonal Wavenumber,    M: ',int2str(mMax)];
@@ -118,8 +117,8 @@ clear cString space1 modelString outFileName outFileString
 clear timeString runTimeString outputType fileType RUNFILE
 
 % done writing message
-disp('Done writing run status to file.')
-disp(' ')
+% disp('Done writing run status to file.')
+% disp(' ')
 
 % END
 

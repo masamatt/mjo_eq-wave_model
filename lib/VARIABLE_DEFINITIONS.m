@@ -26,7 +26,7 @@
 %
 
 % Starting statement
-disp('Starting VARIABLE_DEFINITIONS.m script...')
+disp('VARIABLE_DEFINITIONS.m script')
 
 % global declaration
 global a
@@ -69,7 +69,7 @@ xiVec = [-xiMax:xiIncrement:xiMax];
 
 
 % Finishing statement
-disp('Finishing VARIABLE_DEFINITIONS.m script.')
-disp(' ')
+% disp('Finishing VARIABLE_DEFINITIONS.m script.')
+% disp(' ')
 
 % END

@@ -94,7 +94,6 @@ disp('             |                                                |  ');
 disp('             |                                                |  ');
 disp('             |________________________________________________|  ');
 disp('                                                                 ');
-disp('                                                                 ');
 
 % clear unneeded strings, temp variables
 clear zonalString meridionalString a0String b0String y0String pString Q0_cpString

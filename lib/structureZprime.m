@@ -25,7 +25,7 @@ function Zprime = structureZprime(p);
 
 
 % entry statement
-disp('Entering structureZprime.m function...')
+disp('structureZprime.m function')
 
 % global declaration
 global p0 zT zM
@@ -41,8 +41,8 @@ Zprime = T1*T2*T3;
 
 
 % Exit statement
-disp('Exiting structureZprime.m function.')
-disp(' ')
+% disp('Exiting structureZprime.m function.')
+% disp(' ')
 
 % END
 

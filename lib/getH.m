@@ -1,4 +1,4 @@
-function HnVec = getH(yHat,N);
+function HnVec = getH(yHat,N)
 % GETH - "get"s H, where H are the "script-H" polynomials. (function).
 %        This function takes a scalar value yHat and a maximum n
 %        value n=N and returns a 1-D vector of "script-H" polynomial
