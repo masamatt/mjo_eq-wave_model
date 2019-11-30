@@ -22,15 +22,10 @@
 %       the "output" directory.
 %
 
-
-
-% start balanced run
-disp('                                          ')
 disp('                                          ')
 disp('        =========================         ')
 disp('        *    BALANCED MODEL     *         ')
 disp('        =========================         ')
-disp('                                          ')
 disp('                                          ')
 
 % Balanced = 1 modelType
@@ -41,10 +36,6 @@ CONSTANT_DEFINITIONS;
 
 % Call VARIABLE_DEFINITIONS.m, initialize variables.
 VARIABLE_DEFINITIONS;
-
-% XXX XXX
-% % % convert_params;  *IMPLEMENT ME*
-% XXX XXX
 
 % Call STATUS.m, wait for 10 seconds
 STATUS;
@@ -62,91 +53,74 @@ balancedBasis;
 writeStatus;
 
 
+
 % Compute u field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing u field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('        Computing u field             ')
+disp('----------------------------------    ')
 uBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing u field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      End computing u field           ')
+disp('----------------------------------    ')
+disp('                                      ')
+
+
 
 % Compute v field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing v field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('        Computing v field             ')
+disp('----------------------------------    ')
 vBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing v field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      End computing v field           ')
+disp('----------------------------------    ')
+disp('                                      ')
+
+
 
 % Compute phi field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('           Computing phi field            ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('       Computing phi field            ')
+disp('----------------------------------    ')
 phiBalanced;
-disp('    ----------------------------------    ')
-disp('         End computing phi field          ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('     End computing phi field          ')
+disp('----------------------------------    ')
+disp('                                      ')
+
+
 
 % Compute omegaM field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('         Computing omegaM field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('     Computing omegaM field           ')
+disp('----------------------------------    ')
 omegaMBalanced;
-disp('    ----------------------------------    ')
-disp('        End computing omegaM field        ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('    End computing omegaM field        ')
+disp('----------------------------------    ')
+disp('                                      ')
+
+
 
 % Compute q field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing q field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('        Computing q field             ')
+disp('----------------------------------    ')
 qBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing q field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      End computing q field           ')
+disp('----------------------------------    ')
+disp('                                      ')
+
+
 
 % Print all balanced fields to a text file
 %%%bPrintResults;
-
 % End balanced run
-disp('                                          ')
 disp('                                          ')
 disp('        =========================         ')
 disp('        *   END BALANCED MODEL  *         ')
 disp('        =========================         ')
-disp('                                          ')
 disp('                                          ')
 
 % END
