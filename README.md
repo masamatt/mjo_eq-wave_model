@@ -203,9 +203,9 @@ A schematic outlining the computational procedure for the primitive equation mod
 
 #### V.ii Balanced Model
 [Potential vorticity principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf)<br>
-[Invertibility principle]()<br>
-[PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)
-<br>
+[Invertibility principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf)<br>
+[PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)<br>
+
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
