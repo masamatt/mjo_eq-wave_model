@@ -38,7 +38,7 @@ function IFfield = IFourier(NF,yHatVec,xiVec,M)
 %                 
 
 % Entry statement
-disp('    IFourier.m function      : inverse Fourier transform')
+disp('    IFourier.m function      : [m -> xi] inverse Fourier transform')
 
 
 % global declaration
