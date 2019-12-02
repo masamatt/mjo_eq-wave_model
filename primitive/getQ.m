@@ -62,7 +62,7 @@ function Q = getQ(A,NU,HC0,HC,Q0,a0,b0,y0,M,N)
 %              
 
 % Entry statement
-disp('  getQ.m function            : [Q_mnr] - calc p diabatic coeff.')
+disp('  getQ.m function            : [Q_mnr] - calc primitive diabatic coeff')
 
 
 % global declaration

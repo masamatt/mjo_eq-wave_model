@@ -40,7 +40,7 @@ function A = getA(M,N,V)
 %              
 
 % Entry statement
-disp('  getA.m function            : [A_mnr] - calc p normalization coeff.')
+disp('  getA.m function            : [A_mnr] - calc primitive normalization coeff')
 
 
 % global declaration

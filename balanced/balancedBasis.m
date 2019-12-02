@@ -58,7 +58,6 @@
 
 % entry statement
 disp('balancedBasis.m script')
-disp('----------------------')
 
 
 % Generate Script-H polys n = 0

@@ -51,64 +51,58 @@ disp('To ABORT run:  CTRL-C');disp(' ');
 pause(10);
 disp(' ');
 
+
 % Compute variables needed for all 5 fields
+disp('----------------------------------    ')
+disp('    Computing basis quantities        ')
+disp('----------------------------------    ')
 primitiveBasis;
+disp(' ')
 
 
 % Compute u field
 disp('----------------------------------    ')
 disp('        Computing u field             ')
 disp('----------------------------------    ')
-% Get Eigenfunction U
-Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 uPrimitive;  % Calculate u dependent on wave type
-clear Umnr
 disp(' ')
+
 
 
 % Compute v field
 disp('----------------------------------    ')
 disp('        Computing v field             ')
 disp('----------------------------------    ')
-% Get Eigenfunction V
-Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 vPrimitive;  % Calculate v dependent on wave type
-clear Vmnr
 disp(' ')
+
 
 
 % Compute phi field
 disp('----------------------------------    ')
 disp('       Computing phi field            ')
 disp('----------------------------------    ')
-% Get Eigenfunction PHI
-PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 phiPrimitive;  % Calculate phi dependent on wave type
-% DO NOT clear PHImnr, needed for omegaM calculation
 disp(' ')
+
 
 
 % Compute omegaM field
 disp('----------------------------------    ')
 disp('     Computing omegaM field           ')
 disp('----------------------------------    ')
-% Eigenfunction PHI ( PHImnr ) still avialble from above
-% Get expansion Structure function w_mnr(yHat)
-wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
 omegaMPrimitive;  % Calculate omegaM dependent on wave type
-clear PHImnr wmnr
 disp(' ')
+
 
 
 % Compute q field
 disp('----------------------------------    ')
 disp('        Computing q field             ')
 disp('----------------------------------    ')
-% Get expansion Structure function q_mnr(yHat)
-qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 qPrimitive;        % Calculate q dependent on wave type
-clear qmnr
 disp(' ')
+
 
 
 % write record to runParameters.txt file

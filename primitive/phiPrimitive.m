@@ -26,6 +26,9 @@
 % Start statement
 disp('  phiPrimitive.m script      : [phi(yHat,xi)]')
 
+% Get Eigenfunction PHI
+PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
+
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
 if waves == 0
@@ -59,7 +62,7 @@ disp('  Saving phi(yHat,xi)        : [phi] -> matFiles/field_phi.mat')
 save ./matFiles/field_phi.mat phi
 
 %%%clear PHIN PHIF Z phi   %%% save:  phi
-clear PHIN Z
+clear PHImnr PHIN Z
 
 % Finish statement
 % disp('Finished phiPrimitive.m script.')

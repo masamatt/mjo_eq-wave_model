@@ -55,7 +55,7 @@ function U = getEigenU(A,Nu,H0,H,yHatVec,M,N)
 %              
 
 % Entry statement
-disp('  getEigenU.m function       : [U(yHat)mnr] - eigen zonal wind U')
+disp('    getEigenU.m function     : [U(yHat)mnr] - eigen zonal wind U')
 
 
 % global declaration

@@ -16,7 +16,7 @@ function H0Vec = genH0(yHatVec)
 
 
 % Entry statement
-disp('  genH0.m function           : [H_0(yHat)] - generate structure functions')
+disp('  genH0.m function           : [H_0(yHat)] - generate n=0 H structure functions')
 
 % use array operation to calculate H0 
 H0Vec = pi^(-1/4)*exp((-1/2)*yHatVec.^2);

@@ -30,7 +30,7 @@ function NU = bGetNu(M,N)
 
 
 % entry statement
-disp('  bGetNu.m function          : [nu_mn] calc b frequencies');
+disp('  bGetNu.m function          : [nu_mn] calc balanced frequencies');
 
 % global declaration
 global ep

@@ -53,7 +53,7 @@ function q = prim2BalPV(ETA,A,NU,M,N)
 
 
 % Entry statement
-disp('  prim2BalPV.m function      : [q_mn] - compute p to b PV')
+disp('  prim2BalPV.m function      : [q_mn] - compute primitive to balanced PV')
 
 % global declarations
 global ep a

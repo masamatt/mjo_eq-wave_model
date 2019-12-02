@@ -27,7 +27,7 @@ function stream = bSpectralPsi(q,M,N)
 
 
 % entry statement
-disp('  bSpectralPsi.m function    : [psi_mn] - calc b spectral streamfunction')
+disp('  bSpectralPsi.m function    : [psi_mn] - calc balanced spectral streamfunction')
 
 % global declarations
 global ep a

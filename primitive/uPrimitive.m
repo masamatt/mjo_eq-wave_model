@@ -26,6 +26,9 @@
 % Start statement
 disp('  uPrimitive.m script        : [u(yHat,xi)]')
 
+% Get Eigenfunction U
+Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
+
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
 if waves == 0
@@ -59,7 +62,7 @@ disp('  Saving u(yHat,xi)          : [u] -> matFiles/field_u.mat')
 save ./matFiles/field_u.mat u
 
 %%%clear UN UF Z u   %%% save: u
-clear UN Z
+clear Umnr UN Z
 
 % Finish statement
 % disp('Finished uPrimitive.m script.')

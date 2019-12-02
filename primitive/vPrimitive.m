@@ -26,6 +26,9 @@
 % Start statement
 disp('  vPrimitive.m script        : [v(yHat,xi)]')
 
+% Get Eigenfunction V
+Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
+
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
 if waves == 0
@@ -59,7 +62,7 @@ disp('  Saving v(yHat,xi)          : [v] -> matFiles/field_v.mat')
 save ./matFiles/field_v.mat v
 
 %%%clear VN VF Z v    %%% save: v
-clear VN Z
+clear Vmnr VN Z
 
 % Finish statement
 % disp('Finished vPrimitive.m script.')

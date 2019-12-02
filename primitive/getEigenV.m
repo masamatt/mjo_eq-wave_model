@@ -62,7 +62,7 @@ function V = getEigenV(A,Nu,H0,H,yHatVec,M,N)
 %   
 
 % Entry statement
-disp('  getEigenV.m function       : [V(yHat)mnr] - eigen meridional wind V')
+disp('    getEigenV.m function     : [V(yHat)mnr] - eigen meridional wind V')
 
 
 % global declaration

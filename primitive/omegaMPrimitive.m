@@ -34,6 +34,12 @@
 % Start statement
 disp('  omegaMPrimitive.m script   : [omegaM(yHat,xi)]')
 
+% Get Eigenfunction PHI
+PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
+
+% Get expansion Structure function w_mnr(yHat)
+wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
+
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
 if waves == 0
@@ -72,7 +78,7 @@ disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
 save ./matFiles/field_omegaM.mat omegaM
 
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM
-clear wN wF Zprime w
+clear PHInmr wmnr wN wF Zprime w
 
 % Finish statement
 % disp('Finished omegaMPrimitive.m script.')

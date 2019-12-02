@@ -47,6 +47,9 @@ pause(10);
 disp(' ');disp(' ');
 
 % Compute variables needed for all 5 fields
+disp('----------------------------------    ')
+disp('    Computing basis quantities        ')
+disp('----------------------------------    ')
 balancedBasis;
 disp(' ')
 

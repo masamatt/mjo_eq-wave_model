@@ -23,7 +23,7 @@ function V = genNu(M,N)
 % POST:        3-D array of nu(m,n,r) values has been returned.
 %              
 % Entry statement
-disp('  genNu.m function           : [nu_nmr] - calc p frequencies')
+disp('  genNu.m function           : [nu_nmr] - calc primitive frequencies')
 
 % local variables
 R = 3;                % number of roots 

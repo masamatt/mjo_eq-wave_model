@@ -54,7 +54,7 @@ function PHI = getEigenPHI(A,Nu,H0,H,yHatVec,M,N)
 %    
 
 % Entry statement
-disp('  getEigenPHI.m function     : [PHI(yHat)mnr] - eigen geopotential PHI')
+disp('    getEigenPHI.m function   : [PHI(yHat)mnr] - eigen geopotential PHI')
 
 
 % global declaration

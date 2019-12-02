@@ -52,7 +52,6 @@
 
 % entry statement
 disp('primitiveBasis.m script')
-disp('-----------------------')
 
 % Generate Script-H polys n = 0
 H0 = genH0(yHatVec);
@@ -79,7 +78,7 @@ Eta = getEta(NUmnr,Qmnr,alfa,c,mMax,nMax);
 
 % exit statement
 % disp('Finished primitiveBasis.m script.')
-disp(' ')
+%disp(' ')
 
 % END
 
