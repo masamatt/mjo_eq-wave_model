@@ -34,38 +34,27 @@
 %
 
 % Start statement
-disp('Starting bPrintResults.m script...')
-disp(' ')
+disp('bPrintResults.m script')
 
 % load balanced u(yHat,xi)
 disp('Loading balanced u field...')
 load ./matFiles/field_b_u.mat
-disp('Finished loading balanced u field.')
-disp(' ')
 
 % load balanced v(yHat,xi)
 disp('Loading balanced v field...')
 load ./matFiles/field_b_v.mat
-disp('Finished loading balanced v field.')
-disp(' ')
 
 % load balanced phi(yHat,xi)
 disp('Loading balanced phi field...')
 load ./matFiles/field_b_phi.mat
-disp('Finished loading balanced phi field.')
-disp(' ')
 
 % load balanced omegaM(yHat,xi)
 disp('Loading balanced omegaM field...')
 load ./matFiles/field_b_omegaM.mat
-disp('Finished loading balanced omegaM field.')
-disp(' ')
 
 % load balanced q(yHat,xi)
 disp('Loading balanced q field...')
 load ./matFiles/field_b_q.mat
-disp('Finished loading balanced q field.')
-disp(' ')
 
 % get dimensional meridional distance (y) from dimensionless (yHat)
 yVec = (a/ep^(1/4))*yHatVec;
@@ -141,12 +130,6 @@ else
   fclose(fid);
 end
 disp('Finished writing output.')
-disp(' ')
-
-
-% Finish statement
-disp('Finished bPrintResults.m script.')
-disp(' ')
 
 % END
 

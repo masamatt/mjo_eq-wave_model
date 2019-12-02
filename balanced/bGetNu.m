@@ -83,10 +83,5 @@ for im = 1:mSize    % m loop
   end    % end n loop
 end    % end m loop
 
-
-% exit statement
-% disp('Exiting bGetNu.m function.')
-% disp(' ')
-
 % END
 

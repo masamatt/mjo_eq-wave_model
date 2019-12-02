@@ -41,9 +41,5 @@ disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
 save ./matFiles/field_b_q.mat b_q
 clear qH Z
 
-% Finish statement
-% disp('Finished qBalanced.m script.')
-% disp(' ')
-
 % END
 

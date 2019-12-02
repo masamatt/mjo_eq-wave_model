@@ -106,10 +106,5 @@ for im = 1:mSize    % m loop
   end    % end n loop
 end    % end m loop
 
-
-% exit statement
-% disp('Exiting bSpectralw.m function.')
-% disp(' ')
-
 % END
 

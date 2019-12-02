@@ -56,9 +56,5 @@ disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
 save ./matFiles/field_b_omegaM.mat b_omegaM
 clear wmn wH bwF Zprime
 
-% Finish statement
-% disp('Finished omegaMBalanced.m script.')
-% disp(' ')
-
 % END
 

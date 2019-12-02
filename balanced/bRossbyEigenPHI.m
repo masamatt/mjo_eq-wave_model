@@ -83,11 +83,5 @@ for yy = 1:ySize    % yHat loop
   end    % end m loop
 end    % end yHat loop
 
-
-
-% exit statement
-% disp('Exiting bRossbyEigenPHI.m function.')
-% disp(' ')
-
 % END
 

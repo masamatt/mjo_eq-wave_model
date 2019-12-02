@@ -1,4 +1,4 @@
-function [HC0,HCN] = bGenHC(y0,b0,N);
+function [HC0,HCN] = bGenHC(y0,b0,N)
 % BGENHC - calculates "script-H" polynomials for a constant-y-argument.
 %          bGenHC --> "b"alanced "Gen"erate script-"H" "C"onstant.
 %          This function takes scalar variables y0,b0, and N. It
@@ -68,10 +68,6 @@ HCN = getH(constY,(N+1));        % The function getH(yVal,nVal)
                                  % nVal = (N+1), then the Hn returned
                                  % will be calculated for n values
                                  % n = 1..(N+2).
-                                        
-% Exit statement
-% disp('Exiting bGenHC.m function.')
-% disp(' ')
 
 % END
 

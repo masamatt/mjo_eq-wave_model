@@ -114,11 +114,5 @@ qmn = prim2BalPV(Eta,Amnr,NUmnr,mMax,nMax);
 % (using primitive-rossby-PV --> balanced PV).
 psimn = bSpectralPsi(qmn,mMax,nMax);
 
-
-
-% exit statement
-% disp('Finished balancedBasis.m script.')
-% disp(' ')
-
 % END
 

@@ -44,9 +44,5 @@ disp('  Saving b_u(yHat,xi)        : [b_u] -> matFiles/field_b_u.mat')
 save ./matFiles/field_b_u.mat b_u
 clear Umn U_SE Z
 
-% Finish statement
-% disp('Finished uBalanced.m script.')
-% disp(' ')
-
 % END
 

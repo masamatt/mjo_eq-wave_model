@@ -80,10 +80,5 @@ for im = 1:mSize       % m loop
   end
 end
 
-
-% exit statement
-% disp('Exiting bSpectralPsi.m function.')
-% disp(' ')
-
 % END
 

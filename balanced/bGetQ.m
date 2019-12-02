@@ -143,11 +143,6 @@ for im = 1:mSize        % m loop
     
   end    % end n loop
 end    % end m loop
-    
-
-% Exit statement
-% disp('Exiting bGetQ.m function.')
-% disp(' ')
 
 % END
 

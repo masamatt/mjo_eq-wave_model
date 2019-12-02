@@ -44,9 +44,5 @@ disp('  Saving b_v(yHat,xi)        : [b_v] -> matFiles/field_b_v.mat')
 save ./matFiles/field_b_v.mat b_v
 clear Vmn V_SE Z
 
-% Finish statement
-% disp('Finished vBalanced.m script.')
-% disp(' ')
-
 % END
 
