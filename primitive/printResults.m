@@ -35,38 +35,28 @@
 %
 
 % Start statement
-disp('Starting printResults.m script...')
-disp(' ')
+disp('printResults.m script')
 
 % load u(yHat,xi)
 disp('Loading u field...')
 load ./matFiles/field_u.mat
-disp('Finished loading u field.')
-disp(' ')
 
 % load v(yHat,xi)
 disp('Loading v field...')
 load ./matFiles/field_v.mat
-disp('Finished loading v field.')
-disp(' ')
 
 % load phi(yHat,xi)
 disp('Loading phi field...')
 load ./matFiles/field_phi.mat
-disp('Finished loading phi field.')
-disp(' ')
 
 % load omegaM(yHat,xi)
 disp('Loading omegaM field...')
 load ./matFiles/field_omegaM.mat
-disp('Finished loading omegaM field.')
-disp(' ')
 
 % load q(yHat,xi)
 disp('Loading q field...')
 load ./matFiles/field_q.mat
-disp('Finished loading q field.')
-disp(' ')
+
 
 % get dimensional meridional distance (y) from dimensionless (yHat)
 yVec = (a/ep^(1/4))*yHatVec;
@@ -78,14 +68,10 @@ xSize = length(xiVec);
 % %%% save:  yVec
 disp('Saving y coordinate in file: ./matFiles/coord_y.mat')
 save ./matFiles/coord_y.mat yVec
-disp('Done saving.')
-disp(' ')
 
 % %%% save:  xiVec
 disp('Saving xi coordinate in file: ./matFiles/coord_xi.mat')
 save ./matFiles/coord_xi.mat xiVec
-disp('Done saving.')
-disp(' ')
 
 
 % initialize "T"otal array. T is composed of y,xi,u,v,phi,omegaM,q.
@@ -154,12 +140,6 @@ else
   fclose(fid);
 end
 disp('Finished writing output.')
-disp(' ')
-
-
-% Finish statement
-disp('Finished printResults.m script.')
-disp(' ')
 
 % END
 

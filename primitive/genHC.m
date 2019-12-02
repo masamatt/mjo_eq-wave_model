@@ -68,10 +68,5 @@ HCN = getH(constY,(N+1));        % The function getH(yVal,nVal)
                                  % will be calculated for n values
                                  % n = 1..(N+2).
 
-
-% Exit statement
-% disp('Exiting genHC.m function.')
-% disp(' ')
-
 % END
 

@@ -64,9 +64,5 @@ save ./matFiles/field_q.mat q
 %%%clear qN qF Z q   %%% save: q
 clear qmnr qN Z
 
-% Finish statement
-% disp('Finished qPrimitive.m script.')
-% disp(' ')
-
 % END
 

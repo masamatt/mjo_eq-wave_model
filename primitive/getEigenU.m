@@ -169,10 +169,5 @@ for yy = 1:ySize         % yHat loop
   end    % end m-loop
 end    % end yHat-loop
 
-
-% Exit statement
-% disp('Exiting getEigenU.m function.')
-% disp(' ')
-
 % END
 

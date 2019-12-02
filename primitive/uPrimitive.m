@@ -64,9 +64,5 @@ save ./matFiles/field_u.mat u
 %%%clear UN UF Z u   %%% save: u
 clear Umnr UN Z
 
-% Finish statement
-% disp('Finished uPrimitive.m script.')
-% disp(' ')
-
 % END
 

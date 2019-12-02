@@ -64,9 +64,5 @@ save ./matFiles/field_v.mat v
 %%%clear VN VF Z v    %%% save: v
 clear Vmnr VN Z
 
-% Finish statement
-% disp('Finished vPrimitive.m script.')
-% disp(' ')
-
 % END
 

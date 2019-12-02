@@ -65,10 +65,5 @@ for im = 1:mSize
   end
 end
 
-
-% Exit statement
-% disp('Exiting genNu.m function.')
-% disp(' ')
-
 % END
 

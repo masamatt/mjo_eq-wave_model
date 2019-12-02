@@ -80,9 +80,5 @@ save ./matFiles/field_omegaM.mat omegaM
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM
 clear PHInmr wmnr wN wF Zprime w
 
-% Finish statement
-% disp('Finished omegaMPrimitive.m script.')
-% disp(' ')
-
 % END
 

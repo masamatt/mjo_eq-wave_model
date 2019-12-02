@@ -1,4 +1,4 @@
-function RNfield = rossbyNormalMode(ETA,EIGEN,yHatVec,M,N);
+function RNfield = rossbyNormalMode(ETA,EIGEN,yHatVec,M,N)
 % ROSSBYNORMALMODE - "rossby" component "Normal" "Mode" expansion.
 %                    This function computes the Rossby wave component only
 %                    by doing a Normal Mode expansion of the field
@@ -90,11 +90,6 @@ for yy = 1:ySize    % yHat loop
     RNfield(yy,im) = sumVar;
   end    % end m loop
 end    % end yHat loop
-
-
-% Exit statement
-% disp('Exiting rossbyNormalMode.m function.')
-% disp(' ')
 
 % END
 

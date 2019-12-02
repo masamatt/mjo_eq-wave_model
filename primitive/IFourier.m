@@ -74,11 +74,5 @@ for yy = 1:ySize    % yHat loop
   end    
 end
 
-
-
-% Exit statement
-% disp('Exiting IFourier.m function.')
-% disp(' ')
-
 % END
 

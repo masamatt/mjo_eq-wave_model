@@ -164,10 +164,5 @@ for yy = 1:ySize    % yHat loop
   end    % end m loop
 end    % end yHat loop
 
-
-% Exit statement
-% disp('Exiting getEigenV.m function.')
-% disp(' ')
-
 % END
 

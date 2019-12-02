@@ -91,7 +91,7 @@ for im=1:mSize
       if nVec(jn) > 0
         % m = 0 and r = 0
         % ---------------
-        if (mVec(im) == 0) & (rVec(kr) == 0)
+        if (mVec(im) == 0) && (rVec(kr) == 0)
           A(im,jn,kr) = (2*nVec(jn) + 1)^(-1/2);
         % m != 0 and/or r != 0
         % --------------------
@@ -132,11 +132,6 @@ for im=1:mSize
     end  % end r-loop
   end  % end n-loop
 end  % end m-loop
-
-
-% Exit statement
-% disp('Exiting getA.m function.')
-% disp(' ')
 
 % END
 

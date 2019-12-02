@@ -177,10 +177,5 @@ for yy = 1:ySize    % yHat loop
   end    % end m loop
 end    % end yHat loop
 
-
-% Exit statement
-% disp('Exiting getStructureq.m function.')
-% disp(' ')
-
 % END
 

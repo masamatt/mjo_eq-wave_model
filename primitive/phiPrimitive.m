@@ -64,9 +64,5 @@ save ./matFiles/field_phi.mat phi
 %%%clear PHIN PHIF Z phi   %%% save:  phi
 clear PHImnr PHIN Z
 
-% Finish statement
-% disp('Finished phiPrimitive.m script.')
-% disp(' ')
-
 % END
 
