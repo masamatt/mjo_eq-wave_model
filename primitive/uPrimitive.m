@@ -9,6 +9,8 @@
 %               MM - August 06 2008 - removed call to internal matlab
 %                    'pack'.  In current versions of matlab, pack can
 %                    only be called from the command line.
+%               MM - Dec 02 2019 - tucked getEigenU.m into this script.
+%
 % CALL SYNTAX:  uPrimitive;
 %
 % PRE: The following scripts have been been called:
