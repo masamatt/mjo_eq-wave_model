@@ -103,7 +103,7 @@ clear tmpArray
 % -----------------------------------------
 
 % iConstant = "i"maginary "Constant"; used in loop, so just compute once.
-iConstant = i*((2*Omega)/(Rd*Gmma));
+iConstant = 1i*((2*Omega)/(Rd*Gmma));
 
 
 for yy = 1:ySize    % yHat loop

@@ -127,7 +127,7 @@ for yy = 1:ySize    % yHat loop
           % --------------
           else
             T1 = (ep*Nu(im,jn,kr)^2-mVec(im)^2)*H(yy,nVec(jn));
-            V(yy,im,jn,kr) = -i*A(im,jn,kr)*T1;
+            V(yy,im,jn,kr) = -1i*A(im,jn,kr)*T1;
           end
         
         % n = 0
@@ -137,7 +137,7 @@ for yy = 1:ySize    % yHat loop
           % -------
           if rVec(kr) ~= 1
             T1 = (ep*Nu(im,jn,kr)^2-mVec(im)^2)*H0(yy);
-            V(yy,im,jn,kr) = -i*A(im,jn,kr)*T1;
+            V(yy,im,jn,kr) = -1i*A(im,jn,kr)*T1;
           % r = 1
           % -----
           else

@@ -85,7 +85,7 @@ for im = 1:mSize       % m loop
         % num = "num"erator of eta
         num = kappa*Q_mnr;
         % den = "den"ominator of eta
-        den = alfa + i*(2*Omega*NU_mnr - (c/a)*mVec(im));
+        den = alfa + 1i*(2*Omega*NU_mnr - (c/a)*mVec(im));
         ETA(im,jn,kr) = num/den;
       elseif (Q_mnr == -9999) && (NU_mnr == -9999)
         % Error Case
