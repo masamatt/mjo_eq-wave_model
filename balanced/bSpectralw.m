@@ -88,7 +88,7 @@ for im = 1:mSize    % m loop
     if nVec(jn) == 0
       %%% (EQ 1) %%%
       L1 = T1*Q(im,jn);     % L1 = "L"oop variable "1"
-      L2 = T2*(alfa - (i*mVec(im)*c)/a);
+      L2 = T2*(alfa - (1i*mVec(im)*c)/a);
       L3 = 2^(-1/2)*stream(im,(jn+1));
       w(im,jn) = L1 - L2*L3;
     
@@ -97,7 +97,7 @@ for im = 1:mSize    % m loop
     else
       %%% (EQ 2) %%%
       L1 = T1*Q(im,jn);
-      L2 = T2*(alfa - (i*mVec(im)*c)/a);
+      L2 = T2*(alfa - (1i*mVec(im)*c)/a);
       L3 = ((nVec(jn)+1)/2)^(1/2)*stream(im,(jn+1));
       L4 = (nVec(jn)/2)^(1/2)*stream(im,(jn-1));
       w(im,jn) = L1 - L2*(L3 + L4);

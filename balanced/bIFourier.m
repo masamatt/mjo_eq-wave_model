@@ -71,7 +71,7 @@ for yy = 1:ySize    % yHat loop
     sumVar = 0;
     
     for im = 1:mSize    % m loop
-      sumVar = sumVar + HF(yy,im)*exp((i*mVec(im)*xiVec(xx))/a);
+      sumVar = sumVar + HF(yy,im)*exp((1i*mVec(im)*xiVec(xx))/a);
     end
     
     IFfield(yy,xx) = real(sumVar);
