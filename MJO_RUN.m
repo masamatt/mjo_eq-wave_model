@@ -12,7 +12,6 @@ disp('    *    MJO: Primitive/Balanced Models    *    ')
 disp('    *                                      *    ')
 disp('    ****************************************    ')
 disp('                                                ')
-disp('                                                ')
 
 clear;
 
@@ -98,8 +97,6 @@ fprintf(RUNFILE,'Start Time:     %s\n',startTimeString);
 fprintf(RUNFILE,'Stop Time:      %s\n',stopTimeString);
 fclose(RUNFILE);
 disp('                                                ')
-disp('                                                ')
-disp('                                                ')
 disp('    ****************************************    ')
 disp('    *                                      *    ')
 disp('    *         End MJO Model Run            *    ')
@@ -112,7 +109,6 @@ disp('                                                ')
 % PLOTTING
 disp(' ')
 disp('   ********* PLOT MJO RUN RESULTS *********')
-disp(' ')
 
 mjo_var_copy;
 MJO_PLOT;

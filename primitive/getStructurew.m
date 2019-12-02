@@ -1,4 +1,4 @@
-function w = getStructurew(NU,PHI,yHatVec,M,N);
+function w = getStructurew(NU,PHI,yHatVec,M,N)
 % GETSTRUCTUREW - function to compute w_mnr(yHat).
 %                 w_mnr(yHat) does not appear in the paper as
 %                 a defined quantity. It is defined here for
@@ -61,7 +61,7 @@ function w = getStructurew(NU,PHI,yHatVec,M,N);
 %
 
 % Entry statement
-disp('Entering getStructurew.m function...')
+disp('    getStructurew.m function : [w(yHat)mnr] - expansion w structure')
 
 
 % global declaration
@@ -103,7 +103,7 @@ clear tmpArray
 % -----------------------------------------
 
 % iConstant = "i"maginary "Constant"; used in loop, so just compute once.
-iConstant = i*((2*Omega)/(Rd*Gmma));
+iConstant = 1i*((2*Omega)/(Rd*Gmma));
 
 
 for yy = 1:ySize    % yHat loop
@@ -114,12 +114,12 @@ for yy = 1:ySize    % yHat loop
         
         % n = 0 and r = 1
         % ---------------
-        if (nVec(jn) == 0) & (rVec(kr) == 1)
+        if (nVec(jn) == 0) && (rVec(kr) == 1)
           w(yy,im,jn,kr) = -9999;
           
         % n = -1 and r = 0,1
         % ------------------
-        elseif (nVec(jn) == -1) & (rVec(kr) ~= 2)
+        elseif (nVec(jn) == -1) && (rVec(kr) ~= 2)
           w(yy,im,jn,kr) = -9999;
           
         % all other n,r
@@ -134,11 +134,6 @@ for yy = 1:ySize    % yHat loop
     end    % end n loop
   end    % end m loop
 end    % end yHat loop
-  
-
-% Exit statement
-disp('Exiting getStructurew.m function.')
-disp(' ')
 
 % END
 

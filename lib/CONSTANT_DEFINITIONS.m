@@ -21,7 +21,7 @@
 %
 
 % Starting statement
-disp('Starting CONSTANT_DEFINITIONS.m script...')
+disp('CONSTANT_DEFINITIONS.m script')
 
 % global declaration (this same declaration must also be
 % included in a function file to access these constants.
@@ -75,12 +75,6 @@ ep = (4*Omega^2*a^2)/cBar^2;
 % Constant coefficient for Rayleigh friction 
 % and Newtonian cooling. [1/s]
 % "alfa" = alpha... alpha already taken
-alfa = 2.894*10^(-6); 
+alfa = 2.894*10^(-6);
 
-% Finish statement
-disp('Finishing CONSTANT_DEFINITIONS.m script.')
-disp(' ')  % empty line.. cosmetics
-
-% END                             
-                      
-                      
+% END

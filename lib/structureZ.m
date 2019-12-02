@@ -1,4 +1,4 @@
-function Z = structureZ(p);
+function Z = structureZ(p)
 % STRUCTUREZ - Computes the vertical structure function Z(z).
 %              Here z = ln(p0/p), log-pressure. p0 = 1010mb
 %              is the surface pressure in the model atmosphere.
@@ -23,7 +23,7 @@ function Z = structureZ(p);
 
 
 % entry statement
-disp('Entering structureZ.m function...')
+disp('    structureZ.m function    : [Z(p)] apply Z vertical structure')
 
 % global declaration
 global p0 zT zM
@@ -37,11 +37,6 @@ T2 = exp((z - zM)/2);
 T3 = (zT/(2*pi))*sin((pi*z)/zT);
 T4 = cos((pi*z)/zT);
 Z = T1*T2*(T3 - T4);
-
-
-% Exit statement
-disp('Exiting structureZ.m function.')
-disp(' ')
 
 % END
 

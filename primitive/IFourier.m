@@ -1,4 +1,4 @@
-function IFfield = IFourier(NF,yHatVec,xiVec,M);
+function IFfield = IFourier(NF,yHatVec,xiVec,M)
 % IFOURIER - computes "I"nverse "Fourier" Transformed fields u,v,phi,q,w.
 %            This takes the 2-D array NF_m(yHat) = NF(yIndex,mIndex),
 %            which was recovered from a normal mode expansion,
@@ -38,7 +38,7 @@ function IFfield = IFourier(NF,yHatVec,xiVec,M);
 %                 
 
 % Entry statement
-disp('Entering IFourier.m function...')
+disp('    IFourier.m function      : [m -> xi] inverse Fourier transform')
 
 
 % global declaration
@@ -67,18 +67,12 @@ for yy = 1:ySize    % yHat loop
     sumVar = 0;
     
     for im = 1:mSize    % m loop
-      sumVar = sumVar + NF(yy,im)*exp((i*mVec(im)*xiVec(xx))/a);
+      sumVar = sumVar + NF(yy,im)*exp((1i*mVec(im)*xiVec(xx))/a);
     end
     
     IFfield(yy,xx) = real(sumVar);
   end    
 end
-
-
-
-% Exit statement
-disp('Exiting IFourier.m function.')
-disp(' ')
 
 % END
 

@@ -1,4 +1,4 @@
-function V = bRossbyEigenV(H0,H,yHatVec,M,N);
+function V = bRossbyEigenV(H0,H,yHatVec,M,N)
 % BROSSBYEIGENV - Calculates the Rossby Wave approximation to
 %                 the Eigenfunction V in the primitive model.
 %                 bRossbyEigenV = "b"alanced model "Rossby" wave
@@ -33,7 +33,7 @@ function V = bRossbyEigenV(H0,H,yHatVec,M,N);
 %    
 
 % entry statement
-disp('Entering bRossbyEigenV.m function...');
+disp('    bRossbyEigenV.m function : [V(yHat)mn] - rossby approx. eigen V');
 
 % local variables
 ySize = length(yHatVec);
@@ -65,24 +65,18 @@ for yy = 1:ySize    % yHat loop
       % -----
       if nVec(jn) == 0
         %%% (EQ 2) %%%
-        V(yy,im,jn) = i*mVec(im)*H0(yy);
+        V(yy,im,jn) = 1i*mVec(im)*H0(yy);
         
       % n != 0
       % ------
       else
         %%% (EQ 1) %%%
-        V(yy,im,jn) = i*mVec(im)*H(yy,nVec(jn));
+        V(yy,im,jn) = 1i*mVec(im)*H(yy,nVec(jn));
       end
       
     end    % end n loop
   end    % end m loop
 end    % end yHat loop
-
-
-
-% exit statement
-disp('Exiting bRossbyEigenV.m function.')
-disp(' ')
 
 % END
 

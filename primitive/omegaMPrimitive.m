@@ -16,6 +16,8 @@
 %               MM August 06 2008 - removed call to internal matlab
 %                  'pack'.  In current versions of matlab, pack can
 %                  only be called from the command line.
+%               MM December 02 2019 - tucked getEigenPhi.m, and 
+%                  getStructurew.m into this script.
 %
 % CALL SYNTAX:  omegaMPrimitive;
 %
@@ -32,9 +34,13 @@
 %
 
 % Start statement
-disp('Starting omegaMPrimitive.m script...')
-disp(' ')
+disp('  omegaMPrimitive.m script   : [omegaM(yHat,xi)]')
 
+% Get Eigenfunction PHI
+PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
+
+% Get expansion Structure function w_mnr(yHat)
+wmnr = getStructurew(NUmnr,PHImnr,yHatVec,mMax,nMax);
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -70,27 +76,11 @@ omegaMF = -pM*86400*wF;
 omegaM = Zprime*omegaMF;
 
 % Save omegaM field
-disp('Saving omegaM(yHat,xi) in file: ./matFiles/field_omegaM.mat')
+disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
 save ./matFiles/field_omegaM.mat omegaM
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate omegaM
-disp('Clearing w specific variables.')
-
 
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM
-clear wN wF Zprime w
-
-
-disp('Done clearing.')
-disp(' ')
-
-
-
-% Finish statement
-disp('Finished omegaMPrimitive.m script.')
-disp(' ')
+clear PHInmr wmnr wN wF Zprime w
 
 % END
 

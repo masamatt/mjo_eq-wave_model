@@ -1,4 +1,4 @@
-function Hfield = bHermite(COEFF,H0,H,yHatVec,M,N);
+function Hfield = bHermite(COEFF,H0,H,yHatVec,M,N)
 % BHERMITE - Computes "b"alanced "Hermite" Inverse Transform.
 %            This function will be used to Hermite expand the
 %            Potential Vorticity (q), Streamfunction (psi), and
@@ -64,7 +64,7 @@ function Hfield = bHermite(COEFF,H0,H,yHatVec,M,N);
 %              
 
 % Entry statement
-disp('Entering bHermite.m function...')
+disp('    bHermite.m function      : [n -> yHat] b inverse Hermite transform')
 
 
 % local variables
@@ -107,12 +107,6 @@ for yy = 1:ySize    % yHat loop
     Hfield(yy,im) = sumVar;
   end    % end m loop
 end    % end yHat loop
-
-
-
-% Exit statement
-disp('Exiting bHermite.m function.')
-disp(' ')
 
 % END
 

@@ -1,4 +1,4 @@
-function q = bSpectralq(NU,Q,alfa,c,M,N);
+function q = bSpectralq(NU,Q,alfa,c,M,N)
 % BSPECTRALQ - bSpectralq = "b"alanced model "Spectral" "q".
 %              Calculates and returns a 2-D array of spectral space
 %              potential vorticity, q = q_mn = q(mIndex,nIndex).
@@ -44,7 +44,7 @@ function q = bSpectralq(NU,Q,alfa,c,M,N);
 
 
 % entry statement
-disp('Entering bSpectralq.m function...')
+disp('bSpectralq.m function')
 
 % global declarations
 global Omega kappa cBar ep a
@@ -99,7 +99,7 @@ for im = 1:mSize       % m loop
     if nVec(jn) == 0
       %%% (EQ 1) %%%
       num = 2^(-1/2)*Q(im,(jn+1));
-      den = alfa + i*(2*Omega*NU(im,jn) - c*(mVec(im)/a));
+      den = alfa + 1i*(2*Omega*NU(im,jn) - c*(mVec(im)/a));
       q(im,jn) = T1*(num/den);
     
     % n != 0
@@ -109,17 +109,12 @@ for im = 1:mSize       % m loop
       L1 = sqrt((nVec(jn)+1)/2)*Q(im,(jn+1));
       L2 = sqrt(nVec(jn)/2)*Q(im,(jn-1));
       num = L1 + L2;
-      den = alfa + i*(2*Omega*NU(im,jn) - c*(mVec(im)/a));
+      den = alfa + 1i*(2*Omega*NU(im,jn) - c*(mVec(im)/a));
       q(im,jn) = T1*(num/den);
     end
     
   end    % end n loop
 end    % end m loop
-
-
-% exit statement
-disp('Exiting bSpectralq.m function.')
-disp(' ')
 
 % END
 

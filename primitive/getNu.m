@@ -1,4 +1,4 @@
-function NU = getNu(m,n,r);
+function NU = getNu(m,n,r)
 % GETNU - Calculates and returns nu(scalar,dimensionless frequency).
 %         For valid values of indicies m,n,r, a valid value for nu
 %         is returned. Otherwise, an error value: -9999 is returned.
@@ -227,10 +227,8 @@ else
   % ++ error case ++ --> -9999 is returned.
 end
 
-
 % return NU
 NU = nu;
-
 
 % END
 

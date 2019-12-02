@@ -22,16 +22,12 @@
 %       the "output" directory.
 %
 
-
-
-% start balanced run
-disp('                                          ')
 disp('                                          ')
 disp('        =========================         ')
 disp('        *    BALANCED MODEL     *         ')
 disp('        =========================         ')
 disp('                                          ')
-disp('                                          ')
+
 
 % Balanced = 1 modelType
 modelType = 1;
@@ -42,112 +38,74 @@ CONSTANT_DEFINITIONS;
 % Call VARIABLE_DEFINITIONS.m, initialize variables.
 VARIABLE_DEFINITIONS;
 
-% XXX XXX
-% % % convert_params;  *IMPLEMENT ME*
-% XXX XXX
-
 % Call STATUS.m, wait for 10 seconds
 STATUS;
 disp('Sleeping for 10 seconds...');
 pause(1);
-disp('To ABORT run:  CTRL-C');
-disp('');
+disp('To ABORT run:  CTRL-C');disp(' ');
 pause(10);
-disp('');disp('');
+disp(' ');disp(' ');
 
 % Compute variables needed for all 5 fields
+disp('----------------------------------    ')
+disp('    Computing basis quantities        ')
+disp('----------------------------------    ')
 balancedBasis;
-
-% write record to runParameters.txt file
-writeStatus;
+disp(' ')
 
 
 % Compute u field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing u field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      Computing b_u field             ')
+disp('----------------------------------    ')
 uBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing u field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('                                      ')
+
+
 
 % Compute v field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing v field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      Computing b_v field             ')
+disp('----------------------------------    ')
 vBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing v field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('                                      ')
+
+
 
 % Compute phi field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('           Computing phi field            ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('     Computing b_phi field            ')
+disp('----------------------------------    ')
 phiBalanced;
-disp('    ----------------------------------    ')
-disp('         End computing phi field          ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('                                      ')
+
+
 
 % Compute omegaM field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('         Computing omegaM field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('    Computing b_omegaM field          ')
+disp('----------------------------------    ')
 omegaMBalanced;
-disp('    ----------------------------------    ')
-disp('        End computing omegaM field        ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('                                      ')
+
 
 % Compute q field
-disp('                                          ')
-disp('                                          ')
-disp('    ----------------------------------    ')
-disp('            Computing q field             ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('----------------------------------    ')
+disp('      Computing b_q field             ')
+disp('----------------------------------    ')
 qBalanced;
-disp('    ----------------------------------    ')
-disp('          End computing q field           ')
-disp('    ----------------------------------    ')
-disp('                                          ')
-disp('                                          ')
+disp('                                      ')
 
+
+% write record to runParameters.txt file
+writeStatus;
 % Print all balanced fields to a text file
 %%%bPrintResults;
-
 % End balanced run
-disp('                                          ')
 disp('                                          ')
 disp('        =========================         ')
 disp('        *   END BALANCED MODEL  *         ')
 disp('        =========================         ')
-disp('                                          ')
-disp('                                          ')
 
 % END
 

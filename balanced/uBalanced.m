@@ -22,9 +22,7 @@
 %
 
 % Start statement
-disp('Starting uBalanced.m script...')
-disp(' ')
-
+disp('  uBalanced.m script         : [b_u(yHat,xi)] - b zonal wind')
 
 % Get Rossby wave approximation to Eigenfunction U
 Umn = bRossbyEigenU(H0,Hn,yHatVec,mMax,nMax);
@@ -42,21 +40,9 @@ Z = structureZ(p);
 b_u = Z*bUF;
 
 % save b_u field
-disp('Saving b_u(yHat,xi) variable in file: ./matFiles/field_b_u.mat')
+disp('  Saving b_u(yHat,xi)        : [b_u] -> matFiles/field_b_u.mat')
 save ./matFiles/field_b_u.mat b_u
-disp('Done saving.')
-disp(' ')
-
-% clear variables used to calculate b_u
-disp('Clearing balanced u specific variables.')
 clear Umn U_SE Z
-disp('Done clearing.')
-disp(' ')
-
-
-% Finish statement
-disp('Finished uBalanced.m script.')
-disp(' ')
 
 % END
 

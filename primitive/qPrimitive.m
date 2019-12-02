@@ -9,6 +9,9 @@
 %               MM - August 06 2008 - removed call to internal matlab
 %                    'pack'.  In current versions of matlab, pack can
 %                    only be called from the command line.
+%               MM - December 02 2019 - tucked getStructureq.m into 
+%                    this script.
+%
 % CALL SYNTAX:  qPrimitive;
 %
 % PRE: The following scripts have been been called:
@@ -24,9 +27,10 @@
 %
 
 % Start statement
-disp('Starting qPrimitive.m script...')
-disp(' ')
+disp('  qPrimitive.m script        : [q(yHat,xi)]')
 
+% Get expansion Structure function q_mnr(yHat)
+qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -57,25 +61,11 @@ Z = structureZ(p);
 q = Z*qF;
 
 % Save q field
-disp('Saving q(yHat,xi) variable in file: ./matFiles/field_q.mat')
+disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
 save ./matFiles/field_q.mat q
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate q
-disp('Clearing q specific variables.')
 
 %%%clear qN qF Z q   %%% save: q
-clear qN Z
-
-disp('Done clearing.')
-disp(' ')
-
-
-
-% Finish statement
-disp('Finished qPrimitive.m script.')
-disp(' ')
+clear qmnr qN Z
 
 % END
 

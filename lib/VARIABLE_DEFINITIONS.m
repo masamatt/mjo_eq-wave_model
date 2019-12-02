@@ -26,7 +26,7 @@
 %
 
 % Starting statement
-disp('Starting VARIABLE_DEFINITIONS.m script...')
+disp('VARIABLE_DEFINITIONS.m script')
 
 % global declaration
 global a
@@ -66,10 +66,5 @@ xiIncrement = 50000;
 % have increments of 50 km. (Close to the increments in
 % the meridional direction).
 xiVec = [-xiMax:xiIncrement:xiMax];  
-
-
-% Finishing statement
-disp('Finishing VARIABLE_DEFINITIONS.m script.')
-disp(' ')
 
 % END

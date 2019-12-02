@@ -9,6 +9,9 @@
 %               MM - August 06 2008 - removed call to internal matlab
 %                    'pack'.  In current versions of matlab, pack can
 %                    only be called from the command line.
+%               MM - December 02 2019 - tucked getEigenPHI.m into this
+%                    script.
+%
 % CALL SYNTAX:  phiPrimitive;
 %
 % PRE: The following scripts have been been called:
@@ -24,9 +27,10 @@
 %
 
 % Start statement
-disp('Starting phiPrimitive.m script...')
-disp(' ')
+disp('  phiPrimitive.m script      : [phi(yHat,xi)]')
 
+% Get Eigenfunction PHI
+PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -57,27 +61,11 @@ Z = structureZ(p);
 phi = Z*PHIF;
 
 % Save phi field
-disp('Saving phi(yHat,xi) variable in file: ./matFiles/field_phi.mat')
+disp('  Saving phi(yHat,xi)        : [phi] -> matFiles/field_phi.mat')
 save ./matFiles/field_phi.mat phi
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate phi
-disp('Clearing phi specific variables.')
-
 
 %%%clear PHIN PHIF Z phi   %%% save:  phi
-clear PHIN Z
-
-
-disp('Done clearing.')
-disp(' ')
-
-
-
-% Finish statement
-disp('Finished phiPrimitive.m script.')
-disp(' ')
+clear PHImnr PHIN Z
 
 % END
 

@@ -1,4 +1,4 @@
-function A = getA(M,N,V);
+function A = getA(M,N,V)
 % GETA - Calculates normalization coefficients Amnr, returns 3-D array.
 %        (function). This function takes as arguments the scalars
 %        M=mMax and N=nMax. It also takes the 3-D array
@@ -40,7 +40,7 @@ function A = getA(M,N,V);
 %              
 
 % Entry statement
-disp('Entering getA.m function...')
+disp('  getA.m function            : [A_mnr] - calc primitive normalization coeff')
 
 
 % global declaration
@@ -91,7 +91,7 @@ for im=1:mSize
       if nVec(jn) > 0
         % m = 0 and r = 0
         % ---------------
-        if (mVec(im) == 0) & (rVec(kr) == 0)
+        if (mVec(im) == 0) && (rVec(kr) == 0)
           A(im,jn,kr) = (2*nVec(jn) + 1)^(-1/2);
         % m != 0 and/or r != 0
         % --------------------
@@ -132,11 +132,6 @@ for im=1:mSize
     end  % end r-loop
   end  % end n-loop
 end  % end m-loop
-
-
-% Exit statement
-disp('Exiting getA.m function.')
-disp(' ')
 
 % END
 

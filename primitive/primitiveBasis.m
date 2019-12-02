@@ -51,8 +51,7 @@
 %
 
 % entry statement
-disp('Starting primitiveBasis.m script...')
-disp(' ')
+disp('primitiveBasis.m script')
 
 % Generate Script-H polys n = 0
 H0 = genH0(yHatVec);
@@ -75,11 +74,6 @@ Qmnr = getQ(Amnr,NUmnr,HC0,HC,Q0,a0,b0,y0,mMax,nMax);
 
 % Get expansion coefficient Eta
 Eta = getEta(NUmnr,Qmnr,alfa,c,mMax,nMax);
-
-
-% exit statement
-disp('Finished primitiveBasis.m script.')
-disp(' ')
 
 % END
 

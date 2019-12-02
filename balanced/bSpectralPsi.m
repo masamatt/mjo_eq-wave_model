@@ -1,4 +1,4 @@
-function stream = bSpectralPsi(q,M,N);
+function stream = bSpectralPsi(q,M,N)
 % BSPECTRALPSI - "b"alanced model "Spectral" "Psi".
 %                Calculates and returns a 2-D array of spectral
 %                space streamfunction (psi),
@@ -27,7 +27,7 @@ function stream = bSpectralPsi(q,M,N);
 
 
 % entry statement
-disp('Entering bSpectralPsi.m function...')
+disp('  bSpectralPsi.m function    : [psi_mn] - calc balanced spectral streamfunction')
 
 % global declarations
 global ep a
@@ -79,11 +79,6 @@ for im = 1:mSize       % m loop
     
   end
 end
-
-
-% exit statement
-disp('Exiting bSpectralPsi.m function.')
-disp(' ')
 
 % END
 

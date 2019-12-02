@@ -1,4 +1,4 @@
-function q = getStructureq(A,NU,H0,H,yHatVec,M,N);
+function q = getStructureq(A,NU,H0,H,yHatVec,M,N)
 % GETSTRUCTUREQ - function to compute q_mnr(yHat).
 %                 This function returns a 4-D array: 
 %                 q_mnr(yHat) = q(yHatIndex,mIndex,nIndex,rIndex).
@@ -74,7 +74,7 @@ function q = getStructureq(A,NU,H0,H,yHatVec,M,N);
 %              
 
 % Entry statement
-disp('Entering getStructureq.m function...')
+disp('    getStructureq.m function : [q(yHat)mnr] - expansion q structure')
 
 
 % global declaration
@@ -121,7 +121,7 @@ for yy = 1:ySize    % yHat loop
         if nVec(jn) > 0
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             %%% (EQ 1) %%%
             T1 = -(2/a)*ep^(1/4)*A(im,jn,kr);
             T2 = sqrt(nVec(jn)*(nVec(jn)+1))*H(yy,nVec(jn));
@@ -176,11 +176,6 @@ for yy = 1:ySize    % yHat loop
     end    % end n loop
   end    % end m loop
 end    % end yHat loop
-
-
-% Exit statement
-disp('Exiting getStructureq.m function.')
-disp(' ')
 
 % END
 

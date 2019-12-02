@@ -57,8 +57,7 @@
 %
 
 % entry statement
-disp('Starting balancedBasis.m script...')
-disp(' ')
+disp('balancedBasis.m script')
 
 
 % Generate Script-H polys n = 0
@@ -114,16 +113,6 @@ qmn = prim2BalPV(Eta,Amnr,NUmnr,mMax,nMax);
 % Calculate (balanced) spectral space streamfunction, psi
 % (using primitive-rossby-PV --> balanced PV).
 psimn = bSpectralPsi(qmn,mMax,nMax);
-
-% clear unneeded primitive model variables
-disp('Clearing unneeded primitive model variables.')
-clear HC0 HC NUmnr Amnr Qmnr Eta
-disp('Done clearing primitive variables.')
-disp(' ')
-
-% exit statement
-disp('Finished balancedBasis.m script.')
-disp(' ')
 
 % END
 

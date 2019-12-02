@@ -1,4 +1,4 @@
-function PHI = bRossbyEigenPHI(H0,H,yHatVec,M,N);
+function PHI = bRossbyEigenPHI(H0,H,yHatVec,M,N)
 % BROSSBYEIGENPHI - Calculates the Rossby Wave approximation to
 %                   the Eigenfunction PHI in the primitive model.
 %                   bRossbyEigenPHI = "b"alanced model "Rossby" wave
@@ -33,7 +33,7 @@ function PHI = bRossbyEigenPHI(H0,H,yHatVec,M,N);
 %    
 
 % entry statement
-disp('Entering bRossbyEigenPHI.m function...');
+disp('    bRossbyEigenPHI.m func   : [PHI(yHat,xi)mn] - rossby approx. eigen PHI');
 
 % global declaration
 global ep cBar
@@ -82,12 +82,6 @@ for yy = 1:ySize    % yHat loop
     end    % end n loop
   end    % end m loop
 end    % end yHat loop
-
-
-
-% exit statement
-disp('Exiting bRossbyEigenPHI.m function.')
-disp(' ')
 
 % END
 

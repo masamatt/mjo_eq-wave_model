@@ -1,4 +1,4 @@
-function currentTimeString = getTimeString();
+function currentTimeString = getTimeString()
 % GETTIMESTRING - gets the current time from the clock command
 %                 and returns it as a string in the format
 %                 hh:mm:ss.
@@ -54,11 +54,6 @@ end
 
 % time string
 currentTimeString = [hourString,':',minString,':',secString];
-
-
-% Exit Statement
-%%%disp('Exiting getTimeString.m function.')
-%%%disp(' ')
 
 % END
 

@@ -1,4 +1,4 @@
-function GNfield = gravityNormalMode(ETA,EIGEN,yHatVec,M,N);
+function GNfield = gravityNormalMode(ETA,EIGEN,yHatVec,M,N)
 % GRAVITYNORMALMODE - "gravity" wave component "Normal" "Mode" expansion.
 %                     This function computes the Gravity wave component
 %                     only by doing a Normal Mode expansion of the field
@@ -39,7 +39,7 @@ function GNfield = gravityNormalMode(ETA,EIGEN,yHatVec,M,N);
 %                 
 
 % Entry statement
-disp('Entering gravityNormalMode.m function...')
+disp('    gravityNormalMode.m func : [n=0,r=2; n>0,r=1,2] gravity comp. normal mode expansion')
 
 
 % size of yHat vector
@@ -95,7 +95,7 @@ for yy = 1:ySize    % yHat loop
         elseif nVec(jn) >= 1
           % r = 1,2
           % -------
-          if (rVec(kr) == 1) | (rVec(kr) == 2)
+          if (rVec(kr) == 1) || (rVec(kr) == 2)
             sumVar = sumVar + ETA(im,jn,kr)*EIGEN(yy,im,jn,kr);
           end
         end
@@ -106,11 +106,6 @@ for yy = 1:ySize    % yHat loop
     GNfield(yy,im) = sumVar;
   end    % end m loop
 end    % end yHat loop
-
-
-% Exit statement
-disp('Exiting gravityNormalMode.m function.')
-disp(' ')
 
 % END
 

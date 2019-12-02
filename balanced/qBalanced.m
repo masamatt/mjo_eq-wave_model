@@ -22,8 +22,7 @@
 %
 
 % Start statement
-disp('Starting qBalanced.m script...')
-disp(' ')
+disp('  qBalanced.m script         : [b_q(yHat,xi)] - b potential vorticity')
 
 % Hermite expand q
 qH = bHermite(qmn,H0,Hn,yHatVec,mMax,nMax);
@@ -38,21 +37,9 @@ Z = structureZ(p);
 b_q = Z*bqF;
 
 % save b_q field
-disp('Saving b_q(yHat,xi) variable in file: ./matFiles/field_b_q.mat')
+disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
 save ./matFiles/field_b_q.mat b_q
-disp('Done saving.')
-disp(' ')
-
-% clear variables used to calculate b_q
-disp('Clearing balanced q specific variables.')
 clear qH Z
-disp('Done clearing.')
-disp(' ')
-
-
-% Finish statement
-disp('Finished qBalanced.m script.')
-disp(' ')
 
 % END
 

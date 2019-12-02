@@ -1,4 +1,4 @@
-function V = getEigenV(A,Nu,H0,H,yHatVec,M,N);
+function V = getEigenV(A,Nu,H0,H,yHatVec,M,N)
 % GETEIGENV - A function to "get" "Eigen"function "V".
 %             Computes and returns a 4-D array of eigenfunction 
 %             V values. V = V(yHatIndex,mIndex,nIndex,rIndex).
@@ -62,7 +62,7 @@ function V = getEigenV(A,Nu,H0,H,yHatVec,M,N);
 %   
 
 % Entry statement
-disp('Entering getEigenV.m function...')
+disp('    getEigenV.m function     : [V(yHat)mnr] - eigen meridional wind V')
 
 
 % global declaration
@@ -121,13 +121,13 @@ for yy = 1:ySize    % yHat loop
         if nVec(jn) > 0
           % m = 0 and r = 0
           % ---------------
-          if (mVec(im) == 0) & (rVec(kr) == 0)
+          if (mVec(im) == 0) && (rVec(kr) == 0)
             V(yy,im,jn,kr) = 0;
           % !(m=0 and r=0)
           % --------------
           else
             T1 = (ep*Nu(im,jn,kr)^2-mVec(im)^2)*H(yy,nVec(jn));
-            V(yy,im,jn,kr) = -i*A(im,jn,kr)*T1;
+            V(yy,im,jn,kr) = -1i*A(im,jn,kr)*T1;
           end
         
         % n = 0
@@ -137,7 +137,7 @@ for yy = 1:ySize    % yHat loop
           % -------
           if rVec(kr) ~= 1
             T1 = (ep*Nu(im,jn,kr)^2-mVec(im)^2)*H0(yy);
-            V(yy,im,jn,kr) = -i*A(im,jn,kr)*T1;
+            V(yy,im,jn,kr) = -1i*A(im,jn,kr)*T1;
           % r = 1
           % -----
           else
@@ -163,11 +163,6 @@ for yy = 1:ySize    % yHat loop
     end    % end n loop
   end    % end m loop
 end    % end yHat loop
-
-
-% Exit statement
-disp('Exiting getEigenV.m function.')
-disp(' ')
 
 % END
 

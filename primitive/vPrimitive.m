@@ -9,6 +9,8 @@
 %               MM August 06 2008 - removed call to internal matlab
 %                  'pack'.  In current versions of matlab, pack can
 %                  only be called from the command line.
+%               MM December 02 2019 - tucked getEigenV.m into this script.
+%
 % CALL SYNTAX:  vPrimitive;
 %
 % PRE: The following scripts have been been called:
@@ -24,9 +26,10 @@
 %
 
 % Start statement
-disp('Starting vPrimitive.m script...')
-disp(' ')
+disp('  vPrimitive.m script        : [v(yHat,xi)]')
 
+% Get Eigenfunction V
+Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -57,25 +60,11 @@ Z = structureZ(p);
 v = Z*VF;
 
 % Save v field
-disp('Saving v(yHat,xi) variable in file: ./matFiles/field_v.mat')
+disp('  Saving v(yHat,xi)          : [v] -> matFiles/field_v.mat')
 save ./matFiles/field_v.mat v
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate v
-disp('Clearing v specific variables.')
 
 %%%clear VN VF Z v    %%% save: v
-clear VN Z
-
-disp('Done clearing.')
-disp(' ')
-
-
-
-% Finish statement
-disp('Finished vPrimitive.m script.')
-disp(' ')
+clear Vmnr VN Z
 
 % END
 

@@ -1,4 +1,4 @@
-function q = prim2BalPV(ETA,A,NU,M,N);
+function q = prim2BalPV(ETA,A,NU,M,N)
 % PRIM2BALPV - prim2BalPV = "prim"itive "to" "Bal"anced "PV".
 %              This function computes what is essentially the
 %              Rossby (and Mixed Rossby-Gravity) component of 
@@ -53,7 +53,7 @@ function q = prim2BalPV(ETA,A,NU,M,N);
 
 
 % Entry statement
-disp('Entering prim2BalPV.m function...')
+disp('  prim2BalPV.m function      : [q_mn] - compute primitive to balanced PV')
 
 % global declarations
 global ep a
@@ -134,11 +134,6 @@ for im = 1:mSize        % m loop
     
   end    % end n loop
 end    % end m loop
-
-
-% exit statement
-disp('Exiting prim2Bal.m function.')
-disp(' ')
 
 % END
 

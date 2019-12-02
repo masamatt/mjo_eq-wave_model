@@ -1,4 +1,4 @@
-function Sfield = bStreamEigen(STREAM,EIGEN,yHatVec,M,N);
+function Sfield = bStreamEigen(STREAM,EIGEN,yHatVec,M,N)
 % BSTREAMEIGEN - Computes "b"alanced model "Stream"function -
 %                "Eigen"function(Rossby approximated) expansions.
 %                This function will be used to expand the rotational
@@ -43,7 +43,7 @@ function Sfield = bStreamEigen(STREAM,EIGEN,yHatVec,M,N);
 %       
 
 % Entry statement
-disp('Entering bStreamEigen.m function...')
+disp('    bStreamEigen.m function  : [stream(yHat)m] - b eigen streamfunction expansion')
 
 
 % global declaration
@@ -73,11 +73,6 @@ for yy = 1:ySize    % yHat loop
     
   end    % end m loop
 end    % end yHat loop
-
-
-% Exit statement
-disp('Exiting bStreamEigen.m function.')
-disp(' ')
 
 % END
 

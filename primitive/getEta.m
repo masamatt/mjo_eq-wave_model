@@ -1,4 +1,4 @@
-function ETA = getEta(NU,Q,alfa,c,M,N);
+function ETA = getEta(NU,Q,alfa,c,M,N)
 % GETETA - Calculates the expansion coefficient eta.
 %          Eta is the expansion coefficient used to expand the
 %          solution vector Eta in terms of the Eigenfunctions
@@ -35,7 +35,7 @@ function ETA = getEta(NU,Q,alfa,c,M,N);
 %               
 
 % Entry statement
-disp('Entering getEta.m function...')
+disp('  getEta.m function          : [eta_mnr] - calc primitive eigen expansion coeff')
 
 
 % global declaration
@@ -80,14 +80,14 @@ for im = 1:mSize       % m loop
       % Quality control. Make sure all pieces are index
       % correctly, and the error value (-9999) is not being
       % used in calculations.
-      if (Q_mnr ~= -9999) & (NU_mnr ~= -9999)
+      if (Q_mnr ~= -9999) && (NU_mnr ~= -9999)
         % calculate eta in pieces.. cosmetics.
         % num = "num"erator of eta
         num = kappa*Q_mnr;
         % den = "den"ominator of eta
-        den = alfa + i*(2*Omega*NU_mnr - (c/a)*mVec(im));
+        den = alfa + 1i*(2*Omega*NU_mnr - (c/a)*mVec(im));
         ETA(im,jn,kr) = num/den;
-      elseif (Q_mnr == -9999) & (NU_mnr == -9999)
+      elseif (Q_mnr == -9999) && (NU_mnr == -9999)
         % Error Case
         ETA(im,jn,kr) = -9999;
       else
@@ -101,11 +101,6 @@ for im = 1:mSize       % m loop
     end    % end r loop
   end    % end n loop
 end    % end m loop
-
-
-% Exit statement
-disp('Exiting getEta.m function.')
-disp(' ')
 
 % END
 

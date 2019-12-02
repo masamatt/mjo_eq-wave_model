@@ -9,6 +9,8 @@
 %               MM - August 06 2008 - removed call to internal matlab
 %                    'pack'.  In current versions of matlab, pack can
 %                    only be called from the command line.
+%               MM - Dec 02 2019 - tucked getEigenU.m into this script.
+%
 % CALL SYNTAX:  uPrimitive;
 %
 % PRE: The following scripts have been been called:
@@ -24,8 +26,10 @@
 %
 
 % Start statement
-disp('Starting uPrimitive.m script...')
-disp(' ')
+disp('  uPrimitive.m script        : [u(yHat,xi)]')
+
+% Get Eigenfunction U
+Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
 
 % Determine which wave components are wanted in Normal Mode
 % expansion. Then perform expansion.
@@ -56,25 +60,11 @@ Z = structureZ(p);
 u = Z*UF;
 
 % Save u field
-disp('Saving u(yHat,xi) variable in file: ./matFiles/field_u.mat')
+disp('  Saving u(yHat,xi)          : [u] -> matFiles/field_u.mat')
 save ./matFiles/field_u.mat u
-disp('Done saving.')
-disp(' ')
-
-% Clear variables used to calculate u
-disp('Clearing u specific variables.')
 
 %%%clear UN UF Z u   %%% save: u
-clear UN Z
-
-disp('Done clearing.')
-disp(' ')
-
-
-
-% Finish statement
-disp('Finished uPrimitive.m script.')
-disp(' ')
+clear Umnr UN Z
 
 % END
 
