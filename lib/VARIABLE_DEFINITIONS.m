@@ -67,9 +67,4 @@ xiIncrement = 50000;
 % the meridional direction).
 xiVec = [-xiMax:xiIncrement:xiMax];  
 
-
-% Finishing statement
-% disp('Finishing VARIABLE_DEFINITIONS.m script.')
-% disp(' ')
-
 % END

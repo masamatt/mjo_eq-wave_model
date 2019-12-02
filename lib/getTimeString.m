@@ -55,10 +55,5 @@ end
 % time string
 currentTimeString = [hourString,':',minString,':',secString];
 
-
-% Exit Statement
-%%%disp('Exiting getTimeString.m function.')
-%%%disp(' ')
-
 % END
 

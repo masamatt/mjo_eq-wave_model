@@ -1,4 +1,4 @@
-function Zprime = structureZprime(p);
+function Zprime = structureZprime(p)
 % STRUCTUREZPRIME - Computes the vertical structure function Z'(z).
 %                   Here z = ln(p0/p), log-pressure. p0 = 1010mb
 %                   is the surface pressure in the model atmosphere.
@@ -38,11 +38,6 @@ T1 = (1 + zT^2/(4*pi^2))^(1/2);
 T2 = exp((z - zM)/2);
 T3 = sin((pi*z)/zT);
 Zprime = T1*T2*T3;
-
-
-% Exit statement
-% disp('Exiting structureZprime.m function.')
-% disp(' ')
 
 % END
 

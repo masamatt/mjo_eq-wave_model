@@ -1,4 +1,4 @@
-function HN = genH(yHatVec,N);
+function HN = genH(yHatVec,N)
 % GENH - "gen"erates a 2-D array of H values for n=1..(N+1), all yHat. 
 %        (function). This function takes a vector of yHat values
 %        yHatVec = [-yHatMax..yHatMax] and a maximum n value
@@ -44,11 +44,6 @@ HN = zeros(ySize,(N+1));
 for yy=1:ySize
   HN(yy,:) = getH(yHatVec(yy),N);
 end
-
-
-% Exit statement
-% disp('Exiting genH.m function.')
-% disp(' ')
 
 % END
 

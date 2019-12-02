@@ -1,4 +1,4 @@
-function fileName = getOutFile(modelName,pVal,y0Val,waveID);
+function fileName = getOutFile(modelName,pVal,y0Val,waveID)
 % GETOUTFILE - Determines the name of the ouput file.
 %              This function is used for the primitive model,
 %              balanced model, and when extracting specific wave
@@ -118,11 +118,6 @@ if modelLength == 4
 else
   fileName = [modelName,pPart,y0Part];
 end
-
-
-% Exit Statement
-% disp('Exiting getOutFile.m function.')
-% disp(' ')
 
 % END
 
