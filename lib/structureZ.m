@@ -23,7 +23,7 @@ function Z = structureZ(p)
 
 
 % entry statement
-disp('    structureZ.m function    : [Z(p)] apply Z vertical structure')
+disp('  structureZ.m function      : [Z(p)] apply Z vertical structure')
 
 % global declaration
 global p0 zT zM

@@ -27,7 +27,7 @@
 %
 
 % Start statement
-disp('  phiPrimitive.m script      : [phi(yHat,xi)]')
+disp('phiPrimitive.m script        : [phi(yHat,xi)] - physical space geopotential (phi)')
 
 % Get Eigenfunction PHI
 PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
@@ -60,9 +60,9 @@ Z = structureZ(p);
 % Get total phi field phi(yHat,xi,z)
 phi = Z*PHIF;
 
-% Save phi field
-disp('  Saving phi(yHat,xi)        : [phi] -> matFiles/field_phi.mat')
-save ./matFiles/field_phi.mat phi
+% % Save phi field
+% disp('  Saving phi(yHat,xi)        : [phi] -> matFiles/field_phi.mat')
+% save ./matFiles/field_phi.mat phi
 
 %%%clear PHIN PHIF Z phi   %%% save:  phi
 clear PHImnr PHIN Z

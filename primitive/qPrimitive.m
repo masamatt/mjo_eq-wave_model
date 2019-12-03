@@ -27,7 +27,7 @@
 %
 
 % Start statement
-disp('  qPrimitive.m script        : [q(yHat,xi)]')
+disp('qPrimitive.m script          : [q(yHat,xi)] - physical space potential vorticity (q)')
 
 % Get expansion Structure function q_mnr(yHat)
 qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
@@ -60,9 +60,9 @@ Z = structureZ(p);
 % Get total q field q(yHat,xi,z)
 q = Z*qF;
 
-% Save q field
-disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
-save ./matFiles/field_q.mat q
+% % Save q field
+% disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
+% save ./matFiles/field_q.mat q
 
 %%%clear qN qF Z q   %%% save: q
 clear qmnr qN Z

@@ -33,7 +33,7 @@ function PHI = bRossbyEigenPHI(H0,H,yHatVec,M,N)
 %    
 
 % entry statement
-disp('    bRossbyEigenPHI.m func   : [PHI(yHat,xi)mn] - rossby approx. eigen PHI');
+disp('  bRossbyEigenPHI.m func     : [PHI(yHat,xi)mn] - rossby approx eigen PHI');
 
 % global declaration
 global ep cBar

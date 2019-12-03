@@ -76,30 +76,32 @@ else
 end
 outFileName = getOutFile(mName,p,y0,waves);
 
-% get output type file extension
-load ./matFiles/type_input.mat
-if outputType == 0
-  fileType = '.bin';
-else
-  fileType = '.txt';
-end
+% % get output type file extension
+% load ./matFiles/type_input.mat
+% if outputType == 0
+%   fileType = '.bin';
+% else
+%   fileType = '.txt';
+% end
+%
+% % full output file name
+% outFileString = ['Output File Name: ',outFileName,fileType];
 
-% full output file name
-outFileString = ['Output File Name: ',outFileName,fileType];
-
-% start time of run
-timeString = getTimeString();
-runTimeString = ['Run start time: ',timeString];
+% date / time strings
+runDateString=['Run Date                      : ',date];
+timeStartStr =['Start Time                    : ',startTimeString];
+timeStopStr  =['Stop Time                     : ',stopTimeString];
 
 % formatting space
 space1 = '            ';
 
-
 % write information
 % -----------------
-RUNFILE = fopen('./output/runParameters.txt','a');
-fprintf(RUNFILE,'\n%s%s\n',space1,runTimeString);
-%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
+RUNFILE = fopen('./output/runParameters.txt','w');
+fprintf(RUNFILE,'\n%s%s\n',space1,runDateString);
+fprintf(RUNFILE,'%s%s\n',space1,timeStartStr);
+fprintf(RUNFILE,'%s%s\n\n',space1,timeStopStr);
+%%%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
 fprintf(RUNFILE,'%s%s\n',space1,modelString);
 fprintf(RUNFILE,'%s%s\n',space1,Q0_cpString);
 fprintf(RUNFILE,'%s%s\n',space1,a0String);
@@ -108,7 +110,7 @@ fprintf(RUNFILE,'%s%s\n',space1,y0String);
 fprintf(RUNFILE,'%s%s\n',space1,cString);
 fprintf(RUNFILE,'%s%s\n',space1,pString);
 fprintf(RUNFILE,'%s%s\n',space1,zonalString);
-fprintf(RUNFILE,'%s%s\n',space1,meridionalString);
+fprintf(RUNFILE,'%s%s\n\n',space1,meridionalString);
 fclose(RUNFILE);
 
 % clear unneeded strings, temp variables

@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('  qBalanced.m script         : [b_q(yHat,xi)] - b potential vorticity')
+disp('qBalanced.m script           : [b_q(yHat,xi)] - physical space balanced potential vorticity (b_q)')
 
 % Hermite expand q
 qH = bHermite(qmn,H0,Hn,yHatVec,mMax,nMax);
@@ -36,9 +36,9 @@ Z = structureZ(p);
 % Get total balanced q field b_q(yHat,xi,z)
 b_q = Z*bqF;
 
-% save b_q field
-disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
-save ./matFiles/field_b_q.mat b_q
+% % save b_q field
+% disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
+% save ./matFiles/field_b_q.mat b_q
 clear qH Z
 
 % END

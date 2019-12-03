@@ -54,7 +54,7 @@ disp(' ');
 
 % Compute variables needed for all 5 fields
 disp('----------------------------------    ')
-disp('    Computing basis quantities        ')
+disp('      Compute basis quantities        ')
 disp('----------------------------------    ')
 primitiveBasis;
 disp(' ')
@@ -62,7 +62,7 @@ disp(' ')
 
 % Compute u field
 disp('----------------------------------    ')
-disp('        Computing u field             ')
+disp('        Compute u field               ')
 disp('----------------------------------    ')
 uPrimitive;  % Calculate u dependent on wave type
 disp(' ')
@@ -71,7 +71,7 @@ disp(' ')
 
 % Compute v field
 disp('----------------------------------    ')
-disp('        Computing v field             ')
+disp('        Compute v field               ')
 disp('----------------------------------    ')
 vPrimitive;  % Calculate v dependent on wave type
 disp(' ')
@@ -80,7 +80,7 @@ disp(' ')
 
 % Compute phi field
 disp('----------------------------------    ')
-disp('       Computing phi field            ')
+disp('        Compute phi field             ')
 disp('----------------------------------    ')
 phiPrimitive;  % Calculate phi dependent on wave type
 disp(' ')
@@ -89,7 +89,7 @@ disp(' ')
 
 % Compute omegaM field
 disp('----------------------------------    ')
-disp('     Computing omegaM field           ')
+disp('      Compute omegaM field            ')
 disp('----------------------------------    ')
 omegaMPrimitive;  % Calculate omegaM dependent on wave type
 disp(' ')
@@ -98,22 +98,17 @@ disp(' ')
 
 % Compute q field
 disp('----------------------------------    ')
-disp('        Computing q field             ')
+disp('         Compute q field              ')
 disp('----------------------------------    ')
 qPrimitive;        % Calculate q dependent on wave type
 disp(' ')
 
 
 
-% write record to runParameters.txt file
-writeStatus;
-% Print all fields to a text file
-%%%printResults;
-% End primitive run
-disp('                                          ')
+% % Print all fields to output file
+% printResults;
 disp('        =========================         ')
 disp('        *  END PRIMITIVE MODEL  *         ')
 disp('        =========================         ')
-
 % END
 

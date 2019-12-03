@@ -71,12 +71,6 @@ if primitiveModel == 0
   disp(' ')
 end
 
-% save input parameters
-outputType = 1;
-save ./matFiles/type_input.mat      outputType
-save ./matFiles/suite_input.mat     modelSuite
-save ./matFiles/primitive_input.mat primitiveModel
-save ./matFiles/balanced_input.mat  balancedModel
 
 % run selected model
 startTimeString = getTimeString();
@@ -87,15 +81,11 @@ else
 end
 stopTimeString  = getTimeString();
 
-% write file header -> title, date, time
-RUNFILE = fopen('./output/runParameters.txt','w');
-fprintf(RUNFILE,'\n                   MODEL RUN PARAMETERS\n');
-fprintf(RUNFILE,'                   --------------------\n\n');
-fprintf(RUNFILE,'Run Date:       %s\n',date);
-fprintf(RUNFILE,'Model Run:      %s\n',modelRunString);
-fprintf(RUNFILE,'Start Time:     %s\n',startTimeString);
-fprintf(RUNFILE,'Stop Time:      %s\n',stopTimeString);
-fclose(RUNFILE);
+disp(' ')
+disp(['Start time                   : ',startTimeString])
+disp(['Stop time                    : ',stopTimeString])
+writeStatus;
+cleanUpVars;
 disp('                                                ')
 disp('    ****************************************    ')
 disp('    *                                      *    ')

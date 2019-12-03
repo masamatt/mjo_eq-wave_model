@@ -34,7 +34,7 @@
 %
 
 % Start statement
-disp('  omegaMPrimitive.m script   : [omegaM(yHat,xi)]')
+disp('omegaMPrimitive.m script     : [omegaM(yHat,xi)] - physical space vertical pressure velocity (omegaM)')
 
 % Get Eigenfunction PHI
 PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);
@@ -64,20 +64,20 @@ end
 % Inverse Fourier transform Normal Mode expanded w
 wF = IFourier(wN,yHatVec,xiVec,mMax);
 
-% Want to plot at vertical structure max: Z'(zM) = 1.
-Zprime = 1;
-
 % Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
 % omegaF = -p*wF, so omegaMF = -pM*wF.
 omegaMF = -pM*86400*wF;
 
-% Get total omegaM field omegaM(yHat,xi,z)
-omegaM = Zprime*omegaMF;
+% Want to plot at vertical structure max: Z'(pM) = 1.
+ZprimeMax = structureZprime(pM);
 
-% Save omegaM field
-disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
-save ./matFiles/field_omegaM.mat omegaM
+% Get total omegaM field omegaM(yHat,xi,z)
+omegaM = ZprimeMax*omegaMF;
+
+% % Save omegaM field
+% disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
+% save ./matFiles/field_omegaM.mat omegaM
 
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM
 clear PHInmr wmnr wN wF Zprime w

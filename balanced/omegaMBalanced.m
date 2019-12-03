@@ -29,7 +29,7 @@
 %
 
 % Start statement
-disp('  omegaMBalanced.m script    : [b_omegaM(yHat,xi)] - b log-pressure vertical velocity')
+disp('omegaMBalanced.m script      : [b_omegaM(yHat,xi)] - physical space balanced vertical pressure velocity (b_omegaM)')
 
 % Get spectral space log-pressure vertical velocity
 wmn = bSpectralw(psimn,Qmn,alfa,c,mMax,nMax);
@@ -40,20 +40,20 @@ wH = bHermite(wmn,H0,Hn,yHatVec,mMax,nMax);
 % Inverse fourier transform the Hermite expanded, balanced w
 bwF = bIFourier(wH,yHatVec,xiVec,mMax);
 
-% Want to plot at vertical structure max: Z'(zM) = 1.
-Zprime = 1;
-
 % Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
 % b_omegaF = -p*bwF, so b_omegaMF = -pM*bwF.
 b_omegaMF = -pM*86400*bwF;
 
-% Get total balanced omegaM field b_omegaM(yHat,xi,z)
-b_omegaM = Zprime*b_omegaMF;
+% Want to plot at vertical structure max: Z'(pM) = 1.
+ZprimeMax = structureZprime(pM);
 
-% save b_omegaM field
-disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
-save ./matFiles/field_b_omegaM.mat b_omegaM
+% Get total balanced omegaM field b_omegaM(yHat,xi,z)
+b_omegaM = ZprimeMax*b_omegaMF;
+
+% % save b_omegaM field
+% disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
+% save ./matFiles/field_b_omegaM.mat b_omegaM
 clear wmn wH bwF Zprime
 
 % END
