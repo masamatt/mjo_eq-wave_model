@@ -197,7 +197,7 @@ Two models.<br>
 #### V.i Primitive Equation Model
 The governing equations for the primitive equation (PE) model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
 equations in (`xi`, `y`, `z`)-space are separated into horizonal (`xi`, `y`) and vertical (`z`) structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
-[Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf). 
+[Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating at a constant speed ([App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf)) with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf). 
 
 > The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
 > baroclinic mode response to a moving planetary scale heat source under the long-wave approximation (Chao, 1987).<sup>[\[3\]](#3)</sup>
@@ -207,7 +207,7 @@ Due to the spectral solution method of the shallow water equations, the full wav
 
 
 #### V.ii Balanced Model
-The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial linear balance relation along with boundary conditions to the principle.  The [balanced model and low-frequency PE dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are overlayed for comparison.<br>
+The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial [linear balance relation]() along with boundary conditions to the principle.  The [balanced model and low-frequency PE dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are overlayed for comparison.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
