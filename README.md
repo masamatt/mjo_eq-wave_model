@@ -22,7 +22,7 @@ This repository contains the original model code used in the _Dynamics of Atmosp
 
 Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.  A directory containing scripts to plot the output, `plotting/`, has been added.<br>
  
-Only 3 scripts, all located in the root directory, are needed to operate the model.  The first [MJO_RUN.m](#iiiii---Run-Model--mjo-runm) starts a simulation.  The second [MJO_PARAMS.m]() contains the user adjustable parameters controlling a simulation.  The last [MJO_PLOT.m]() contains parameters for plot appareance and makes the plot call as well.
+Only 3 scripts, all located in the root directory, are needed to operate the model.  The first [MJO_RUN.m](#iiiii---run-model--mjo-runm) starts a simulation.  The second [MJO_PARAMS.m]() contains the user adjustable parameters controlling a simulation.  The last [MJO_PLOT.m]() contains parameters for plot appareance and makes the plot call as well.
 
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
