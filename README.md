@@ -20,7 +20,9 @@
 ## I. Overview
 This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  Introductory information on the tropical weather phenomenon that is the subject of the study, the Madden Julian oscillation (MJO), can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).  
 
-Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.<br>
+Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.  A directory containing scripts to plot the output, `plotting/`, has been added.<br>
+ 
+Only 3 scripts, all located in the root directory, are needed to operate the model.  The first [MJO_RUN.m]() starts a simulation.  The second [MJO_PARAMS.m]() contains the user adjustable parameters controlling a simulation.  The last [MJO_PLOT.m]() contains parameters for plot appareance and makes the plot call as well.
 
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
