@@ -130,7 +130,7 @@ For the default parameters listed in the table above this section, the output pl
 [Balanced solution](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/B_a1250b450y450_2019-11-29_141143.pdf)<br>
 
 ---
-Notice the 1st panel (potential vorticity) is blank and it's peak values are both zero -- this is correct, and is a characteristic of the Kelvin wave that it's PV field is always identically zero.  For this and other cases where fields are zero Matlab will generate warning output similar to the following
+Notice in the [Kelvin wave plot](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PKa1250b450y450_2019-11-29_135702.pdf), the 1st panel (potential vorticity) is blank and it's peak values are both zero -- this is correct, and is a characteristic of the Kelvin wave that it's PV field is always identically zero.  For this and other cases where fields are zero Matlab will generate warning output similar to the following
 ```matlab
 Warning: Contour not rendered for constant ZData 
 > In contourf (line 60)
