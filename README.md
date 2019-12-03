@@ -8,7 +8,7 @@
 
 
 ## Contents
-* [I. Overview](#I-Overview) - brief description
+* [I. Overview](#I-Overview)
 * [II. Manifest](#II-Manifest) - repository structure
 * [III. User Guide](#III-User-Guide) - **how to access repository and run model**
 * [IV. Thesis Abstract](#IV-Thesis-Abstract) - MS abstract reproduced
@@ -190,7 +190,7 @@ which can safely be ignored and is just stating Matlab can't contour a constant 
 
 
 ## V. Model Description
-Two models.
+Two models.<br>
 <br><br>
 
 
@@ -207,7 +207,7 @@ Due to the spectral solution method of the shallow water equations, the full wav
 
 
 #### V.ii Balanced Model
-The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial linear balance relation along with boundary conditions to the principle.  The dispersion curves for the [balanced model and low-frequency PE](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are overlayed for comparison.
+The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial linear balance relation along with boundary conditions to the principle.  The [balanced model and low-frequency PE dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are overlayed for comparison.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
