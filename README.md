@@ -65,7 +65,7 @@ Change directories to the root directory in the cloned repository, and start Mat
   $ cd mjo_eq-wave_model
   $ matlab
 ```
-From the command prompt (`>>`) inside Matlab you can start a model simulation (with default parameters set) by calling the main run script
+From the command prompt (`>>`) inside Matlab you can start a model simulation (with default parameters set) by calling the main run script ([`MJO_RUN.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_RUN.m))
 ```matlab
   >> MJO_RUN
 ```
@@ -97,7 +97,7 @@ The model will run for ~O(5 min), computer dependent, and will automatically ope
 
 
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
-The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PARAMS.m) is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` to compute the solution for the selected parameters.
+The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PARAMS.m) is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` again to compute the solution for the newly selected parameters.
 <br>
 
 | Parameter | MatLab Variable | &nbsp;&nbsp; Units &nbsp;&nbsp;&nbsp; | Description | Sample Value |
