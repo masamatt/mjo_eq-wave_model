@@ -119,7 +119,7 @@ The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 ```matlab
 >> MJO_PLOT
 ```
-without having to do another run, and a new figure window with an updated plot will open.  As an aside, since a new figure will be opened each time `MJO_PLOT.m` is called, figures can be left during new simulations so different run plots can be compared side-by-side.<br>
+without having to do another run, and a new figure window with an updated plot will open.  As an aside, since a new figure will be opened each time `MJO_PLOT.m` is called, any number of figures can be generated and left open during new simulations so different run plots can be compared side-by-side.<br>
 
 The output plots are formatted to each have three panels displaying the output fields in the equatorial channel, and are listed here from the top
 1. potential vorticity (`q`)
