@@ -22,8 +22,7 @@ This repository contains the original model code used in the _Dynamics of Atmosp
 
 Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.  A directory containing scripts to plot the output, `plotting/`, has been added.<br>
  
-Only 3 scripts, all located in the root directory, are needed to operate the model.  The first [MJO_RUN.m](#iiiii---run-model--mjo_runm) calls a simulation.  The second [MJO_PARAMS.m](#iiiiii---set-run-parameters--mjo_paramsm) contains the user adjustable parameters controlling physical aspects of a simulation.  The last [MJO_PLOT.m](#iiiiv---plot-model-output--mjo_plotm) contains parameters for plot appareance and makes the plotting call as well.
-
+Only 3 scripts, all located in the root directory, are needed to operate the model.  The first [MJO_RUN.m](#iiiii---run-model--mjo_runm) calls a simulation.  The second [MJO_PARAMS.m](#iiiiii---set-run-parameters--mjo_paramsm) contains the user adjustable parameters controlling physical aspects of a simulation.  The last [MJO_PLOT.m](#iiiiv---plot-model-output--mjo_plotm) contains parameters for plot appareance and makes the plotting call as well.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
@@ -146,7 +145,7 @@ Warning: Contour not rendered for constant ZData
 >>
 ```
 which can safely be ignored and is just stating Matlab can't contour a constant (0) field.  Another circumstance when this will occur is for any model configuration where the meridional displacement (of the center of the diabatic heating envelope) from the Equator is zero (y<sub>0</sub>=0).  In this case the mixed 
-Rossby-gravity wave is not excited due to it's symmetry about the equator and all it's fields are then zero as well.<br>
+Rossby-gravity wave is not excited due to it's symmetry about the equator and all it's fields are then identically zero.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
@@ -215,7 +214,6 @@ A schematic outlining the computational procedure for the primitive equation mod
 [Potential vorticity principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf)<br>
 [Invertibility principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf)<br>
 [PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)<br>
-
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
