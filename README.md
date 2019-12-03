@@ -140,7 +140,7 @@ Warning: Contour not rendered for constant ZData
   In MJO_RUN (line 118) 
 >>
 ```
-and they can be safely ignored.  Another circumstance when this will occur is for any model configuration where the meridional displacement (of the center of the diabatic heating envelope) from the Equator is zero (y<sub>0</sub>=0).  In this case the mixed 
+which can safely be ignored.  Another circumstance when this will occur is for any model configuration where the meridional displacement (of the center of the diabatic heating envelope) from the Equator is zero (y<sub>0</sub>=0).  In this case the mixed 
 Rossby-gravity wave is not excited due to it's symmetry about the equator and all it's fields are then zero as well.
 <br>
 
