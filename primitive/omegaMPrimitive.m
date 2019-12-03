@@ -64,16 +64,16 @@ end
 % Inverse Fourier transform Normal Mode expanded w
 wF = IFourier(wN,yHatVec,xiVec,mMax);
 
-% Want to plot at vertical structure max: Z'(zM) = 1.
-Zprime = 1;
-
 % Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
 % omegaF = -p*wF, so omegaMF = -pM*wF.
 omegaMF = -pM*86400*wF;
 
+% Want to plot at vertical structure max: Z'(pM) = 1.
+ZprimeMax = structureZprime(pM);
+
 % Get total omegaM field omegaM(yHat,xi,z)
-omegaM = Zprime*omegaMF;
+omegaM = ZprimeMax*omegaMF;
 
 % % Save omegaM field
 % disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')

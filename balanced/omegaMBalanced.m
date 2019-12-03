@@ -40,16 +40,16 @@ wH = bHermite(wmn,H0,Hn,yHatVec,mMax,nMax);
 % Inverse fourier transform the Hermite expanded, balanced w
 bwF = bIFourier(wH,yHatVec,xiVec,mMax);
 
-% Want to plot at vertical structure max: Z'(zM) = 1.
-Zprime = 1;
-
 % Get vertical velocity in pressure units (hPa/day), at the
 % pressure level of maximum vertical structure magnitude, pM.
 % b_omegaF = -p*bwF, so b_omegaMF = -pM*bwF.
 b_omegaMF = -pM*86400*bwF;
 
+% Want to plot at vertical structure max: Z'(pM) = 1.
+ZprimeMax = structureZprime(pM);
+
 % Get total balanced omegaM field b_omegaM(yHat,xi,z)
-b_omegaM = Zprime*b_omegaMF;
+b_omegaM = ZprimeMax*b_omegaMF;
 
 % % save b_omegaM field
 % disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
