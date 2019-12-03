@@ -189,7 +189,7 @@ which can safely be ignored and is just stating Matlab can't contour a constant 
 
 
 ## V. Model Description
-The two models (primitive equation, balanced) described below comprise the original model code.  The plots for <sup>[\[1\]](#1), </sup><sup>[\[2\]](#2)</sup> were produced at the time by Brian McNoldy using IDL software.  
+The two models (primitive equation, balanced) described below comprise the original model code.  The plots for <sup>[\[1\]](#1), </sup><sup>[\[2\]](#2)</sup> were produced at the time by Brian McNoldy using IDL software.  The core model code remains unchanged, though  plotting scripts have now been added to automatically plot the output within Matlab.  The parameters for input, or 'forcing', for the model are contained within `MJO_PARAMS.m` and allow the user to specify the characteristics of the diabatic heating.  This diabatic source term is intended capture the net effect from an ensemble of cloud complexes (i.e., an upward transport of mass), and in that way resembles a MJO-like convective envelope.  The primitive equation model then solves for the wind (`u`,`v`), geopotential (`phi`), vertical pressure velocity (`omegaM`), and potential vorticity (`q`) response to the translating diabatic forcing in the equatorial channel.  The balanced model recovers the 'rotational wind' (`u_psi`, `v_psi`) after first solving for the horizontal stream function (`psi`), as well as `phi`, `omegaM`, and `q` as before.  
 <br><br><br>
 
 
