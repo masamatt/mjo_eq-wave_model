@@ -54,7 +54,7 @@ issuing the following command at a prompt (`$`) in a terminal
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
 The model is composed of Matlab scripts and functions and is ready for use once downloaded.
-<br><br>
+<br><br><br>
 
 
 
@@ -92,7 +92,7 @@ Enter the wave ID number [0,1,2,3,4]:
 Entering a wave ID `1` to `4` computes the response for that particular equatorial wave componment, while entering `0` computes the total wave solution, i.e., the sum of waves `1-4`.  
 
 The model will run for ~O(5 min), computer dependent.  While running, status output will continuously be displayed to the Matlab console.  Once the run is finished a figure window will automatically open with a plot of the output.
-<br><br>
+<br><br><br>
 
 
 
