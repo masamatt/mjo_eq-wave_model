@@ -54,7 +54,7 @@ issuing the following command at a prompt (`$`) in a terminal
 ```bash
   $ git clone https://github.com/masamatt/mjo_eq-wave_model
 ```
-The model is composed only of Matlab scripts and functions, so it does not need to be compiled, and is in fact ready for use once downloaded.
+The model is composed of Matlab scripts and functions and is ready for use once downloaded.
 <br><br>
 
 
