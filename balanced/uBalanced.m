@@ -39,9 +39,9 @@ Z = structureZ(p);
 % Get total balanced u field b_u(yHat,xi,z)
 b_u = Z*bUF;
 
-% save b_u field
-disp('  Saving b_u(yHat,xi)        : [b_u] -> matFiles/field_b_u.mat')
-save ./matFiles/field_b_u.mat b_u
+% % save b_u field
+% disp('  Saving b_u(yHat,xi)        : [b_u] -> matFiles/field_b_u.mat')
+% save ./matFiles/field_b_u.mat b_u
 clear Umn U_SE Z
 
 % END

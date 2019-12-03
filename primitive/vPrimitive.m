@@ -59,9 +59,9 @@ Z = structureZ(p);
 % Get total v field v(yHat,xi,z)
 v = Z*VF;
 
-% Save v field
-disp('  Saving v(yHat,xi)          : [v] -> matFiles/field_v.mat')
-save ./matFiles/field_v.mat v
+% % Save v field
+% disp('  Saving v(yHat,xi)          : [v] -> matFiles/field_v.mat')
+% save ./matFiles/field_v.mat v
 
 %%%clear VN VF Z v    %%% save: v
 clear Vmnr VN Z

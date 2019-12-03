@@ -62,13 +62,13 @@ else
 end
 modelString=[modelString,' Model'];
 
-% output format
-load ./matFiles/type_input.mat
-if outputType == 0
-  outString = 'Output Format: Binary - float64';
-else
-  outString = 'Output Format: Formatted text (ascii)';
-end
+% % output format
+% load ./matFiles/type_input.mat
+% if outputType == 0
+%   outString = 'Output Format: Binary - float64';
+% else
+%   outString = 'Output Format: Formatted text (ascii)';
+% end
 
 % display information
 % -------------------

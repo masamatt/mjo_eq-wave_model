@@ -76,13 +76,13 @@ else
 end
 outFileName = getOutFile(mName,p,y0,waves);
 
-% get output type file extension
-load ./matFiles/type_input.mat
-if outputType == 0
-  fileType = '.bin';
-else
-  fileType = '.txt';
-end
+% % get output type file extension
+% load ./matFiles/type_input.mat
+% if outputType == 0
+%   fileType = '.bin';
+% else
+%   fileType = '.txt';
+% end
 
 % full output file name
 outFileString = ['Output File Name: ',outFileName,fileType];
@@ -97,9 +97,11 @@ space1 = '            ';
 
 % write information
 % -----------------
-RUNFILE = fopen('./output/runParameters.txt','a');
-fprintf(RUNFILE,'\n%s%s\n',space1,runTimeString);
-%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
+RUNFILE = fopen('./output/runParameters.txt','w');
+fprintf(RUNFILE,'Run Date:       %s\n',date);
+fprintf(RUNFILE,'Start Time:     %s\n',startTimeString);
+fprintf(RUNFILE,'Stop Time:      %s\n',stopTimeString);
+%%%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
 fprintf(RUNFILE,'%s%s\n',space1,modelString);
 fprintf(RUNFILE,'%s%s\n',space1,Q0_cpString);
 fprintf(RUNFILE,'%s%s\n',space1,a0String);

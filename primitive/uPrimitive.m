@@ -59,9 +59,9 @@ Z = structureZ(p);
 % Get total u field u(yHat,xi,z)
 u = Z*UF;
 
-% Save u field
-disp('  Saving u(yHat,xi)          : [u] -> matFiles/field_u.mat')
-save ./matFiles/field_u.mat u
+% % Save u field
+% disp('  Saving u(yHat,xi)          : [u] -> matFiles/field_u.mat')
+% save ./matFiles/field_u.mat u
 
 %%%clear UN UF Z u   %%% save: u
 clear Umnr UN Z

@@ -60,9 +60,9 @@ Z = structureZ(p);
 % Get total q field q(yHat,xi,z)
 q = Z*qF;
 
-% Save q field
-disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
-save ./matFiles/field_q.mat q
+% % Save q field
+% disp('  Saving q(yHat,xi)          : [q] -> matFiles/field_q.mat')
+% save ./matFiles/field_q.mat q
 
 %%%clear qN qF Z q   %%% save: q
 clear qmnr qN Z

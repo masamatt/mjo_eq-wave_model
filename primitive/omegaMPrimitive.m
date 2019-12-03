@@ -75,9 +75,9 @@ omegaMF = -pM*86400*wF;
 % Get total omegaM field omegaM(yHat,xi,z)
 omegaM = Zprime*omegaMF;
 
-% Save omegaM field
-disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
-save ./matFiles/field_omegaM.mat omegaM
+% % Save omegaM field
+% disp('  Saving omegaM(yHat,xi)     : [omegaM] -> matFiles/field_omegaM.mat')
+% save ./matFiles/field_omegaM.mat omegaM
 
 %%%clear wN wF Zprime w omegaMF     %%% save: omegaM
 clear PHInmr wmnr wN wF Zprime w

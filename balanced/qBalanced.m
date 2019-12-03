@@ -36,9 +36,9 @@ Z = structureZ(p);
 % Get total balanced q field b_q(yHat,xi,z)
 b_q = Z*bqF;
 
-% save b_q field
-disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
-save ./matFiles/field_b_q.mat b_q
+% % save b_q field
+% disp('  Saving b_q(yHat,xi)        : [b_q] -> matFiles/field_b_q.mat')
+% save ./matFiles/field_b_q.mat b_q
 clear qH Z
 
 % END

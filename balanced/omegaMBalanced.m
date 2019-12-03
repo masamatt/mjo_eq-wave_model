@@ -51,9 +51,9 @@ b_omegaMF = -pM*86400*bwF;
 % Get total balanced omegaM field b_omegaM(yHat,xi,z)
 b_omegaM = Zprime*b_omegaMF;
 
-% save b_omegaM field
-disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
-save ./matFiles/field_b_omegaM.mat b_omegaM
+% % save b_omegaM field
+% disp('  Saving b_omegaM(yHat,xi)   : [b_omegaM] -> matFiles/field_b_omegaM.mat')
+% save ./matFiles/field_b_omegaM.mat b_omegaM
 clear wmn wH bwF Zprime
 
 % END

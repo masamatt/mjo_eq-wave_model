@@ -39,9 +39,9 @@ Z = structureZ(p);
 % Get total balanced v field b_v(yHat,xi,z)
 b_v = Z*bVF;
 
-% save b_v field
-disp('  Saving b_v(yHat,xi)        : [b_v] -> matFiles/field_b_v.mat')
-save ./matFiles/field_b_v.mat b_v
+% % save b_v field
+% disp('  Saving b_v(yHat,xi)        : [b_v] -> matFiles/field_b_v.mat')
+% save ./matFiles/field_b_v.mat b_v
 clear Vmn V_SE Z
 
 % END

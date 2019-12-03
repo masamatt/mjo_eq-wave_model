@@ -39,9 +39,9 @@ Z = structureZ(p);
 % Get total balanced phi field b_phi(yHat,xi,z)
 b_phi = Z*bPhiF;
 
-% save b_phi field
-disp('  Saving b_phi(yHat,xi)      : [b_phi] -> matFiles/field_b_phi.mat')
-save ./matFiles/field_b_phi.mat b_phi
+% % save b_phi field
+% disp('  Saving b_phi(yHat,xi)      : [b_phi] -> matFiles/field_b_phi.mat')
+% save ./matFiles/field_b_phi.mat b_phi
 clear PHImn PHI_SE Z
 
 % END
