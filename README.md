@@ -189,7 +189,7 @@ which can safely be ignored and is just stating Matlab can't contour a constant 
 
 
 ## V. Model Description
-The two models (primitive equation, balanced) described below comprise the original model code.  The plots for <sup>[\[1\], ](#1)</sup><sup>[\[2\]](#2)</sup> were produced at the time by Brian McNoldy using IDL software.  
+The two models (primitive equation, balanced) described below comprise the original model code.  The plots for <sup>[\[1\]](#1), </sup><sup>[\[2\]](#2)</sup> were produced at the time by Brian McNoldy using IDL software.  
 <br><br><br>
 
 
