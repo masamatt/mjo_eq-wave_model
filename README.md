@@ -64,18 +64,18 @@ Change directories to the root directory in the cloned repository, and start Mat
   $ cd mjo_eq-wave_model
   $ matlab
 ```
-From the command prompt (`>>`) inside Matlab you can start a model simulation (with default parameters set) by calling the main run script ([`MJO_RUN.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_RUN.m))
+From the Matlab command prompt (`>>`) start a model simulation (using default parameters) by calling the main run script ([`MJO_RUN.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_RUN.m))
 ```matlab
   >> MJO_RUN
 ```
-You will be prompted to run either the primitive equation model (`0`), or the balanced model (`1`).  
+You'll be prompted to run the primitive equation model (`0`), or the balanced model (`1`).  
 ```matlab
 Which model should be run?
         Primitive: 0
         Balanced:  1
 Enter [0 or 1]:
 ```
-If you enter `1` for the balanced model no more input is needed and the model will start solving for the balanced theory solution.  If you entered `0` for the primitive equation model, you will then be prompted for which equatorial wave component should be run
+If you enter `1` for the balanced model no more input is needed and the model will start solving for the balanced theory solution.  If you entered `0` for the primitive equation model, you'll then be prompted for which equatorial wave component(s) should be run
 ```matlab
 Choose from the wave components for the Primitive Model.
                                                         
@@ -191,32 +191,23 @@ which can safely be ignored and is just stating Matlab can't contour a constant 
 
 ## V. Model Description
 Two models.
- 
- 
-
-
 <br><br>
 
 
 #### V.i Primitive Equation Model
-The governing equations for the primitive equation model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
-equations in 3-dimensional space are separated into horizonal and vertical structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
-[Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf).  
+The governing equations for the primitive equation (PE) model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
+equations in (`xi`, `y`, `z`)-space are separated into horizonal (`xi`, `y`) and vertical (`z`) structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
+[Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating [App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf) at a constant speed with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf). 
 
 > The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
 > baroclinic mode response to a moving planetary scale heat source under the long-wave approximation (Chao, 1987).<sup>[\[3\]](#3)</sup>
 
-Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).
-A schematic outlining the computational procedure for the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
-<br>
-[Primitive: Equatorial wave dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf)
+Due to the spectral solution method of the shallow water equations, the full wave response can be decomposed into equatorial wave components ([PE dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf)). Plots of the horizontal solutions fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).  A schematic outlining the computational procedure for the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
 <br><br>
 
 
 #### V.ii Balanced Model
-[Potential vorticity principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf)<br>
-[Invertibility principle](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf)<br>
-[PE Rossby vs. Balanced Dispersion](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf)<br>
+The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial linear balance relation along with boundary conditions to the principle.  The dispersion curves for the [balanced model and low-frequency PE](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are overlayed for comparison.
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
