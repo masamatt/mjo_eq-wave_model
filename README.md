@@ -92,7 +92,7 @@ Enter the wave ID number [0,1,2,3,4]:
 ```
 Entering a wave ID `1` to `4` computes the response for that particular equatorial wave componment, while entering `0` computes the total wave solution, i.e., the sum of waves `1-4`.  
 
-The model will run for ~O(5 min), computer dependent, and will automatically open a plot of the output upon completion.
+The model will run for ~O(5 min), computer dependent.  While running, status output will continuously be displayed to the Matlab console.  Once the run is finished a figure window will automatically open with a plot of the output.
 <br><br>
 
 
@@ -116,6 +116,7 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
+The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m) is automatically called at the end of the script `MJO_RUN.m`.  Inside `MJO_PLOT.m` there are a number of parameter options that you can set to make a small amount of adjustments to a plot.  You can simply edit the parameters within the script, and then call the script (`MJO_PLOT.m`) again, without having to do another run.
 [Primitive Eq. - total wave response](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/P_a1250b450y450_2019-11-29_134840.pdf)<br>
 [ - Rossby wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PRa1250b450y450_2019-11-29_135120.pdf)<br>
 [ - Mixed Rossby-gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PMa1250b450y450_2019-11-29_134443.pdf)<br>
@@ -134,7 +135,7 @@ Warning: Contour not rendered for constant ZData
 ```
 <br>
 
-[`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m).
+
 <br>
 
 [\[Return to top\]](#mjo_eq-wave_model)
