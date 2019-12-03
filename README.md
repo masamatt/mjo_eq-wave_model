@@ -47,7 +47,6 @@ mjo_eq-wave_model/
 
 ## III. User Guide
 
-
 #### III.i. - Download Repository
 Download a copy of the repository to your computer using `git` by
 issuing the following command at a prompt (`$`) in a terminal
@@ -56,6 +55,7 @@ issuing the following command at a prompt (`$`) in a terminal
 ```
 The model is composed of Matlab scripts and functions and is ready for use once downloaded.
 <br><br>
+
 
 
 #### III.ii - Run Model:  MJO_RUN.m
@@ -95,6 +95,7 @@ The model will run for ~O(5 min), computer dependent.  While running, status out
 <br><br>
 
 
+
 #### III.iii - Set Run Parameters:  MJO_PARAMS.m
 The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PARAMS.m) is a script containing all the parameters available to the user for configuring the model forcing and resolution.  Edit the following parameters then run the script `MJO_RUN.m` again to compute the solution for the newly selected parameters.
 <br>
@@ -111,7 +112,8 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 | M  | `mMax` |      \[ \]       |  maximum zonal wavenumber (int)  |  `200` |
 |   | `zonalDomain` |      \[ \]       |  extent of physical space zonal channel to display (float) | `0.5` |
 
-<br>
+<br><br>
+
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
