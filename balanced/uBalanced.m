@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('  uBalanced.m script         : [b_u(yHat,xi)] - b zonal wind')
+disp('uBalanced.m script           : [b_u(yHat,xi)] - physical space balanced zonal wind (b_u)')
 
 % Get Rossby wave approximation to Eigenfunction U
 Umn = bRossbyEigenU(H0,Hn,yHatVec,mMax,nMax);

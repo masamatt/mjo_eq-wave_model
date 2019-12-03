@@ -39,7 +39,7 @@ function KNfield = kelvinNormalMode(ETA,EIGEN,yHatVec,M,N)
 %                 
 
 % Entry statement
-disp('    kelvinNormalMode.m func  : [n=-1,r=2] Kelvin component normal mode expansion')
+disp('  kelvinNormalMode.m func  : [n=-1,r=2 -> yHat] Kelvin component normal mode expansion')
 
 
 % size of yHat vector

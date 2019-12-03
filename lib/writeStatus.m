@@ -87,15 +87,20 @@ outFileName = getOutFile(mName,p,y0,waves);
 % % full output file name
 % outFileString = ['Output File Name: ',outFileName,fileType];
 
+% date / time strings
+runDateString=['Run Date                      : ',date];
+timeStartStr =['Start Time                    : ',startTimeString];
+timeStopStr  =['Stop Time                     : ',stopTimeString];
+
 % formatting space
 space1 = '            ';
 
 % write information
 % -----------------
 RUNFILE = fopen('./output/runParameters.txt','w');
-fprintf(RUNFILE,'Run Date:       %s\n',date);
-fprintf(RUNFILE,'Start Time:     %s\n',startTimeString);
-fprintf(RUNFILE,'Stop Time:      %s\n',stopTimeString);
+fprintf(RUNFILE,'\n%s%s\n',space1,runDateString);
+fprintf(RUNFILE,'%s%s\n',space1,timeStartStr);
+fprintf(RUNFILE,'%s%s\n\n',space1,timeStopStr);
 %%%fprintf(RUNFILE,'%s%s\n',space1,outFileString);
 fprintf(RUNFILE,'%s%s\n',space1,modelString);
 fprintf(RUNFILE,'%s%s\n',space1,Q0_cpString);
@@ -105,7 +110,7 @@ fprintf(RUNFILE,'%s%s\n',space1,y0String);
 fprintf(RUNFILE,'%s%s\n',space1,cString);
 fprintf(RUNFILE,'%s%s\n',space1,pString);
 fprintf(RUNFILE,'%s%s\n',space1,zonalString);
-fprintf(RUNFILE,'%s%s\n',space1,meridionalString);
+fprintf(RUNFILE,'%s%s\n\n',space1,meridionalString);
 fclose(RUNFILE);
 
 % clear unneeded strings, temp variables

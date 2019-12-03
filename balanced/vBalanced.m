@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('  vBalanced.m script         : [b_v(yHat,xi)] - b meridional wind')
+disp('vBalanced.m script           : [b_v(yHat,xi)] - physical space balanced meridional wind (b_v)')
 
 % Get Rossby wave approximation to Eigenfunction V
 Vmn = bRossbyEigenV(H0,Hn,yHatVec,mMax,nMax);

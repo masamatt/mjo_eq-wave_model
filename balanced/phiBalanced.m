@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('  phiBalanced.m script       : [b_phi(yHat,xi)] - b geopotential')
+disp('phiBalanced.m script         : [b_phi(yHat,xi)] - physical space balanced geopotential (b_phi)')
 
 % Get Rossby wave approximation to Eigenfunction PHI
 PHImn = bRossbyEigenPHI(H0,Hn,yHatVec,mMax,nMax);

@@ -34,7 +34,7 @@
 %
 
 % Start statement
-disp('  omegaMPrimitive.m script   : [omegaM(yHat,xi)]')
+disp('omegaMPrimitive.m script     : [omegaM(yHat,xi)] - physical space vertical pressure velocity (omegaM)')
 
 % Get Eigenfunction PHI
 PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);

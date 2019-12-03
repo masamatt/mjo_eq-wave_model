@@ -39,7 +39,7 @@ function MNfield = mixedNormalMode(ETA,EIGEN,yHatVec,M,N)
 %                 
 
 % Entry statement
-disp('    mixedNormalMode.m func   : [n=0,r=0] mixed component normal mode expansion')
+disp('  mixedNormalMode.m func     : [n=0,r=0 -> yHat] mixed component normal mode expansion')
 
 
 % size of yHat vector

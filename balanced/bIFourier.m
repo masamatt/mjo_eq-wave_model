@@ -42,7 +42,7 @@ function IFfield = bIFourier(HF,yHatVec,xiVec,M)
 %                 
 
 % Entry statement
-disp('    bIFourier.m function     : [m -> xi] b inverse Fourier transform')
+disp('  bIFourier.m function       : [m -> xi] b inverse Fourier transform')
 
 
 % global declaration

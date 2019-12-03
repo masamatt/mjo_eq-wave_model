@@ -22,7 +22,7 @@
 %
 
 % Start statement
-disp('  qBalanced.m script         : [b_q(yHat,xi)] - b potential vorticity')
+disp('qBalanced.m script           : [b_q(yHat,xi)] - physical space balanced potential vorticity (b_q)')
 
 % Hermite expand q
 qH = bHermite(qmn,H0,Hn,yHatVec,mMax,nMax);

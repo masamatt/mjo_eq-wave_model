@@ -74,7 +74,7 @@ function q = getStructureq(A,NU,H0,H,yHatVec,M,N)
 %              
 
 % Entry statement
-disp('    getStructureq.m function : [q(yHat)mnr] - expansion q structure')
+disp('  getStructureq.m function   : [q(yHat)mnr] - expansion q structure')
 
 
 % global declaration

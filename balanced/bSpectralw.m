@@ -50,7 +50,7 @@ function w = bSpectralw(stream,Q,alfa,c,M,N)
 
 
 % entry statement
-disp('    bSpectralw.m function    : [w_mn] - b spectral vertical velocity')
+disp('  bSpectralw.m function      : [w_mn] - b spectral vertical velocity')
 
 % global declarations
 global cp Gmma Omega Rd ep a

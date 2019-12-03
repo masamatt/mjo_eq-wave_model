@@ -26,7 +26,7 @@
 %
 
 % Start statement
-disp('  uPrimitive.m script        : [u(yHat,xi)]')
+disp('uPrimitive.m script          : [u(yHat,xi)] - physical space zonal wind (u)')
 
 % Get Eigenfunction U
 Umnr = getEigenU(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);

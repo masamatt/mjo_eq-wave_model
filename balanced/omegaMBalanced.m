@@ -29,7 +29,7 @@
 %
 
 % Start statement
-disp('  omegaMBalanced.m script    : [b_omegaM(yHat,xi)] - b log-pressure vertical velocity')
+disp('omegaMBalanced.m script      : [b_omegaM(yHat,xi)] - physical space balanced vertical pressure velocity (b_omegaM)')
 
 % Get spectral space log-pressure vertical velocity
 wmn = bSpectralw(psimn,Qmn,alfa,c,mMax,nMax);

@@ -33,7 +33,7 @@ function U = bRossbyEigenU(H0,H,yHatVec,M,N)
 %    
 
 % entry statement
-disp('    bRossbyEigenU.m function : [U(yHat)mn] - rossby approx. eigen U');
+disp('  bRossbyEigenU.m function   : [U(yHat)mn] - rossby approx eigen U');
 
 % global declaration
 global ep

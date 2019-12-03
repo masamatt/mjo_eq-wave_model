@@ -26,7 +26,7 @@
 %
 
 % Start statement
-disp('  vPrimitive.m script        : [v(yHat,xi)]')
+disp('vPrimitive.m script          : [v(yHat,xi)] - physical space meridional wind (v)')
 
 % Get Eigenfunction V
 Vmnr = getEigenV(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);

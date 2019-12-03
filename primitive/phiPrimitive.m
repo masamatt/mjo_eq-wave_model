@@ -27,7 +27,7 @@
 %
 
 % Start statement
-disp('  phiPrimitive.m script      : [phi(yHat,xi)]')
+disp('phiPrimitive.m script        : [phi(yHat,xi)] - physical space geopotential (phi)')
 
 % Get Eigenfunction PHI
 PHImnr = getEigenPHI(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);

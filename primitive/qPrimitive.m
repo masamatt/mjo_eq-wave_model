@@ -27,7 +27,7 @@
 %
 
 % Start statement
-disp('  qPrimitive.m script        : [q(yHat,xi)]')
+disp('qPrimitive.m script          : [q(yHat,xi)] - physical space potential vorticity (q)')
 
 % Get expansion Structure function q_mnr(yHat)
 qmnr = getStructureq(Amnr,NUmnr,H0,Hn,yHatVec,mMax,nMax);

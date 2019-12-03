@@ -81,8 +81,11 @@ else
 end
 stopTimeString  = getTimeString();
 
-
+disp(' ')
+disp(['Start time                   : ',startTimeString])
+disp(['Stop time                    : ',stopTimeString])
 writeStatus;
+cleanUpVars;
 disp('                                                ')
 disp('    ****************************************    ')
 disp('    *                                      *    ')

@@ -39,7 +39,7 @@ function GNfield = gravityNormalMode(ETA,EIGEN,yHatVec,M,N)
 %                 
 
 % Entry statement
-disp('    gravityNormalMode.m func : [n=0,r=2; n>0,r=1,2] gravity comp. normal mode expansion')
+disp('  gravityNormalMode.m func   : [n=0,r=2; n>0,r=1,2 -> yHat] gravity comp. normal mode expansion')
 
 
 % size of yHat vector

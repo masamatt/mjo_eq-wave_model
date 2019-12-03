@@ -48,7 +48,7 @@ disp(' ');disp(' ');
 
 % Compute variables needed for all 5 fields
 disp('----------------------------------    ')
-disp('    Computing basis quantities        ')
+disp('     Compute basis quantities         ')
 disp('----------------------------------    ')
 balancedBasis;
 disp(' ')
@@ -56,7 +56,7 @@ disp(' ')
 
 % Compute u field
 disp('----------------------------------    ')
-disp('      Computing b_u field             ')
+disp('       Compute b_u field              ')
 disp('----------------------------------    ')
 uBalanced;
 disp('                                      ')
@@ -65,7 +65,7 @@ disp('                                      ')
 
 % Compute v field
 disp('----------------------------------    ')
-disp('      Computing b_v field             ')
+disp('       Compute b_v field              ')
 disp('----------------------------------    ')
 vBalanced;
 disp('                                      ')
@@ -74,7 +74,7 @@ disp('                                      ')
 
 % Compute phi field
 disp('----------------------------------    ')
-disp('     Computing b_phi field            ')
+disp('      Compute b_phi field             ')
 disp('----------------------------------    ')
 phiBalanced;
 disp('                                      ')
@@ -83,7 +83,7 @@ disp('                                      ')
 
 % Compute omegaM field
 disp('----------------------------------    ')
-disp('    Computing b_omegaM field          ')
+disp('     Compute b_omegaM field           ')
 disp('----------------------------------    ')
 omegaMBalanced;
 disp('                                      ')
@@ -91,7 +91,7 @@ disp('                                      ')
 
 % Compute q field
 disp('----------------------------------    ')
-disp('      Computing b_q field             ')
+disp('       Compute b_q field              ')
 disp('----------------------------------    ')
 qBalanced;
 disp('                                      ')
@@ -100,7 +100,6 @@ disp('                                      ')
 
 % % Print all balanced fields to a text file
 % bPrintResults;
-disp('                                          ')
 disp('        =========================         ')
 disp('        *   END BALANCED MODEL  *         ')
 disp('        =========================         ')

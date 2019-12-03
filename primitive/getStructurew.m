@@ -61,7 +61,7 @@ function w = getStructurew(NU,PHI,yHatVec,M,N)
 %
 
 % Entry statement
-disp('    getStructurew.m function : [w(yHat)mnr] - expansion w structure')
+disp('  getStructurew.m function   : [w(yHat)mnr] - expansion w structure')
 
 
 % global declaration
