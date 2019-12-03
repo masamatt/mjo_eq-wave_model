@@ -83,17 +83,12 @@ outFileName = getOutFile(mName,p,y0,waves);
 % else
 %   fileType = '.txt';
 % end
-
-% full output file name
-outFileString = ['Output File Name: ',outFileName,fileType];
-
-% start time of run
-timeString = getTimeString();
-runTimeString = ['Run start time: ',timeString];
+%
+% % full output file name
+% outFileString = ['Output File Name: ',outFileName,fileType];
 
 % formatting space
 space1 = '            ';
-
 
 % write information
 % -----------------

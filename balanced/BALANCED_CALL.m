@@ -97,11 +97,9 @@ qBalanced;
 disp('                                      ')
 
 
-% write record to runParameters.txt file
-writeStatus;
-% Print all balanced fields to a text file
-%%%bPrintResults;
-% End balanced run
+
+% % Print all balanced fields to a text file
+% bPrintResults;
 disp('                                          ')
 disp('        =========================         ')
 disp('        *   END BALANCED MODEL  *         ')

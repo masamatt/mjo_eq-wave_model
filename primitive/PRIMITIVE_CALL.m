@@ -105,11 +105,8 @@ disp(' ')
 
 
 
-% write record to runParameters.txt file
-writeStatus;
-% Print all fields to a text file
-%%%printResults;
-% End primitive run
+% % Print all fields to output file
+% printResults;
 disp('                                          ')
 disp('        =========================         ')
 disp('        *  END PRIMITIVE MODEL  *         ')
