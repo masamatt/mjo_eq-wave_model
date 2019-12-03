@@ -119,9 +119,10 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m) is automatically called at the end of the script `MJO_RUN.m`.  Inside `MJO_PLOT.m` are parameter options that can be set to make some adjustments to a plot.  You can simply edit the parameters then call the script (`MJO_PLOT.m`) again, without having to do another run, and a new figure window with an updated plot will open.  As an aside, since a new figure will be opened each time `MJO_PLOT.m` is called, figures can be left during new simulations so different run plots can be compared side-by-side.<br>
 
 The output plots are formatted to each have three panels displaying the output fields in the equatorial channel, and are listed here from the top
-1. potential vorticity (q)
-2. wind + geopotential height (u,v,phi)
-3. vertical pressure velocity (omegaM)
+1. potential vorticity (`q`)
+2. wind + geopotential height (`u`,`v`,`phi`)
+3. vertical pressure velocity (`omegaM`)
+
 For the default parameters listed in the table above this section, the output plot for each possible simulation are listed below:  
 
 ---
@@ -130,6 +131,7 @@ For the default parameters listed in the table above this section, the output pl
 * [Mixed Rossby-gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PMa1250b450y450_2019-11-29_134443.pdf)<br>
 * [Inertia-gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PGa1250b450y450_2019-11-29_135408.pdf)<br>
 * [Kelvin wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PKa1250b450y450_2019-11-29_135702.pdf)<br>
+
 [Balanced solution](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/B_a1250b450y450_2019-11-29_141143.pdf)<br>
 
 ---
@@ -144,9 +146,7 @@ Warning: Contour not rendered for constant ZData
 >>
 ```
 which can safely be ignored.  Another circumstance when this will occur is for any model configuration where the meridional displacement (of the center of the diabatic heating envelope) from the Equator is zero (y<sub>0</sub>=0).  In this case the mixed 
-Rossby-gravity wave is not excited due to it's symmetry about the equator and all it's fields are then zero as well.
-<br>
-
+Rossby-gravity wave is not excited due to it's symmetry about the equator and all it's fields are then zero as well.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
