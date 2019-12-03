@@ -121,7 +121,7 @@ The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 For the default parameters listed in the table above this section, the output plot for each possible simulation are shown: 
 
 ---
-[Primitive Eq. - total wave response](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/P_a1250b450y450_2019-11-29_134840.pdf)<br>
+[Primitive equation (total wave response)](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/P_a1250b450y450_2019-11-29_134840.pdf)<br>
 * [Rossby wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PRa1250b450y450_2019-11-29_135120.pdf)<br>
 * [Mixed Rossby-gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PMa1250b450y450_2019-11-29_134443.pdf)<br>
 * [Gravity wave](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/PGa1250b450y450_2019-11-29_135408.pdf)<br>
