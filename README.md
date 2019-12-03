@@ -201,7 +201,7 @@ equations in `(x,y,z,t)`-space are separated into horizonal `(x,y,t)` and vertic
 > The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
 > baroclinic mode response to a moving planetary scale heat source under the long-wave approximation (Chao, 1987).<sup>[\[3\]](#3)</sup>
 
-Due to the spectral series solution of these shallow water equations, the full wave response can be decomposed into equatorially trapped  wave components ([PE dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf)). Plots of the horizontal solution fields are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).  Finally, a schematic outlining the computational procedure for solving the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
+Due to the spectral series solution of these shallow water equations, the full wave response can be decomposed into equatorially trapped  wave components.  The [frequency disperson curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf) for each component can be displayed as by Matsuno, 1966<sup>[\[4\]](#4)</sup>. Plots of the horizontal solution fields for the total response as well as each component are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).  Finally, a schematic outlining the computational procedure for solving the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
 <br><br>
 
 
@@ -216,6 +216,8 @@ The balanced model is borne out of the primitive equation PV principle derived i
 * <sup><a name="2">\[2\]</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
 * <sup><a name="3">\[3\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci._, 
 **44**, 1940-1949.
+* <sup><a name="4">\[4\]</a></sup> Matsuno, T., 1966:  Quasi-geostrophic motions in the equatorial area. _J. Meteor. Soc. Japan_,
+**44**, 25-43.
 * [Bibliography](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_bib.pdf) for MS thesis.
 * [Appendix F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf) - schematic flow-chart of the primitive equation computational procedure.
 <br><br><br>
