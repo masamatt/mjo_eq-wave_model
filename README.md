@@ -195,7 +195,7 @@ Two models.<br>
 
 #### V.i Primitive Equation Model
 The governing equations for the primitive equation (PE) model are presented in [Sec 2.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.1.pdf).  These 
-equations in (`xi`, `y`, `z`)-space are separated into horizonal (`xi`, `y`) and vertical (`z`) structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf). In 
+equations in (`xi`, `y`, `z`)-space are separated into horizonal (`xi`, `y`) and vertical (`z`) structure equations in [Sec 2.2](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.2.pdf) by way of a [vertical normal mode transform](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_vert_norm_mode.pdf). In 
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating at a constant speed ([App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf)) with the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf). 
 
 > The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
