@@ -15,7 +15,7 @@
 
 
 ## I. Overview
-This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  The tropical Pacific weather phenomenon most commonly referred to as the _Madden-Julian oscillation (MJO)_ was discovered in 1970 by Roland Madden and Paul Julian, which they reported on in (Madden and Julian, 1971)<sup>[\[3\]](#3)</sup>.  Introductory  information on the MJO as well as further references can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).
+This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  The tropical Pacific weather phenomenon most commonly referred to as the _Madden-Julian oscillation (MJO)_ was discovered in 1970 by Roland Madden and Paul Julian, which they reported on in (Madden and Julian, 1971)<sup>[\[3\]](#3)</sup>.  Introductory  information on the MJO as well as further references can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).  This modeling work is concerned with simulating the large-scale flow field response to a prescribed forcing term, a 'MJO-like' large-scale convective envelope, translating eastward in an equatorial channel.
 
 Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.  A directory containing scripts to plot the output, `plotting/`, has just been added.<br>
  
@@ -216,7 +216,7 @@ The balanced model is borne out of the primitive equation PV principle derived i
 ## VI. Appendix \& Citations
 * <sup><a name="1">\[1\]</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**, 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 * <sup><a name="2">\[2\]</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
-* <sup><a name="3">\[3\]</a></sup>
+* <sup><a name="3">\[3\]</a></sup> Madden, R. A., and P. R. Julian, 1971:  Detection of a 40-50 day oscillation in the zonal wind in the tropical Pacific. _J. Atmos. Sci._, **28**, 702-708.
 * <sup><a name="4">\[4\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci._, 
 **44**, 1940-1949.
 * <sup><a name="5">\[5\]</a></sup> Matsuno, T., 1966:  Quasi-geostrophic motions in the equatorial area. _J. Meteor. Soc. Japan_,
