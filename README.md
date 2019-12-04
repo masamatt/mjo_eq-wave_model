@@ -111,7 +111,7 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 |   | `zonalDomain` |      \[ \]       |  extent of physical space zonal channel to display (float) | `0.5` |
 
 *NOTE:  the parameter `zonalDomain` specifies the zonal physical extent to **display**.  The solutions are computed in spectral space, and as such always include the **full equatorial channel**.  Plotting just half of the circumference (`zonalDomain = 0.5`) centered on the diabatic forcing allows for more resolution in the region of most interest.*
-<br><br>
+<br><br><br>
 
 
 
