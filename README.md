@@ -15,7 +15,7 @@
 
 
 ## I. Overview
-This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  Introductory information on the tropical weather phenomenon that is the subject of the study, the Madden Julian oscillation (MJO), can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).  
+This repository contains the original model code used in the _Dynamics of Atmospheres and Oceans_ journal article (Schubert and Masarik, 2006)<sup>[\[1\]](#1)</sup>, as well as the MS thesis (Masarik,  2007)<sup>[\[2\]](#2)</sup>.  The description here will follow the later.  The tropical Pacific weather phenomenon most commonly referred to as the _Madden-Julian oscillation (MJO)_ was discovered in 1970 by Roland Madden and Paul Julian, which they reported on in (Madden and Julian, 1971)<sup>[\[3\]](#3)</sup>.  Introductory  information on the MJO as well as further references can be found in [Ch 1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_ch1_intro.pdf).
 
 Two models are available within the repository.  The first, derived from the [primitive equations](#Vi-Primitive-Equation-Model) on an equatorial beta-plane, is contained mostly in the directory `primitive/`.  The second model is contained mostly in the directory `balanced/`, and is derived from the primitive equation [potential vorticity](#Vii-Balanced-Model) (PV) principle together with a linear balance relation.  The directory `lib/` contains a few routines shared between both models.  A directory containing scripts to plot the output, `plotting/`, has just been added.<br>
  
@@ -201,9 +201,9 @@ equations in `(x,y,z,t)`-space are separated into horizonal `(x,y,t)` and vertic
 [Sec 2.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.3.pdf) the prescription of the diabatic forcing term for the horizontal structure problem is given.  Assuming steady-state conditions in a reference frame translating at a constant speed ([App C](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_xi_coord.pdf)) with the center of the prescribed diabatic forcing, the horizontal structure equations are solved in [Sec 2.4](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.4.pdf). 
 
 > The solution can be considered as the primitive equation generalization of the simplest MJO model involving the first 
-> baroclinic mode response to a moving planetary scale heat source under the long-wave approximation (Chao, 1987).<sup>[\[3\]](#3)</sup>
+> baroclinic mode response to a moving planetary scale heat source under the long-wave approximation (Chao, 1987).<sup>[\[4\]](#4)</sup>
 
-Due to the spectral series solution of these shallow water equations, the full wave response can be decomposed into equatorially trapped  wave components.  The [frequency disperson curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf) for each wave component can be displayed as by Matsuno, 1966<sup>[\[4\]](#4)</sup>, Fig. 3.a.  Plots of the horizontal solution fields for the total response as well as each component are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).  Finally, a schematic outlining the computational procedure for solving the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
+Due to the spectral series solution of these shallow water equations, the full wave response can be decomposed into equatorially trapped  wave components.  The [frequency disperson curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_eq_disp.pdf) for each wave component can be displayed as by Matsuno, 1966<sup>[\[5\]](#5)</sup>, Fig. 3.a.  Plots of the horizontal solution fields for the total response as well as each component are displayed for a given pressure surface in [Sec 2.5](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_2.5.pdf).  Finally, a schematic outlining the computational procedure for solving the primitive equation model is given in [App F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf).
 <br><br>
 
 
@@ -216,11 +216,12 @@ The balanced model is borne out of the primitive equation PV principle derived i
 ## VI. Appendix \& Citations
 * <sup><a name="1">\[1\]</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**, 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 * <sup><a name="2">\[2\]</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
-* <sup><a name="3">\[3\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci._, 
+* <sup><a name="3">\[3\]</a></sup>
+* <sup><a name="4">\[4\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci._, 
 **44**, 1940-1949.
-* <sup><a name="4">\[4\]</a></sup> Matsuno, T., 1966:  Quasi-geostrophic motions in the equatorial area. _J. Meteor. Soc. Japan_,
+* <sup><a name="5">\[5\]</a></sup> Matsuno, T., 1966:  Quasi-geostrophic motions in the equatorial area. _J. Meteor. Soc. Japan_,
 **44**, 25-43.
-* [Bibliography](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_bib.pdf) for MS thesis.
+* [Bibliography](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_bib.pdf) - MS thesis.
 * [Appendix F](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_comp_proc.pdf) - schematic flow-chart of the primitive equation computational procedure.
 <br><br><br>
 [\[Return to top\]](#mjo_eq-wave_model)
