@@ -66,12 +66,12 @@ ySize = length(yVec);
 xSize = length(xiVec);
 
 % %%% save:  yVec
-disp('Saving y coordinate in file: ./matFiles/coord_y.mat')
-save ./matFiles/coord_y.mat yVec
+% disp('Saving y coordinate in file: ./matFiles/coord_y.mat')
+% save ./matFiles/coord_y.mat yVec
 
 % %%% save:  xiVec
-disp('Saving xi coordinate in file: ./matFiles/coord_xi.mat')
-save ./matFiles/coord_xi.mat xiVec
+% disp('Saving xi coordinate in file: ./matFiles/coord_xi.mat')
+% save ./matFiles/coord_xi.mat xiVec
 
 
 % initialize "T"otal array. T is composed of y,xi,u,v,phi,omegaM,q.
