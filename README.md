@@ -116,7 +116,7 @@ The file [`MJO_PARAMS.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/mas
 
 
 #### III.iv - Plot Model Output:  MJO_PLOT.m
-The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m) is automatically called at the end of the script `MJO_RUN.m`.  Inside `MJO_PLOT.m` are parameter options that can be set to make some adjustments to a plot.  You can simply edit the parameters then call the script from the Matlab prompt
+The script [`MJO_PLOT.m`](https://github.com/masamatt/mjo_eq-wave_model/blob/master/MJO_PLOT.m) is automatically called at the end of the script `MJO_RUN.m`.  Inside `MJO_PLOT.m` are parameter options that can be set to make plot adjustments.  You can simply edit the parameters then call the script from the Matlab prompt
 ```matlab
 >> MJO_PLOT
 ```
