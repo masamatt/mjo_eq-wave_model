@@ -209,7 +209,7 @@ Due to the spectral series solution of these shallow water equations, the full w
 
 
 #### V.ii Balanced Model
-The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial [linear balance relation](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_eq_bal.pdf) between the wind and mass fields.  The invertibility principle is solved using spectral methods in a manner similar to the PE model, and plots for the balanced flow field are displayed along with the PE model Rossby component flow.  The [balanced dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are plotted alongside the low-frequency (Rossby and Mixed Rossby-gravity waves) PE model curves for comparison.<br>
+The balanced model is borne out of the primitive equation PV principle derived in [Sec 3.1](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.1.pdf).  An invertibility principle is then defined in [Sec 3.3](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_sec_3.3.pdf) by introducing an equatorial [linear balance relation](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/mtm_thesis_eq_bal.pdf) between the wind and mass fields.  The invertibility principle is solved using spectral methods in a manner similar to the PE model, and plots for the balanced flow field are displayed along with the PE model Rossby component flow.  The [balanced dispersion curves](https://github.com/masamatt/mjo_eq-wave_model/blob/master/docs/prim_bal_disp.pdf) are plotted alongside the low-frequency (Rossby and Mixed Rossby-gravity wave) PE model curves for comparison.<br>
 [\[Return to top\]](#mjo_eq-wave_model)
 <br><br><br>
 
@@ -218,8 +218,8 @@ The balanced model is borne out of the primitive equation PV principle derived i
 * <sup><a name="1">\[1\]</a></sup> Schubert, W. H., and M. T. Masarik, 2006: Potential vorticity apsects of the MJO. _Dynamics of Atmospheres and Oceans_, **42**, 127-151. [\[PDF\]](http://dx.doi.org/10.1016/j.dynatmoce.2006.02.003)
 * <sup><a name="2">\[2\]</a></sup> Masarik, M. T. 2007: Potential Vorticity and Energy Aspects of the MJO Through Equatorial Wave Theory.  M.S. Thesis, pp. 94, Dept. of Atmos. Sci., Colo. State Univ., Fort Collins, Colo. [\[PDF\]](http://schubert.atmos.colostate.edu/publications/theses/masarik_thesis_2007.pdf)
 * <sup><a name="3">\[3\]</a></sup> Madden, R. A., and P. R. Julian, 1971:  Detection of a 40-50 day oscillation in the zonal wind in the tropical Pacific. _J. Atmos. Sci._, **28**, 702-708.
-* <sup><a name="4">\[4\]</a></sup> Madden, R. A., and P. R. Julian, 1972:  
-* <sup><a name="5">\[5\]</a></sup> Madden, R. A., and P. R. Julian, 1994:  
+* <sup><a name="4">\[4\]</a></sup> Madden, R. A., and P. R. Julian, 1972:  Description of global scale circulation cells in the tropics with a 40-50 day period. _J. Atmos. Sci._, **29**, 1109-1123.
+* <sup><a name="5">\[5\]</a></sup> Madden, R. A., and P. R. Julian, 1994:  Observations of the 40-50 day tropical oscillation -- a review. _Mon. Wea. Rev._, **122**, 814-837.
 * <sup><a name="6">\[6\]</a></sup> Chao, W. C., 1987: On the origin of the tropical intraseasonal oscillation.  _J. Atmos. Sci._, 
 **44**, 1940-1949.
 * <sup><a name="7">\[7\]</a></sup> Matsuno, T., 1966:  Quasi-geostrophic motions in the equatorial area. _J. Meteor. Soc. Japan_,
