@@ -37,7 +37,6 @@ disp('        Balanced:  1')
 primitiveModel = input('Enter [0 or 1]: ');
 balancedModel  = 1;              % init outside of 'if'
 modelRunString = '';             % init outside of 'if'
-modelSuite     = 1;              % never run full modelSuite, legacy var
 if primitiveModel == 0
     balancedModel = 1;
     modelRunString = 'Primitive';

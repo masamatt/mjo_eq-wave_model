@@ -19,6 +19,10 @@ function [HC0,HCN] = genHC(y0,b0,N)
 %                                       Will try to consolidate 
 %                                       when I have more time to
 %                                       check for dependencies.
+%            (3) MM December 04 2019 -  Regarding previous note (2), 
+%                                       bGenHC.m and genHC.m have
+%                                       been consolidated to genHC.m
+%                                       in lib/.
 %
 % CALL SYNTAX: [HC0,HCN] = genHC(y0,b0,N);
 %              HC0 = H0(Const), scalar []
