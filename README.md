@@ -1,6 +1,6 @@
 # mjo_eq-wave_model
 
-*Steady state beta-plane equatorial wave model for Madden-Julian oscillation (MJO)-like diabatic forcing.*
+*Primitive equation and balanced theory models for Madden-Julian oscillation (MJO)-like diabatic forcing.*
 <br><br><br>
 
 
