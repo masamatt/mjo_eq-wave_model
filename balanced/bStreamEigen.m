@@ -43,7 +43,7 @@ function Sfield = bStreamEigen(STREAM,EIGEN,yHatVec,M,N)
 %       
 
 % Entry statement
-disp('  bStreamEigen.m function    : [stream(yHat)m] - b eigen streamfunction expansion')
+disp('  bStreamEigen.m function    : [n -> yHat] - b streamfunction eigen expansion')
 
 
 % global declaration

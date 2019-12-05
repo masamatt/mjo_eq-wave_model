@@ -65,7 +65,7 @@ if overlayEquator == true
     contour_Equator(XI,Y,EQ);
 end
 if overlayForcing == true
-    contour_DiabForcing(XI,Y,Qdiab);
+    contour_DiabForcing(XI,Y,Qdiab,forcingContourLevs);
 end
 label_plot(['vertical p-velocity(hPa day$^{-1}$) p=',pOmegaMStr,'hPa',peakOmegaMStr]);
 hold off

@@ -21,20 +21,13 @@ primPath = [mjoDir,'/','primitive'];
 balPath  = [mjoDir,'/','balanced'];
 libPath  = [mjoDir,'/','lib'];
 outPath  = [mjoDir,'/','output'];
-matPath  = [mjoDir,'/','matFiles'];
 plotPath = [mjoDir,'/','plotting'];
-
-if exist('./matFiles') ~= 7     % 7 = directory
-    mkdir matFiles;
-else
-    delete('./matFiles/*');
-end
-if exist('./output') ~= 7
+if exist('./output') ~= 7       % 7 = directory
     mkdir output;
 else
     delete('./output/*');
 end
-addpath(mjoDir,primPath,balPath,libPath,outPath,matPath,plotPath);
+addpath(mjoDir,primPath,balPath,libPath,outPath,plotPath);
 
 
 % Prompt for which model: primitive or balanced
@@ -44,7 +37,6 @@ disp('        Balanced:  1')
 primitiveModel = input('Enter [0 or 1]: ');
 balancedModel  = 1;              % init outside of 'if'
 modelRunString = '';             % init outside of 'if'
-modelSuite     = 1;              % never run full modelSuite, legacy var
 if primitiveModel == 0
     balancedModel = 1;
     modelRunString = 'Primitive';

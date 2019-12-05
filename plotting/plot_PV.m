@@ -76,7 +76,7 @@ if overlayEquator == true
     contour_Equator(XI,Y,EQ);
 end
 if overlayForcing == true
-    contour_DiabForcing(XI,Y,Qdiab);
+    contour_DiabForcing(XI,Y,Qdiab,forcingContourLevs);
 end
 label_plot(['potential vorticity(10$^{-6}\,$ s$^{-1}$) anomaly p=',pPVStr,'hPa',peakPVString]);
 hold off

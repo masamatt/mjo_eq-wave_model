@@ -25,7 +25,7 @@ function Zprime = structureZprime(p)
 
 
 % entry statement
-disp('  structureZprime.m function : [ZPrime(p)] apply ZPrime structure')
+disp('  structureZprime.m function : [ZPrime(p)] - apply ZPrime structure')
 
 % global declaration
 global p0 zT zM

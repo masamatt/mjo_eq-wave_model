@@ -19,6 +19,10 @@ function [HC0,HCN] = genHC(y0,b0,N)
 %                                       Will try to consolidate 
 %                                       when I have more time to
 %                                       check for dependencies.
+%            (3) MM December 04 2019 -  Regarding previous note (2), 
+%                                       bGenHC.m and genHC.m have
+%                                       been consolidated to genHC.m
+%                                       in lib/.
 %
 % CALL SYNTAX: [HC0,HCN] = genHC(y0,b0,N);
 %              HC0 = H0(Const), scalar []
@@ -37,7 +41,7 @@ function [HC0,HCN] = genHC(y0,b0,N)
 
 
 % Entry statement
-disp('  genHC.m function           : [HC_0(y_const), HC_n(y_const)] - generate y_const H structure functions')
+disp('  genHC.m function           : [HC0(y_const), HCN(y_const)] - generate y=const, merid H structure functions')
 
 % Global declaration
 global ep a

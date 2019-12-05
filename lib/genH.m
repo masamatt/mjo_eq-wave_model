@@ -22,7 +22,7 @@ function HN = genH(yHatVec,N)
 
 
 % Entry statement
-disp('  genH.m function            : [H_n(yHat)] - generate n>0 H structure functions')
+disp('  genH.m function            : [HN(yHat)] - generate n>0, meridional H structure functions')
 
 % Check if N < 1. If so, display error message and return 
 % control to calling function.

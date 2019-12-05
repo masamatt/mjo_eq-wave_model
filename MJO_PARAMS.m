@@ -7,9 +7,9 @@
 % Q0/cp [K/day]:  diabatic heating rate          [default, Q0/cp=12K/day]
 Q0_cp = 12;                      %   comment: for fixed integrated heating
 fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
-%%% fixedIntegratedForcing=true; % uncomment: for fixed integrated heating
-%%% Q0_cp     = NaN;             % uncomment: for fixed integrated heating
-%%% a0b0Q0_cp = 1250*450*12;     % uncomment: for fixed integrated heating
+%%%fixedIntegratedForcing=true;  % uncomment: for fixed integrated heating
+%%%Q0_cp     = NaN;              % uncomment: for fixed integrated heating
+%%%a0b0Q0_cp = 1250*450*12;      % uncomment: for fixed integrated heating
                                  %   set integrated heating fixed amount,
                                  %   a0b0Q0_cp:= a0*b0*Q0/cp
                                  %             = 1250*450*12

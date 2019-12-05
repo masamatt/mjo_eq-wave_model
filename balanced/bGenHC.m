@@ -38,7 +38,7 @@ function [HC0,HCN] = bGenHC(y0,b0,N)
 
 
 % Entry statement
-disp('  bGenHC.m function          : [H_0(y_const), H_n(y_const)] - generate balanced y_const H structure functions ')
+disp('  bGenHC.m function          : [H_0(y_const), H_n(y_const)] - generate balanced y=const, merid H structure functions')
 
 % Global declaration
 global ep a

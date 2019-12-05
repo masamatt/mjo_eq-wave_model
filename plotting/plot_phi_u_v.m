@@ -62,7 +62,7 @@ if overlayEquator == true
     contour_Equator(XI,Y,EQ);
 end
 if overlayForcing == true
-    contour_DiabForcing(XI,Y,Qdiab);
+    contour_DiabForcing(XI,Y,Qdiab,forcingContourLevs);
 end
 quiver(XISKIP,YSKIP,USKIP,VSKIP,'Color','black','AutoScale','on', ...
     'AutoScaleFactor',vectorScaleFactor);

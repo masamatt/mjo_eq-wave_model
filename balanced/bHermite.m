@@ -64,7 +64,7 @@ function Hfield = bHermite(COEFF,H0,H,yHatVec,M,N)
 %              
 
 % Entry statement
-disp('  bHermite.m function        : [n -> yHat] b inverse Hermite transform')
+disp('  bHermite.m function        : [n -> yHat] - b inverse Hermite transform')
 
 
 % local variables

@@ -33,6 +33,12 @@ y0String         = ['Meridional displacement,    y0: ',num2str(y0_km),' km'];
 % diabatic heating rate for prescribed forcing
 Q0_cpString      = ['Diabatic heating rate,   Q0/cp: ',sprintf('%0.2f',Q0_cp),' K/day'];
 
+% optional: total integrated diabatic heating rate
+a0b0Q0_cpString  = '';
+if fixedIntegratedForcing == true
+    a0b0Q0_cpString = ['Integrated heating,  a0b0Q0/cp: ',sprintf('%0.2e',a0b0Q0_cp),' km^2 K/day'];
+end
+
 % pressure level (mb == hPa)
 p_mb = p;
 pString          = ['Pressure level,              p: ',num2str(p_mb),' hPa'];
@@ -81,6 +87,9 @@ disp('             |________________________________________________|  ');
 disp(' ');
 %%%disp([space1,outString]);
 disp([space1,modelString]);
+if fixedIntegratedForcing == true
+    disp([space1,a0b0Q0_cpString]);
+end
 disp([space1,Q0_cpString]);
 disp([space1,a0String]);
 disp([space1,b0String]);
@@ -97,7 +106,7 @@ disp('                                                                 ');
 
 % clear unneeded strings, temp variables
 clear zonalString meridionalString a0String b0String y0String pString Q0_cpString
-clear cString space1 modelString outputType outString
+clear cString space1 modelString outputType outString a0b0Q0_cpString
 
 % END
 

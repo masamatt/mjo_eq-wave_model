@@ -53,53 +53,53 @@ disp(' ');
 
 
 % Compute variables needed for all 5 fields
-disp('----------------------------------    ')
-disp('      Compute basis quantities        ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('  Compute basis quantities   ')
+disp('-----------------------------')
 primitiveBasis;
 disp(' ')
 
 
 % Compute u field
-disp('----------------------------------    ')
-disp('        Compute u field               ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('      Compute u field        ')
+disp('-----------------------------')
 uPrimitive;  % Calculate u dependent on wave type
 disp(' ')
 
 
 
 % Compute v field
-disp('----------------------------------    ')
-disp('        Compute v field               ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('      Compute v field        ')
+disp('-----------------------------')
 vPrimitive;  % Calculate v dependent on wave type
 disp(' ')
 
 
 
 % Compute phi field
-disp('----------------------------------    ')
-disp('        Compute phi field             ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('      Compute phi field      ')
+disp('-----------------------------')
 phiPrimitive;  % Calculate phi dependent on wave type
 disp(' ')
 
 
 
 % Compute omegaM field
-disp('----------------------------------    ')
-disp('      Compute omegaM field            ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('     Compute omegaM field    ')
+disp('-----------------------------')
 omegaMPrimitive;  % Calculate omegaM dependent on wave type
 disp(' ')
 
 
 
 % Compute q field
-disp('----------------------------------    ')
-disp('         Compute q field              ')
-disp('----------------------------------    ')
+disp('-----------------------------')
+disp('       Compute q field       ')
+disp('-----------------------------')
 qPrimitive;        % Calculate q dependent on wave type
 disp(' ')
 
