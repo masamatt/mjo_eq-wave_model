@@ -39,7 +39,7 @@ function RNfield = rossbyNormalMode(ETA,EIGEN,yHatVec,M,N)
 %                 
 
 % Entry statement
-disp('  rossbyNormalMode.m func    : [n>0,r=0 -> yHat] Rossby component normal mode expansion')
+disp('  rossbyNormalMode.m func    : [n>0,r=0 -> yHat] - Rossby component normal mode expansion')
 
 
 % size of yHat vector
