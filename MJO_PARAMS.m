@@ -5,11 +5,11 @@
 
 % *****************  DIABATIC FORCING PARAMETERS ****************** %
 % Q0/cp [K/day]:  diabatic heating rate          [default, Q0/cp=12K/day]
-Q0_cp = 12;                      %   comment: for fixed integrated heating
-fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
-%%% fixedIntegratedForcing=true; % uncomment: for fixed integrated heating
-%%% Q0_cp     = NaN;             % uncomment: for fixed integrated heating
-%%% a0b0Q0_cp = 1250*450*12;     % uncomment: for fixed integrated heating
+%%%Q0_cp = 12;                      %   comment: for fixed integrated heating
+%%%fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
+fixedIntegratedForcing=true; % uncomment: for fixed integrated heating
+Q0_cp     = NaN;             % uncomment: for fixed integrated heating
+a0b0Q0_cp = 1250*450*12;     % uncomment: for fixed integrated heating
                                  %   set integrated heating fixed amount,
                                  %   a0b0Q0_cp:= a0*b0*Q0/cp
                                  %             = 1250*450*12
@@ -17,11 +17,11 @@ fixedIntegratedForcing=false;    %   comment: for fixed integrated heating
 
 % a0 [km]:  zonal half-width of diabatic heating
 %           [default, a0=1250km]
-a0_km = 1250;
+a0_km = 1500;
 
 % b0 [km]:  meridional e-folding width of diabatic heating
 %           [default,  b0=450km]
-b0_km = 450;
+b0_km = 800;
 
 % y0 [km]:  meridional displacement from equator of diabatic heating
 %           [default,  y0=450km]
