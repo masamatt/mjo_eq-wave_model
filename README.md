@@ -37,6 +37,7 @@ mjo_eq-wave_model/
 ├── output/                         #   directory for text and image output
 ├── plotting/                       #   scripts for plotting
 ├── primitive/                      #   code base for primitive equation model
+├── LICENSE.md  
 └── README.md
 ```
 [\[Return to top\]](#mjo_eq-wave_model)
