@@ -16,7 +16,11 @@ fields, and the bottom panel shows the vertical (pressure) velocity field.  When
 wave response, or to run a particular wave component.
 
 Assuming MatLab is installed on your machine, to run the model with default cloud cluster forcing simply download the the repository and then run the main script in
-the root directory, `MJO_RUN.m`.  The `README.md` contains further information on settings found in `MJO_PARAMS.m` and `MJO_PLOT.m'.  Additionally it contains model 
-background information as well as references that are related to it.  Below shows some examples of sample output from the model.
+the root directory, `MJO_RUN.m`.  The `README.md` contains further information on settings found in `MJO_PARAMS.m` and `MJO_PLOT.m`.  Additionally it contains model 
+background information as well as references that are related to it.  Below shows a sample output plot of the Mixed-Rossby gravity wave response to a cloud cluster (see 
+dashed oval) centered 750km north of the equator.
+<br>
 
 ![Mixed Rossby gravity wave](PMa800b500y750_2020-09-20_222919.png)
+
+<br>
