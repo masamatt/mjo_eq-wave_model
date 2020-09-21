@@ -1,5 +1,8 @@
 # MJO Equatorial Wave Model
 
+<hr>
+<br><br>
+
 ![Total wave response: equatorially symmetric](P_a800b500y0_2020-09-20_230250.png)
 _Sample output plot of the total wave response to equatorially symmetric forcing._
 
