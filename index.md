@@ -15,3 +15,8 @@ root directory, `MJO_PLOT.m`, which generates a 3-panel plot of the response fie
 fields, and the bottom panel shows the vertical (pressure) velocity field.  When calling the `MJO_RUN.m` script you will be prompted to run either the total equatorial
 wave response, or to run a particular wave component.
 
+Assuming MatLab is installed on your machine, to run the model with default cloud cluster forcing simply download the the repository and then run the main script in
+the root directory, `MJO_RUN.m`.  The `README.md` contains further information on settings found in `MJO_PARAMS.m` and `MJO_PLOT.m'.  Additionally it contains model 
+background information as well as references that are related to it.  Below shows some examples of sample output from the model.
+
+![Mixed Rossby gravity wave](PMa800b500y750_2020-09-20_222919.png)
