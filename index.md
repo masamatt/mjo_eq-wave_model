@@ -19,7 +19,7 @@ Assuming MatLab is installed on your machine, to run the model with default clou
 the root directory, `MJO_RUN.m`.  The `README.md` contains further information on settings found in `MJO_PARAMS.m` and `MJO_PLOT.m`.  Additionally it contains model 
 background information as well as references that are related to it.  Below shows a sample output plot of the Mixed-Rossby gravity wave response to a cloud cluster (see 
 dashed oval) centered 750km north of the equator.
-<br>
+<br><br>
 
 ![Mixed Rossby gravity wave](PMa800b500y750_2020-09-20_222919.png)
 
