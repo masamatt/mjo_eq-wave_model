@@ -1,5 +1,9 @@
 # MJO Equatorial Wave Model
 
+![Total wave response: equatorially symmetric](P_a800b500y0_2020-09-20_230250.png)
+_Sample output plot of the total wave response to equatorially symmetric forcing._
+
+<br><br>
 The **Madden-Julian oscillation (MJO)** is a tropical weather phenomena which originate in the Indian Ocean and propagates eastward along the
 Equator until dying out near the dateline in the colder waters of the eastern Pacific.  The MJO is made up a large-scale convective envelope
 moving eastward near the equator accompanied by the equatorial wave response to the translating heat source.  The total wave response is a sum
@@ -22,5 +26,7 @@ dashed oval) centered 750km north of the equator.
 <br><br>
 
 ![Mixed Rossby gravity wave](PMa800b500y750_2020-09-20_222919.png)
+_The cloud cluster forcing in this output is centered 750km off the equator, otherwise the forcing is the same as that in the first figure.  The Mixed-Rossby gravity
+response is a wave mode anti-symmetric about the equator, so only when the cloud cluster is located either north or south of it, will this mode be stimulated._
 
 <br>
