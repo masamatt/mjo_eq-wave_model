@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+# MJO Equatorial Wave Model
 
-You can use the [editor on GitHub](https://github.com/masamatt/mjo_eq-wave_model/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/masamatt/mjo_eq-wave_model/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The Madden-Julian oscillation (MJO) is a tropical weather phenomena which originate in the Indian Ocean and propagates eastward along the
+Equator until dying out near the dateline in the colder waters of the eastern Pacific.  The MJO is made up a large-scale convective envelope
+moving eastward near the equator accompanied by the equatorial wave response to the translating heat source.  The total wave response is a sum
+of the individual wave components: Eastward and Westward Inertio-gravity waves, Kelvin wave, Mixed-Rossby gravity wave, and Rossby wave.  The
+Rossby wave response is found to the West of the convective cluster and the Kelvin wave response to East of the cluster.  The research done
+with the model contained in this repository looks at the MJO as a composition of these equatorial wave components and then investigates the
+degree to which it's dynamics can be captured from it's potential vorticity (PV) principle.  
