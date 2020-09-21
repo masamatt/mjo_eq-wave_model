@@ -9,6 +9,7 @@ _Sample output plot of the total wave response to equatorially symmetric forcing
 <br>
 <hr>
 <br><br>
+
 The **Madden-Julian oscillation (MJO)** is a tropical weather phenomena which originate in the Indian Ocean and propagates eastward along the
 Equator until dying out near the dateline in the colder waters of the eastern Pacific.  The MJO is made up a large-scale convective envelope
 moving eastward near the equator accompanied by the equatorial wave response to the translating heat source.  The total wave response is a sum
