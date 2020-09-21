@@ -8,3 +8,10 @@ Rossby wave response is found to the West of the convective cluster and the Kelv
 with the model contained in this repository looks at the MJO as a composition of these equatorial wave components and then investigates the
 degree to which it's dynamics can be captured from it's **potential vorticity (PV) principle**.  
 
+The model contained in the repository is a suite of MatLab scripts which simulate the response fields based on a parameterized convective heat-source.  The
+parameters that control the characteristics of the cloud cluster are found in the file, MJO_PARAMS.m, located in the root directory.  Once the heating source has
+been prescribed, the model can be run by calling the main run script, MJO_RUN.m.  The run script first runs the simulation, then calls the last script located in the
+root directory, MJO_PLOT.m, which generates a 3-panel plot of the response field.  The top panel displays the PV field, the middle panel contains the wind and height
+fields, and the bottom panel shows the vertical (pressure) velocity field.  When calling the MJO_RUN.m script you will be prompted to run either the total equatorial
+wave response, or to run a particular wave component.
+
